@@ -1,0 +1,106 @@
+@media (max-width: 870px) {
+
+    h1, h2, h3 {
+        font-size: 40px;
+    }
+
+    /*Right side mockup*/
+
+    #hand {
+        background: url(../images/hand-mockup.png) top no-repeat;
+        width: 800px;
+        height: 1000px;
+        background-size: 100%;
+        position: fixed;
+        margin-left: -209px;
+        top: 50%;
+        margin-top: -270px;
+        left: 50%;
+    }
+
+    /*Screenshots*/
+
+    .screenshots-wrapper,
+    .section-image {
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        overflow: hidden;
+        z-index: 10;
+        margin-top: -192px;
+        width: 232px;
+        height: 407px;
+        margin-left: 270px;
+        border-radius: 3px;
+    }
+    .screenshots-wrapper img,
+    .section-image img {
+        width: 100%;
+        display: block;
+        max-height: 407px;
+    }
+    .screenshots-wrapper {
+        -webkit-transition: 0.9s;
+        -o-transition: 0.9s;
+        transition: 0.9s;
+        opacity: 0;
+    }
+    .active .screenshots-wrapper {
+        opacity: 1;
+        overflow: visible;
+    }
+    .screenshots-wrapper .fp-tableCell { height: 100%!important }
+    .active .section-image img { opacity: 1 }
+}
+
+@media screen and (min-width: 320px) and (max-width: 640px) {
+    
+    /*Right side mockup*/
+
+    #hand {
+        background: url(../images/hand-mockup.png) top no-repeat;
+        width: 800px;
+        height: 1000px;
+        background-size: 100%;
+        position: fixed;
+        margin-left: -209px;
+        top: 50%;
+        margin-top: -270px;
+        left: -30%;
+    }
+
+    /*Screenshots*/
+
+    .screenshots-wrapper,
+    .section-image {
+        position: fixed;
+        left: -30%;
+        top: 50%;
+        overflow: hidden;
+        z-index: 2000;
+        margin-top: -192px;
+        width: 232px;
+        height: 407px;
+        margin-left: 270px;
+        border-radius: 3px;
+    }
+    .screenshots-wrapper img,
+    .section-image img {
+        width: 100%;
+        display: block;
+        max-height: 407px;
+    }
+    .screenshots-wrapper {
+        -webkit-transition: 0.9s;
+        -o-transition: 0.9s;
+        transition: 0.9s;
+        opacity: 0;
+    }
+    .active .screenshots-wrapper {
+        opacity: 1;
+        overflow: visible;
+    }
+    .screenshots-wrapper .fp-tableCell { height: 100%!important }
+    .active .section-image img { opacity: 1 }
+   
+}

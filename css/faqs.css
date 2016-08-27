@@ -1,0 +1,45 @@
+/*
+======================================================
+Faqs
+======================================================
+*/
+
+.faq-qa {
+	color: #00a7dd;
+	font-weight: 550;
+	padding-right: 5px;
+}
+.tab-content {
+	padding: 20px;
+}
+
+
+.panel {
+	box-shadow: none;
+	border: none;
+}
+.panel-title {
+	color: #4a4a4a;
+	font-weight: normal;
+	font-size: 16px;
+}
+
+
+
+.panel-body {
+	background: #fafafa;
+	margin-top: 2px;
+	color: #54676e;
+}
+.panel-default > .panel-heading + .panel-collapse > .panel-body {
+	border-top-color: #fafafa;
+}
+.panel-group {
+	margin-bottom: 0;
+}
+.panel-group .panel + .panel {
+	margin-top: 20px;
+}
+.panel-title a:focus {
+ text-decoration: none;
+}
