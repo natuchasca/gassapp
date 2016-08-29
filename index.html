@@ -131,7 +131,7 @@
 
                 <!-- HERO IMAGES -->
                 <div class="hero-images wow layout3HeroPhone" data-wow-duration="1s" data-wow-delay="0.5s">
-                    <img src="images/hero-phone-and-hand2.png" class="hero-image parallax" alt="" />
+                    <img src="images/home-phone.png" class="hero-image parallax" alt="" />
                 </div>
                 
             </div>
@@ -143,7 +143,7 @@
     GASSAPP SECTION
     =================================
     -->
-    <section id="gassapp" class="pv-50">
+    <section id="gassapp" class="pv-70">
         <div class="container">
             <div class="row space-bottom">
                 <div class="col-md-12 text-center">
@@ -254,7 +254,7 @@
     TESTIMONIALS SECTION
     =================================
     -->
-    <section class="dark-translucent-bg background-img-4 pv-50 hidden">
+    <section id="testimonials" class="dark-translucent-bg background-img-4 pv-50">
         <div class="call-to-action text-center"> 
             <h2>Opiniones</h2> 
         </div>
@@ -390,6 +390,75 @@
                 $( '.navbar-default' ).removeClass( 'floating' );
             }
         });*/
+    </script>
+    <script>
+        $(document).ready(function() {
+         
+          //Owl carousel
+        //-----------------------------------------------
+        if ($('.owl-carousel').length>0) {
+            $(".owl-carousel.carousel").owlCarousel({
+                items: 4,
+                pagination: false,
+                navigation: true,
+                navigationText: false
+            });
+            $(".owl-carousel.carousel-autoplay").owlCarousel({
+                items: 4,
+                autoPlay: 5000,
+                pagination: false,
+                navigation: true,
+                navigationText: false
+            });
+            $(".owl-carousel.clients").owlCarousel({
+                items: 6,
+                autoPlay: true,
+                pagination: false,
+                itemsDesktopSmall: [992,4],
+                itemsTablet: [768,4],
+                itemsMobile: [479,3]
+            });
+            $(".owl-carousel.content-slider").owlCarousel({
+                singleItem: true,
+                autoPlay: 5000,
+                navigation: false,
+                navigationText: false,
+                pagination: false
+            });
+            $(".owl-carousel.content-slider-with-controls").owlCarousel({
+                singleItem: true,
+                autoPlay: false,
+                navigation: true,
+                pagination: true
+            });
+            $(".owl-carousel.content-slider-with-large-controls").owlCarousel({
+                singleItem: true,
+                autoPlay: false,
+                navigation: true,
+                pagination: true
+            });
+            $(".owl-carousel.content-slider-with-controls-autoplay").owlCarousel({
+                singleItem: true,
+                autoPlay: 5000,
+                navigation: true,
+                pagination: true
+            });
+            $(".owl-carousel.content-slider-with-large-controls-autoplay").owlCarousel({
+                singleItem: true,
+                autoPlay: 5000,
+                navigation: true,
+                pagination: true
+            });
+            $(".owl-carousel.content-slider-with-controls-autoplay-hover-stop").owlCarousel({
+                singleItem: true,
+                autoPlay: 5000,
+                navigation: true,
+                pagination: true,
+                stopOnHover: true
+            });
+        };
+
+        });
     </script>
 
     

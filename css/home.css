@@ -1,12 +1,14 @@
 /**
- * ========================================
- * HOME
- * Hero image parallax 
- * GASSAPP reseña y situaciones
- * CLIENTES
- * TESTIMONIOS
- * ========================================
- */
+* ========================================
+* HOME
+* ========================================
+*/
+/*
+1.- Hero image parallax 
+2.- GASSAPP reseña y situaciones
+3.- CLIENTES
+4.-TESTIMONIOS
+*/
 
  /*Colors
 ---------------------------------- */
@@ -763,7 +765,7 @@ figure.effect-apollo:hover p {
 .testimonial .separator {
   margin: 15px auto 5px;
 }
-.testimonial-image {
+.testimonial-image img {
   width: 90px;
   margin: 0 auto;
 }

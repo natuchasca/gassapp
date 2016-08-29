@@ -71,9 +71,50 @@
 	</header>
     <!--
     =================================
-    Slider o Parallax
+    Slider 
     =================================
     -->
+    <div id="inSlider" class="carousel carousel-fade" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#inSlider" data-slide-to="0" class="active"></li>
+            <li data-target="#inSlider" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="item active item1">
+                <div class="container">
+                    <div class="carousel-caption blank">
+                        <h1>Únete a la nueva forma
+                          <br>de vender cilindros de gas
+                        </h1>
+                        <p>Sé parte de GassApp.</p>
+                        <p>
+                            <a class="btn btn-lg btn-primary" href="#registro" role="button">Hazte Socio</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="item item2">
+                <div class="container">
+                    <div class="carousel-caption blank">
+                        <h1>Aumenta tus ventas y
+                          <br>clientes satisfechos.
+                        </h1>
+                        <p>Disminuyendo los costos de operación.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Saber más</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="left carousel-control" href="#inSlider" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Atrás</span>
+        </a>
+        <a class="right carousel-control" href="#inSlider" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+        </a>
+    </div>
+    
 
     <!--
     =================================
@@ -513,6 +554,138 @@
                 </div>
             </div>
         </div>
+
+        <!--
+    =================================
+    REGISTRO
+    =================================
+    -->
+    <section id="myModal_registro" class="modal fade pv-40" role="dialog">
+            <div class="modal-dialog modal-dialog-pop">
+                <div class="row m-b-lg">
+                    <div class="col-lg-12 text-center">
+                        <div class="navy-line"></div>
+                        <h1>Registrate</h1>
+                        <p>Registrate con nosotros y enterate de los beneficios y promociones de tus vendedores de Gas</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <form class="form-horizontal" id="formulario" enctype="multipart/form-data">
+
+                            <div class="form-group" id="frg_email">
+                                <label class="control-label col-xs-3">Email:</label>
+                                <div class="col-xs-9">
+                                    <input type="email" class="form-control" name="email" id="email" placeholder="micorreo@dominio.cl" required="required">
+                                </div>
+                            </div>
+                            <div class="form-group" id="frg_rut">
+                                <label class="control-label col-xs-3">Rut:</label>
+                                <div class="col-xs-9">
+                                    <input type="text" class="form-control" required="required" id="rut" name="rut" placeholder="10797970-2">
+                                </div>
+                            </div>
+
+                            <div class="form-group" id="frg_nombre">
+                                <label class="control-label col-xs-3">Nombres:</label>
+                                <div class="col-xs-9">
+                                    <input type="text" class="form-control" required="required" id="nombre" name="nombre" placeholder="Nombres">
+                                </div>
+                            </div>
+                            <div class="form-group" id="frg_apellidos">
+                                <label class="control-label col-xs-3">Apellidos:</label>
+                                <div class="col-xs-9">
+                                    <input type="text" class="form-control" required="required" id="apellidos" name="apellidos" placeholder="Apellidos">
+                                </div>
+                            </div>
+
+                            <div class="form-group" id="frg_telefono">
+                                <label class="control-label col-xs-3">Celular:</label>
+                                <div class="col-xs-9">
+                                    <input type="text" class="form-control" id="telefono" name="telefono" placeholder="9 8657 8931" required="required">
+                                </div>
+                            </div>
+
+                            <div class="form-group" id="frg_direccion">
+                                <label class="control-label col-xs-3">Dirección:</label>
+                                <div class="col-xs-9">
+                                    <input type="text" class="form-control" required="required" id="direccion" name="direccion" placeholder="Dirección" />
+                                </div>
+                            </div>
+                            <div class="form-group" id="frg_registro_region">
+                                <label class="control-label col-xs-3">Ubicación</label>
+                                <div class="col-xs-3">
+                                    <select class="form-control" name="registro_region" id="registro_region" required="required">
+                                        <option>Región</option>
+                                    </select>
+                                </div>
+                                <div class="col-xs-3">
+                                    <select class="form-control disabled" name="registro_provincia" id="registro_provincia" disabled required="required">
+                                        <option>Provincia</option>
+                                    </select>
+                                </div>
+                                <div class="col-xs-3">
+                                    <select class="form-control disabled" name="registro_comuna" id="registro_comuna" disabled required="required">
+                                        <option>Comuna</option>
+                                    </select>
+                                </div>
+                            </div>
+
+
+                            <div class="form-group" id="frg_inputPassword">
+                                <label class="control-label col-xs-3">Contraseña:</label>
+                                <div class="col-xs-9">
+                                    <input type="password" class="form-control" name="inputPassword" id="inputPassword" placeholder="Contraseña" required="required">
+                                </div>
+                            </div>
+                            <div class="form-group" id="frg_inputPassword2">
+                                <label class="control-label col-xs-3">Confirmar:</label>
+                                <div class="col-xs-9">
+                                    <input type="password" class="form-control" id="inputPassword2" placeholder="Confirmar Contraseña" required="required">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-xs-offset-3 col-xs-9">
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" name="noticias" id="noticias">
+                                            Deseo recibir información en mi cuenta de correo
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group" id="frg_terminos_y_condiciones">
+                                <div class="col-xs-offset-3 col-xs-9">
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" name="terminos_y_condiciones" id="terminos_y_condiciones" required="required">
+                                            Accepto <a href="#">Terminos y condiciones</a>.
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group" id="frmg_mensajes_error" style="display: none">
+                                <div class="col-xs-offset-3 col-xs-9">
+                                    <label class="checkbox-inline" id="mensaje_error">
+                                    </label>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <div class="col-xs-offset-3 col-xs-9">
+                                    <input type="button" class="btn btn-primary" id="btn_registro_usuario" value="Registrarse">
+                                    <input type="reset" id="btn_limpiar_registro_usuario" class="btn btn-default" value="Limpiar">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                        
+
+                </div>
+
+            </div>
+
+        </section>
+
 
 
 

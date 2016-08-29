@@ -2,33 +2,46 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>GassApp | Distribuidor</title>
+	<title>Test</title>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/helpers.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/distribuidor.css">
 
-    <!-- Mobile Meta -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="images/favicon.ico">
-
-    <!-- Web Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Raleway:700,400,300' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
-
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/helpers.css">
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/distribuidor.css">
+	<style>
+	#phone {
+		position: fixed;
+		top: 400px;
+		margin-left: 30%;
+		z-index: 0;
+	}
+	.dots-menu ul li {
+		list-style: none;
+	}
+	.dots-menu {
+		position: fixed;
+		top: 300px;
+		left: 20px;
+	}
+	.section {
+		height: 631px;
+		padding-top: 300px;
+	}
+	.holder {
+		display: none;
+	}
+	.bg-1 { background-image: url("http://www.easytaxi.com/wp-content/themes/easytaxi-v3/assets/images/slider/background-slider-1.jpg"); }
+        .bg-2 { background-image: url("http://www.easytaxi.com/wp-content/uploads/2015/04/background-slider-2.jpg");}
+        .bg-3 { background-image: url("http://www.easytaxi.com/wp-content/themes/easytaxi-v3/assets/images/slider/background-slider-3.jpg"); }
+        .bg-4 { background-image: url("http://www.easytaxi.com/wp-content/uploads/2015/04/background-slider-4.jpg");}
+        #phone {
+        background-image: url("http://www.easytaxi.com/wp-content/themes/easytaxi-v3/assets/images/slider/base-iphone.png");
+        background-repeat: no-repeat;}
+	</style>
 </head>
 <body>
-    <!-- scrollToTop -->
-    <!-- ================ -->
-    <div class="scrollToTop circle"><i class="icon-up-open-big"></i></div>
-    <!--
+	<!--
     =================================
     HEADER
     =================================
@@ -143,126 +156,88 @@
     </div>
     <!--
     =================================
-    DASH
+    Demo Dash 
     =================================
     -->
-    <section class="dash pv-50">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <!-- Textos -->
-            <div class="text-dash">
-              <h1>Administra tu flota y ventas
-              <br>en línea</h1>
-              <div class="box">
-                  <p>GassApp ha pensado en cada uno de los distribuidores de gas. 
-                  <br><span><i class="fa fa-truck" aria-hidden="true"></i></span> Tu flota de vehículos en terreno recorrerá menos distancia diariamente. 
-                  <br><span><i class="fa fa-money" aria-hidden="true"></i></span> Aumenta tus ventas y la satisfacción de tu personal disminuyendo los costos de operación.
-                  <br><span><i class="fa fa-check-square-o" aria-hidden="true"></i></span> Administra de mejor manera tu stock.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 text-center">
-            <!-- imagenes computador y dash -->
-            <div class="wrap">
-              <div class="section-image wow fadeInRight animated" data-wow-delay="0.1s"> 
-                <img src="images/distribuidor-dash.png" width="600" height="auto">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--
-    =================================
-    DEMO Vendedor
-    =================================
-    -->
-    <!-- SECCION DEMO -->
-    <section class="demo pv-50" id="demodist">
-      <!-- Dots de Links -->
-      <div class="dots-menu hidden-xs hidden-sm wow fadeInLeft" data-wow-delay="0.1s">
-        <ul>
-          <li><a href="#one">&#9679;</a></li>
-          <li><a href="#two">&#9679;</a></li>
-        </ul>
-      </div>
-      <!-- PHONE -->
-      <div id="phone" class="phone-back">
-        <div class="screens  wow fadeInRight animated" data-wow-delay="0.1s">
-          <div class="holder step-1">
-            <img src="images/0.jpg">
-          </div>
-          <div class="holder step-2">
-            <img src="images/1.jpg">
-          </div>
-        </div>
-      </div>
-      <!-- CONTENIDO -->
-      <div class="contenido">
-        <div class="bg-1 pv-50 section" id="one">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="wrap">
-                  <h1>Recibe tus ventas directamente 
-                  <br>en tu smartphone</h1>
-                  <div class="box">
-                    <p>En terreno, mantén el GPS de tu celular activo e ingresa a GassApp con tu usuario y contraseña. Verás cómo los pedidos de gas no tardan en llegar. 
-                    Verifica si posees la carga necesaria para la venta y realiza la oferta a este cliente. Si él o ella están conforme con tu ofrecimiento confirmarán tu asistencia y esperarán a que llegues a su domicilio en pocos minutos. ¡NO LOS HAGAS ESPERAR!</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 visible-xs">
-                <div class="wow fadeInRight animated" data-wow-delay="0.1s">
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="bg-2  pv-50 section" id="two">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="wrap">
-                  <h1>Tus clientes a la vuelta de la esquina. 
-                  <br>¡Apúrate!, porque ya tienes otro pedido entrante </h1>
-                  <div class="box">
-                    <p>Verifica que la dirección que indica tu cliente coincida con la que detecta el GPS de tu teléfono. Avísale tu llegada al domicilio. La mejor atención marcará la diferencia!
-                    Podrás fidelizar y con ello ganar a más y nuevos clientes. </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--
-    =================================
-    Call To Action
-    =================================
-    -->
-    <section class="call-to">
-      <div class="call-back">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-12 text-center">
-              <h1>Sé parte de GassApp y accede a cientos de clientes
-                <br>Inscríbete</h1>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-
-    <!--
+		<!-- SECCION DEMO -->
+		<section class="demo pv-50" id="demodist">
+			<!-- Dots de Links -->
+			<div class="dots-menu hidden-xs hidden-sm wow fadeInRight" data-wow-delay="0.1s">
+	      <ul>
+	        <li><a href="#one">&#9679;</a></li>
+	        <li><a href="#two">&#9679;</a></li>
+	        <li><a href="#tree">&#9679;</a></li>
+	        <li><a href="#four">&#9679;</a></li>
+	      </ul>
+	    </div>
+	    <!-- PHONE -->
+	    <div id="phone" class="wow fadeInRight" data-wow-delay="0.1s">
+	    	<div class="holder step-1">
+	    		<img src="images/phone-in-hand.png" alt="">
+	    	</div>
+	    	<div class="holder step-2">
+	    		<img src="images/hero-phone-and-hand.png" alt="">
+	    	</div>
+	    	<div class="holder step-3">
+	    		<img src="images/hero-phone-and-hand2.png" alt="">
+	    	</div>
+	    	<div class="holder step-4">
+	    		<img src="images/handphone.png" alt="">
+	    	</div>
+	    </div>
+	    <!-- CONTENIDO -->
+			<div class="contenido">
+				<div class="bg-1 pv-50 section" id="one">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, fugiat, assumenda perspiciatis ea nulla animi, illo nam reiciendis iste vel aperiam rerum porro consequuntur nobis cum quisquam labore reprehenderit, eaque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis in pariatur cupiditate, ratione dolor veritatis nostrum natus maiores unde, dignissimos porro, suscipit quasi quia aliquid. Fugiat labore, nesciunt facere vel! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere quaerat, iure similique quia obcaecati nam blanditiis distinctio nobis fugit rerum accusamus ut excepturi enim eaque aspernatur eligendi numquam sit vitae.</p>
+							</div>
+							<div class="col-md-6">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bg-2  pv-50 section" id="two">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, fugiat, assumenda perspiciatis ea nulla animi, illo nam reiciendis iste vel aperiam rerum porro consequuntur nobis cum quisquam labore reprehenderit, eaque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis in pariatur cupiditate, ratione dolor veritatis nostrum natus maiores unde, dignissimos porro, suscipit quasi quia aliquid. Fugiat labore, nesciunt facere vel! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere quaerat, iure similique quia obcaecati nam blanditiis distinctio nobis fugit rerum accusamus ut excepturi enim eaque aspernatur eligendi numquam sit vitae.</p>
+							</div>
+							<div class="col-md-6">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bg-3  pv-50 section" id="tree">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, fugiat, assumenda perspiciatis ea nulla animi, illo nam reiciendis iste vel aperiam rerum porro consequuntur nobis cum quisquam labore reprehenderit, eaque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis in pariatur cupiditate, ratione dolor veritatis nostrum natus maiores unde, dignissimos porro, suscipit quasi quia aliquid. Fugiat labore, nesciunt facere vel! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere quaerat, iure similique quia obcaecati nam blanditiis distinctio nobis fugit rerum accusamus ut excepturi enim eaque aspernatur eligendi numquam sit vitae.</p>
+							</div>
+							<div class="col-md-6">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bg-4  pv-50 section" id="four">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, fugiat, assumenda perspiciatis ea nulla animi, illo nam reiciendis iste vel aperiam rerum porro consequuntur nobis cum quisquam labore reprehenderit, eaque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis in pariatur cupiditate, ratione dolor veritatis nostrum natus maiores unde, dignissimos porro, suscipit quasi quia aliquid. Fugiat labore, nesciunt facere vel! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere quaerat, iure similique quia obcaecati nam blanditiis distinctio nobis fugit rerum accusamus ut excepturi enim eaque aspernatur eligendi numquam sit vitae.</p>
+							</div>
+							<div class="col-md-6">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--
     =================================
     FOOTER
     =================================
@@ -305,43 +280,64 @@
 
 
 
-    <!--
-    =================================
-    SCRIPTS
-    =================================
-    -->
-    
-    <!-- jQuery -->
-    <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+  <script src="js/wow.min.js"></script>
+	<script src="scrollmagic/minified/ScrollMagic.min.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+	<script type="text/javascript">
 
-    <!-- Smootscrolling -->
-    <script src="js/smoothscrolling.jquery.js"></script>
-    <script>
-      $(document).on('click','.navbar-collapse.in',function(e) {
-      if( $(e.target).is('a') ) {
-          $(this).collapse('hide');
-        }
-      });
-    </script>
-    <script>
-      $("a.scroller").smoothscrolling(
-          { 
-        offsetTop: 65 // cantidad de pixeles que tiene el elemento flotante
-      });
-    </script>
+    $(document).ready(function(){
+      var controller = new ScrollMagic.Controller({});
 
-    <!-- Scroll Demo Requires scrollmagic -->
-    <script src="scrollmagic/minified/ScrollMagic.min.js"></script>
-    <script src="js/scrolldemo.js"></script>
+      var phone = new ScrollMagic.Scene({
+        triggerElement: "#demodist",
+        offset: 2687,
+        duration: 0
+      })
+      .setClassToggle("#phone", "pinIt").addTo(controller);
 
-    <!-- Wow -->
-    <script src="js/wow.min.js"></script>
-    <script>
-      new WOW().init();
-    </script>
+      var menu = new ScrollMagic.Scene({
+        triggerElement: "#demodist",
+        offset: 2687,
+        duration: 0
+      })
+      .setClassToggle(".dots-menu", "pinIt").addTo(controller);
+
+      var scene1 = new ScrollMagic.Scene({
+        triggerElement: "#one",
+        duration: 650
+      })
+      .setClassToggle(".step-1", "show").addTo(controller)
+
+      var scene2 = new ScrollMagic.Scene({
+        triggerElement: "#two",
+        duration: 650
+      })
+      .setClassToggle(".step-2", "show").addTo(controller);
+
+      var scene3 = new ScrollMagic.Scene({
+        triggerElement: "#tree",
+        duration: 650
+      })
+      .setClassToggle(".step-3", "show").addTo(controller);
+
+      var scene4 = new ScrollMagic.Scene({
+        triggerElement: "#four",
+        duration: 400
+      })
+      .setClassToggle(".step-4", "show").addTo(controller);
+
+      /*$('body').fullpage({
+        scrollBar: true,
+        resize : false,
+        css3: false,
+        responsive: 0,
+        scrollOverflow: true,
+        normalScrollElements: "#download, #review"
+      });*/
+    });
+  </script>
+	
 </body>
 </html>
-
