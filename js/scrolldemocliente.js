@@ -67,9 +67,9 @@ $(document).ready(function(){
   .setClassToggle(".step-8", "show").addTo(controller);
 
 
-  // Para detener el celular
+  // Para desaparecer el celular y dots
   $(window).scroll(function(){
-    var threshold = 1300; // number of pixels before bottom of page that you want to start fading
+    var threshold = 1800; // number of pixels before bottom of page that you want to start fading
     var op = (($(document).height() - $(window).height()) - $(window).scrollTop()) - threshold;
     if( op <= 0 ){
       $(".phone-back").hide();
@@ -77,6 +77,13 @@ $(document).ready(function(){
       $(".phone-back").show();
     }
     $(".phone-back").css("opacity", op ); 
+
+    if( op <= 0 ){
+      $(".dots-menu").hide();
+    } else {
+      $(".dots-menu").show();
+    }
+    $(".dots-menu").css("opacity", op ); 
   });
 
 

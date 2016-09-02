@@ -9,136 +9,147 @@
  3.- Registro
  */
 
-/* DEMO */
-/* Backgrounds de secciones */
-body { 
-background-image: url("../images/bg2.jpg"); 
-background-size: cover;
-background-attachment: fixed;
-background-repeat: no-repeat;
-}
-
-.phone-back {
-  background: url(../images/hand-mockup.png) top no-repeat;
-  width: 800px;
-  height: 1000px;
-  background-size: 100%;
-  position: fixed;
-  margin-left: -209px;
-  top: 53%;
-  margin-top: -270px;
-  left: 50%;
-}
-.screens {
-  position: fixed;
-  left: 50%;
-  top: 53%;
-  overflow: hidden;
-  z-index: 10;
-  margin-top: -192px;
-  width: 232px;
-  height: 407px;
-  margin-left: 270px;
-  border-radius: 3px;
-}
-.dots-menu ul li {
-  list-style: none;
-}
-.dots-menu {
-  position: fixed;
-  top: 300px;
-  left: 20px;
-  visibility: hidden;
-}
-.section {
-  height: 631px;
-  padding-top: 180px;
-}
-.holder {
-  display: none;
-}
-
-.wrap .box,
+/* Mobile first */
 .wrap {
-    -webkit-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s;
-}
-.box {
-    font-family: 'Roboto', sans-serif;
-    text-align: left;
-    line-height: 26px;
-    font-weight: 400;
-    font-style: normal;
-    color: #111;
-    font-size: 15px;
-    padding-left: 40px;
-}
-.box h1 {
-  font-size: 50px;
-  font-weight: 300;
-}
-.box p { margin: 15px 0 }
-
-/*buttons*/
-
-.appstore {
-    background: url(../images/appstore.png);
-    height: 21px;
-    width: 17px;
-    margin-top: 2px;
-    float: left;
-}
-/*.appstore-button:hover .appstore { background: url(../images/appstore2.png) }*/
-.playstore {
-    background: url(../images/playstore.png);
-    height: 20px;
-    width: 17px;
-    margin-top: 2px;
-    float: left;
-}
-/*.playstore-button:hover .playstore { background: url(../images/playstore2.png) }*/
-.simple-button {
-    font-size: 16px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    border-radius: 4px;
-    color: #ffffff;
-    min-width: 130px;
-    margin-right: 10px;
-    text-decoration: none;
-    padding: 12px 25px;
-    margin-top: 25px;
-    float: left;
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
-    background: #30AEE5 ;
-}
-.simple-button:hover {
-    color: #fff;
-    background: #2669DF;
-}
-
-
-
-
-/* Call to action */
-.call-to {
-  background-image: url("../images/2-transportista.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: white;
-  height: 200px;
   width: 100%;
-  z-index: 2000;
-}
-.call-back {
-  background-color: rgba(48, 174, 229, 0.8);
-  padding: 50px;
+  min-width: 320px;
 }
 
-/* Regístrate */
-.registrate {
-  background-color: white;
+/* Desktop */
+@media ( min-width: 768px ) {
+  /* DEMO */
+    /* Backgrounds de secciones */
+    body { 
+    background-image: url("../images/bg2.jpg"); 
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    }
+
+    .phone-back {
+      background: url(../images/hand-mockup.png) top no-repeat;
+      width: 800px;
+      height: 1000px;
+      background-size: 100%;
+      position: fixed;
+      margin-left: -209px;
+      top: 53%;
+      margin-top: -270px;
+      left: 50%;
+    }
+    .screens {
+      position: fixed;
+      left: 50%;
+      top: 53%;
+      overflow: hidden;
+      z-index: 10;
+      margin-top: -192px;
+      width: 232px;
+      height: 407px;
+      margin-left: 270px;
+      border-radius: 3px;
+    }
+    .dots-menu ul li {
+      list-style: none;
+    }
+    .dots-menu {
+      position: fixed;
+      top: 300px;
+      left: 20px;
+      visibility: hidden;
+    }
+    .section {
+      height: 631px;
+      padding-top: 180px;
+    }
+    .holder {
+      display: none;
+    }
+
+    .wrap .box,
+    .wrap {
+        -webkit-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s;
+    }
+    .box {
+        font-family: 'Roboto', sans-serif;
+        text-align: left;
+        line-height: 26px;
+        font-weight: 400;
+        font-style: normal;
+        color: #111;
+        font-size: 15px;
+        padding-left: 40px;
+    }
+    .box h1 {
+      font-size: 50px;
+      font-weight: 300;
+    }
+    .box p { margin: 15px 0 }
+
+    /*buttons*/
+
+    .appstore {
+        background: url(../images/appstore.png);
+        height: 21px;
+        width: 17px;
+        margin-top: 2px;
+        float: left;
+    }
+    /*.appstore-button:hover .appstore { background: url(../images/appstore2.png) }*/
+    .playstore {
+        background: url(../images/playstore.png);
+        height: 20px;
+        width: 17px;
+        margin-top: 2px;
+        float: left;
+    }
+    /*.playstore-button:hover .playstore { background: url(../images/playstore2.png) }*/
+    .simple-button {
+        font-size: 16px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        border-radius: 4px;
+        color: #ffffff;
+        min-width: 130px;
+        margin-right: 10px;
+        text-decoration: none;
+        padding: 12px 25px;
+        margin-top: 25px;
+        float: left;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+        background: #30AEE5 ;
+    }
+    .simple-button:hover {
+        color: #fff;
+        background: #2669DF;
+    }
+
+
+
+
+    /* Call to action */
+    .call-to {
+      background-image: url("../images/2-transportista.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      color: white;
+      height: 200px;
+      width: 100%;
+      z-index: 2000;
+    }
+    .call-back {
+      background-color: rgba(48, 174, 229, 0.8);
+      padding: 50px;
+    }
+
+    /* Regístrate */
+    .registrate {
+      background-color: white;
+    }
+
+
 }

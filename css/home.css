@@ -54,18 +54,17 @@ html {
 /*Links
 ---------------------------------- */
 a {
-  color: #09afdf;
+  color: #777777; 
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-a:hover {
-  color: #0c9ec7;
-}
+a:hover,
 a:focus,
 a:active {
   outline: none;
   color: #0c9ec7;
+  text-decoration: none; 
 }
 
 /* Buttons
@@ -91,9 +90,9 @@ a:active {
 .btn-default:active,
 .btn-default.active,
 .open > .dropdown-toggle.btn-default {
-  color: #ffffff;
-  background-color: #0c9ec7;
-  border-color: #0c9ec7;
+  color: #0c9ec7;
+  background-color: white;
+  border: 1px solid #0c9ec7;
 }
 .btn-default.disabled,
 .btn-default[disabled],
@@ -133,6 +132,15 @@ button.navbar-toggle {
 /*.floating {
   margin-top: 0;
 }*/
+/* Hover links & buttons */
+.navbar-default .navbar-nav li a:hover,
+.navbar-default .navbar-nav li a:focus,
+.navbar-default .navbar-nav li a:active {
+  color: #0c9ec7;
+  text-decoration: none; 
+}
+
+
 
 
 /* Scroll to top
@@ -535,13 +543,13 @@ figure.effect-apollo figcaption::before {
 
 figure.effect-apollo p {
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   position: absolute;
   right: 0;
   bottom: 0;
   margin: 3em;
   padding: 0 1em;
-  max-width: 300px;
+  max-width: 400px;
   border-right: 4px solid #fff;
   text-align: right;
   opacity: 0;
@@ -550,7 +558,7 @@ figure.effect-apollo p {
 }
 
 figure.effect-apollo:hover img {
-  opacity: 0.6;
+  opacity: 0.3;
   -webkit-transform: scale3d(1,1,1);
   transform: scale3d(1,1,1);
 }
@@ -584,7 +592,7 @@ figure.effect-apollo:hover p {
 }
 
 
-/* 9 Owl Carousel
+/* Owl Carousel
 ---------------------------------- */
 .background-img-4 {
   background: url("../images/background-img-4.jpg") 50% 0px no-repeat;
@@ -818,6 +826,7 @@ figure.effect-apollo:hover p {
   display: none;
 }
 
+
 /* Testimonials
 ---------------------------------- */
 .testimonial {
@@ -825,9 +834,35 @@ figure.effect-apollo:hover p {
 }
 .testimonial blockquote {
   margin: 0;
+  font-size: 16px;
+  border-left: none;
+}
+.testimonial blockquote::after {
+  content: "“";
+  width: 25px;
+  height: 25px;
+  line-height: 36px;
+  font-size: 36px;
+  font-family: "PT Serif", serif;
+  position: absolute;
+  top: 185px;
+  left: 0px;
+  color: rgb(205, 205, 205);
 }
 .testimonial .separator {
   margin: 15px auto 5px;
+}
+.default-bg .separator:after,
+.dark-translucent-bg .separator:after,
+.default-translucent-bg .separator:after,
+.light.separator:after {
+  background: rgba(255, 255, 255, 0.5);
+  background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 35%, rgba(255, 255, 255, 0.5) 70%, rgba(255, 255, 255, 0) 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(35%, rgba(255, 255, 255, 0.5)), color-stop(70%, rgba(255, 255, 255, 0.5)), color-stop(100%, rgba(255, 255, 255, 0)));
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 35%, rgba(255, 255, 255, 0.5) 70%, rgba(255, 255, 255, 0) 100%);
+  background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 35%, rgba(255, 255, 255, 0.5) 70%, rgba(255, 255, 255, 0) 100%);
+  background: -ms-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 35%, rgba(255, 255, 255, 0.5) 70%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 35%, rgba(255, 255, 255, 0.5) 70%, rgba(255, 255, 255, 0) 100%);
 }
 .testimonial-image img {
   width: 90px;
@@ -847,6 +882,7 @@ figure.effect-apollo:hover p {
 .testimonial p {
   margin-bottom: 15px;
 }
+
 
 
 /*Translucent Backgrounds*/
