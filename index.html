@@ -1,472 +1,514 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>GassApp | La Aplicación del gas</title>
+	<head>
+		<meta charset="UTF-8">
+		<title>GassApp | La Aplicación del gas</title>
 
-    <!-- Mobile Meta -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Mobile Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="images/favicon.ico">
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="images/favicon.ico">
 
-    <!-- Web Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Raleway:700,400,300' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
+		<!-- Web Fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Raleway:700,400,300' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="plugins/owl-carousel/owl.carousel.css">
-    <link href="plugins/owl-carousel/owl.transitions.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/helpers.css">
-    <link rel="stylesheet" href="css/home.css">
-</head>
-<body>
-    <!-- scrollToTop -->
-    <!-- ================ -->
-    <div class="scrollToTop circle"><i class="icon-up-open-big"></i></div>
-    <!--
-    =================================
-    HEADER
-    =================================
-    -->
+		<!-- Stylesheets -->
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="plugins/owl-carousel/owl.carousel.css">
+		<link href="plugins/owl-carousel/owl.transitions.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/helpers.css">
+		<link rel="stylesheet" href="css/home.css">
+	</head>
+	<body>
+		<!-- scrollToTop -->
+		<!-- ================ -->
+		<div class="scrollToTop circle"><i class="fa fa-chevron-up"></i></div>
+		<!--
+		=================================
+		HEADER
+		=================================
+		-->
 		<header>
 			<!-- navbar start -->
-	        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-	            <div class="container">
-	                <!-- Brand and toggle get grouped for better mobile display -->
-	                <div class="navbar-header">
-	                    <button type="button" class=" navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
-	                        <span class="sr-only">Toggle navigation</span>
-	                        <span class="icon-bar"></span>
-	                        <span class="icon-bar"></span>
-	                        <span class="icon-bar"></span>
-	                    </button>
-	                    <a class="navbar-brand page-scroll" href="#">
-	                        <img id="logo_img" src="images/logo_gassapp.png" alt="Gassapp Chile">
-	                    </a>
-	                </div>
+			<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class=" navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand page-scroll scroller" href="#">
+							<img id="logo_img" src="images/logo_gassapp.png" alt="Gassapp Chile">
+						</a>
+					</div>
 
-	                <!-- Collect the nav links, forms, and other content for toggling -->
-	                <div class="collapse navbar-collapse" id="navbar-collapse-1">
-	                    <ul class="nav navbar-nav navbar-right">
-	                        <li>
-	                            <a class="scroller" href="#gassapp">GassApp</a>
-	                        </li>
-	                        <li>
-	                            <a class="scroller" data-offset-top="120" href="#servicios">Servicios</a>
-	                        </li>
-	                        <li>
-	                          <a href="faqs.html">Preguntas Frecuentes</a>
-	                        </li>
-	                        <!-- mega-menu end -->
-	                        <!--
-	                        <li class="dropdown padding-r-20">
-	                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Preguntas Frecuentes</a>
-	                            <ul class="dropdown-menu">
-	                                <li><a href="faqs.html"><i class="fa fa-angle-right"></i> bla bla bla</a></li>
-	                            </ul>
-	                        </li>
-	                        -->
-	                        <li>
-	                            <!-- header buttons -->
-	                            <div class="header-dropdown-buttons align-center">
-	                                <a href="consumidor.html" class="btn btn-sm hidden-xs btn-default">Cliente<i class="fa fa-user padding-l-5"></i></a>
-	                                <a href="consumidor.html" class="btn btn-sm visible-xs btn-default margin-bottom-5">Cliente<i class="fa fa-user padding-l-5"></i></a>
-	                                <a href="distribuidor.html" class="btn btn-sm hidden-xs btn-default">Distribuidor<i class="fa fa-user padding-l-5"></i></a>
-	                                <a href="distribuidor.html" class="btn btn-sm visible-xs btn-default">Distribuidor<i class="fa fa-user padding-l-5"></i></a>
-	                            </div> <!-- header buttons end-->
-	                        </li>
-	                    </ul>
-	                            
-	                </div> <!-- /.navbar-collapse -->
-	            </div> <!-- /.container-fluid -->
-	        </nav>
-	        <!-- ================ -->                                        
-	        <!-- navbar end -->
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="navbar-collapse-1">
+						<ul class="nav navbar-nav navbar-right">
+							<li>
+								<a class="scroller" href="#gassapp">GassApp</a>
+							</li>
+							<li>
+								<a class="scroller" data-offset-top="120" href="#servicios">Servicios</a>
+							</li>
+							<li>
+							  <a href="faqs.html">Dudas?</a>
+							</li>
+							<!-- mega-menu end -->
+							<!--
+							<li class="dropdown padding-r-20">
+								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Preguntas Frecuentes</a>
+								<ul class="dropdown-menu">
+									<li><a href="faqs.html"><i class="fa fa-angle-right"></i> bla bla bla</a></li>
+								</ul>
+							</li>
+							-->
+							<li>
+								<!-- header buttons -->
+								<div class="header-dropdown-buttons align-center">
+									<a href="consumidor.html" class="btn btn-sm hidden-xs btn-default">Cliente<i class="fa fa-user padding-l-5"></i></a>
+									<a href="consumidor.html" class="btn btn-sm visible-xs btn-default margin-bottom-5">Cliente<i class="fa fa-user padding-l-5"></i></a>
+									<a href="distribuidor.html" class="btn btn-sm hidden-xs btn-default">Distribuidor<i class="fa fa-user padding-l-5"></i></a>
+									<a href="distribuidor.html" class="btn btn-sm visible-xs btn-default">Distribuidor<i class="fa fa-user padding-l-5"></i></a>
+								</div> <!-- header buttons end-->
+							</li>
+						</ul>
+								
+					</div> <!-- /.navbar-collapse -->
+				</div> <!-- /.container-fluid -->
+			</nav>
+			<!-- ================ -->                                        
+			<!-- navbar end -->
 		</header>
-    <!--
-    =================================
-    HERO SECTION
-    =================================
-    -->
-    <section id="home" class="hero-section wow fadeIn">
-        <!-- BACKGROUND OVERLAY -->
-        <div class="black-background-overlay"></div>
-        <div class="container">
-            <div class="hero-content">
-                <!-- HERO TEXT -->
-                <div class="hero-text wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
-                    <!-- TAGLINE -->
-                    <h1 class="hero-title">La forma de comprar cilindros de gas <strong>cambió</strong></h1>
-                    <!-- HERO DESCRIPTION -->
-                    <p class="hero-description">La aplicación del gas ya está aquí.</p>
+		<!--
+		=================================
+		HERO SECTION
+		=================================
+		-->
+		<section id="home" class="hero-section wow fadeIn">
+			<!-- BACKGROUND OVERLAY -->
+			<div class="black-background-overlay"></div>
+			<div class="container">
+				<div class="hero-content">
+					<!-- HERO TEXT -->
+					<div class="hero-text wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+						<!-- TAGLINE -->
+						<h1 class="hero-title">Descubre lo fácil que es pedir cilindros de gas</h1>
+						<!-- HERO DESCRIPTION -->
+						<p class="hero-description">GassApp ya está aquí.</p>
 
-                    <!-- DOWNLOAD BUTTONS -->
-                    <p class="download-buttons">
-                        <img src="images/boton_googleplaycolor.png" class="hvr-float-shadow">
-                       
-                        <!-- APP STORE DOWNLOAD -->
-                        <!--<a href="#please-edit-this-link" class="btn btn-app-download btn-ios">
-                            <i class="fa fa-apple"></i>
-                            <strong>Descarga</strong> <span>desde App Store</span>
-                        </a>-->
-                        <!-- PLAY STORE DOWNLOAD -->
-                        <!--<a href="#please-edit-this-link" class="btn btn-app-download btn-primary">
-                            <i class="fa fa-android"></i>
-                            <strong>Descarga</strong> <span>desde Play Store</span>
-                        </a>-->
-                        <!-- WINDOWS PHONE STORE DOWNLOAD -->
-                        <!--<a href="#please-edit-this-link" class="btn btn-app-download btn-windows-phone">
-                            <i class="fa fa-windows"></i>
-                            <strong>Download App</strong> <span>from Windows Store</span>
-                        </a>-->
-                    </p>
+						<!-- DOWNLOAD BUTTONS -->
+						<p class="download-buttons">
+							<img src="images/boton_googleplaycolor.png" class="hvr-float-shadow">
+						   
+							<!-- APP STORE DOWNLOAD -->
+							<!--<a href="#please-edit-this-link" class="btn btn-app-download btn-ios">
+								<i class="fa fa-apple"></i>
+								<strong>Descarga</strong> <span>desde App Store</span>
+							</a>-->
+							<!-- PLAY STORE DOWNLOAD -->
+							<!--<a href="#please-edit-this-link" class="btn btn-app-download btn-primary">
+								<i class="fa fa-android"></i>
+								<strong>Descarga</strong> <span>desde Play Store</span>
+							</a>-->
+							<!-- WINDOWS PHONE STORE DOWNLOAD -->
+							<!--<a href="#please-edit-this-link" class="btn btn-app-download btn-windows-phone">
+								<i class="fa fa-windows"></i>
+								<strong>Download App</strong> <span>from Windows Store</span>
+							</a>-->
+						</p>
 
-                </div>
+					</div>
 
-                <!-- HERO IMAGES -->
-                <div class="hero-images wow layout3HeroPhone" data-wow-duration="1s" data-wow-delay="0.5s">
-                    <img src="images/home-phone.png" class="hero-image parallax" alt="" />
-                </div>
-                
-            </div>
+					<!-- HERO IMAGES -->
+					<div class="hero-images wow layout3HeroPhone" data-wow-duration="1s" data-wow-delay="0.5s">
+						<img src="images/home-phone.png" class="hero-image parallax" alt="" />
+					</div>
+					
+				</div>
 
-        </div>
-    </section>
-    <!--
-    =================================
-    GASSAPP SECTION
-    =================================
-    -->
-    <section id="gassapp" class="pv-70">
-        <div class="container">
-            <div class="row space-bottom">
-                <div class="col-md-12 text-center">
-                    <h1><strong>La aplicación <br class="visible-xs">del Gas</strong></h1>
-                    <p class="large">La única aplicación para realizar pedidos de cilindros de gas, transformando
-                    <br>la manera de comprar en el servicio más eficiente, más seguro y más rápido del mercado.</p>
-                </div>
-            </div>
-        </div>
-        <!-- imágenes situaciones -->
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-3 nopadding">
-                  <figure class="effect-apollo">
-                    <img src="images/gallery 1.jpg" alt="img18" class="situaciones"/>
-                    <figcaption>
-                      <p>Tu comida siempre a punto si tu gas llega a tiempo.</p>
-                    </figcaption>     
-                  </figure>
-                </div>
-                <div class="col-md-3 nopadding">
-                  <figure class="effect-apollo">
-                    <img src="images/gallery 2.jpg" alt="img18" class="situaciones"/>
-                    <figcaption>
-                      <p>Mantén siempre el calor de tu hogar y familia.</p>
-                    </figcaption>     
-                  </figure>
-                </div>
-                <div class="col-md-3 nopadding">
-                  <figure class="effect-apollo">
-                    <img src="images/gallery 3.jpg" alt="img18" class="situaciones"/>
-                    <figcaption>
-                      <p>Comprar gas es más fácil y no una preocupación de último minuto.</p>
-                    </figcaption>     
-                  </figure>
-                </div>
-                <div class="col-md-3 nopadding">
-                  <figure class="effect-apollo">
-                    <img src="images/gallery 4.jpg" alt="img18" class="situaciones"/>
-                    <figcaption>
-                      <p>¡La espera terminó! Tu pedido de gas llega en un par de minutos.</p>
-                    </figcaption>     
-                  </figure>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--
-    =================================
-    CLIENTS SECTION
-    =================================
-    -->
-    <section id="servicios" class="pv-50">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 text-center">
-                    <img src="images/gassapp_1.png" class="gassapp-icons responsive-img">
-                </div>
-                <div class="col-md-6">
-                    <div class="feature-box-2 right margin-clear wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="col-md-1 col-xs-2">
-                            <span class="icon without-bg">
-                                <img src="images/pin_cliente.png" height="40" width="40" class="icon-app">
-                            </span>
-                        </div>
-                        <div class="col-md-11 col-xs-10">
-                            <div class="body">
-                                <h4><b>Cliente Consumidor</b></h4>
-                                <p>Accede desde tu smartphone y compra cilindros de gas de cualquier formato y marca sin llamadas telefónicas. Los camiones repartidores estarán conectados esperando tu pedido!</p>
-                            <div class="separator-2 margin-top-20"></div>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="feature-box-2 right margin-clear wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="col-md-1 col-xs-2">
-                            <span class="icon without-bg">
-                                <img src="images/pin_transportista.png" height="40" width="40" class="icon-app">
-                            </span>
-                        </div>
-                        <div class="col-md-11 col-xs-10">
-                            <div class="body">
-                                <h4><b>Vendedor</b></h4>
-                                <p>Recibe pedidos directamente en tu celular y optimiza tu tiempo y stock accediendo a pedidos georeferenciados que podrás atender de forma rápida y oportuna. Además podrás hacer más eficiente tu ruta y servicio, fidelizando tus clientes!</p>
-                                <div class="separator-2 margin-top-20"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="feature-box-2 right margin-clear wow fadeInUp" data-wow-delay="0.9s">
-                        <div class="col-md-1 col-xs-2">
-                            <span class="icon without-bg">
-                                <img src="images/pin_transportista.png" height="40" width="40" class="icon-app">
-                            </span>
-                        </div>
-                        <div class="col-md-11 col-xs-10">
-                            <div class="body">
-                                <h4><b>Distribuidor</b></h4>
-                                <p>Optimiza la calidad de tu servicio. Conoce tu flujo de ventas, administra tu stock y flota en línea. Disminuye tus costos operacionales paulatinamente aprovechando las ventajas de GassApp.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+			</div>
+		</section>
+		<!--
+		=================================
+		GASSAPP SECTION
+		=================================
+		-->
+		<section id="gassapp" class="gassapp pv-70">
+			<div class="container">
+				<div class="row space-bottom">
+					<div class="col-md-12 col-xs-12">
+						<h1 class="space-bottom"><strong>La aplicación <br class="visible-xs">del Gas</strong></h1>
+						<p class="large">La mejor aplicación para pedir cilindros de gas, transformando la manera de comprar 
+							<br>en el servicio más eficiente, más seguro y más rápido del mercado.</p>
+					</div>
+				</div>
+			</div>
+			<!-- imágenes situaciones -->
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-3 nopadding hidden-sm">
+					  <figure class="effect-apollo">
+							<img src="images/gallery 2.jpg" alt="img18" class="situaciones"/>
+							<figcaption>
+							  <p>Evita que se apague el calor de tu hogar.</p>
+							</figcaption>     
+					  </figure>
+					</div>
+					<div class="col-md-3 nopadding hidden-sm">
+					  <figure class="effect-apollo">
+							<img src="images/gallery 1.jpg" alt="img18" class="situaciones"/>
+							<figcaption>
+							  <p>Los momentos importantes no pueden esperar.</p>
+							</figcaption>     
+					  </figure>
+					</div>
+					<div class="col-md-3 nopadding hidden-sm">
+					  <figure class="effect-apollo">
+								<img src="images/gallery 3.jpg" alt="img18" class="situaciones"/>
+								<figcaption>
+								  <p>Usa GassApp y vive sin preocupaciones.</p>
+								</figcaption>     
+					  </figure>
+					</div>
+					<div class="col-md-3 nopadding hidden-sm">
+					  <figure class="effect-apollo">
+							<img src="images/gallery 4.jpg" alt="img18" class="situaciones"/>
+							<figcaption>
+							  <p>La espera terminó, ¡GassApp ya llegó!.</p>
+							</figcaption>     
+					  </figure>
+					</div>
+					<!-- Visible sm -->
+					<div class="col-sm-6 visible-sm nopadding">
+						<figure class="effect-apollo">
+	            <img src="images/gallery 2.jpg" alt="img18" class="situaciones"/>
+	            <figcaption>
+	              <p>Evita que se apague el calor de tu hogar.</p>
+	            </figcaption>     
+	          </figure>
+					  <figure class="effect-apollo">
+						<img src="images/gallery 1.jpg" alt="img18" class="situaciones"/>
+						<figcaption>
+						  <p>Los momentos importantes no pueden esperar.</p>
+						</figcaption>     
+					  </figure>
+					</div>
+					<div class="col-sm-6 visible-sm nopadding">
+					  <figure class="effect-apollo">
+								<img src="images/gallery 3.jpg" alt="img18" class="situaciones"/>
+								<figcaption>
+								  <p>Usa GassApp y vive sin preocupaciones.</p>
+								</figcaption>     
+					  </figure>
+					  <figure class="effect-apollo">
+						<img src="images/gallery 4.jpg" alt="img18" class="situaciones"/>
+						<figcaption>
+						  <p>¡La espera terminó! Tu pedido de gas llega en un par de minutos.</p>
+						</figcaption>     
+					  </figure>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--
+		=================================
+		CLIENTS SECTION
+		=================================
+		-->
+		<section id="servicios" class="pv-50">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-xs-12 text-center">
+						<img src="images/gassapp_1.png" class="gassapp-icons responsive-img">
+					</div>
+					<div class="col-md-6 col-xs-12">
+						<div class="feature-box-2 right margin-clear wow fadeInUp" data-wow-delay="0.3s">
+							<div class="col-md-1 col-xs-2">
+								<span class="icon without-bg">
+									<img src="images/pin_cliente.png" height="40" width="40" class="icon-app">
+								</span>
+							</div>
+							<div class="col-md-11 col-xs-10">
+								<div class="body">
+									<h4><b>Cliente</b></h4>
+									<p>Accede desde tu teléfono movil y compra cilindros de gas de cualquier formato y marca sin llamadas telefónicas. Los camiones repartidores estarán conectados esperando tu pedido!</p>
+								<div class="separator-2 margin-top-20"></div>
+							</div>
+							</div>
+						</div>
+						<div class="feature-box-2 right margin-clear wow fadeInUp" data-wow-delay="0.6s">
+							<div class="col-md-1 col-xs-2">
+								<span class="icon without-bg">
+									<img src="images/pin_transportista.png" height="40" width="40" class="icon-app">
+								</span>
+							</div>
+							<div class="col-md-11 col-xs-10">
+								<div class="body">
+									<h4><b>Distribuidor</b></h4>
+									<p>Optimiza la calidad de tu servicio. Conoce tu flujo de ventas, administra tu stock y flota en línea. Disminuye tus costos operacionales paulatinamente aprovechando las ventajas de GassApp.</p>
+									<div class="separator-2 margin-top-20"></div>
+								</div>
+							</div>
+						</div>
+						<div class="feature-box-2 right margin-clear wow fadeInUp" data-wow-delay="0.9s">
+							<div class="col-md-1 col-xs-2">
+								<span class="icon without-bg">
+									<img src="images/pin_transportista.png" height="40" width="40" class="icon-app">
+								</span>
+							</div>
+							<div class="col-md-11 col-xs-10">
+								<div class="body">
+									<h4><b>Vendedor</b></h4>
+									<p>Recibe pedidos directamente en tu celular y optimiza tu tiempo y stock accediendo a pedidos georeferenciados que podrás atender de forma rápida y oportuna. Además podrás hacer más eficiente tu ruta y servicio, fidelizando tus clientes!</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-    <!--
-    =================================
-    TESTIMONIALS SECTION
-    =================================
-    -->
-    <section id="testimonials" class="dark-translucent-bg background-img-4 pv-50">
-        <div class="call-to-action text-center"> 
-            <h2>Opiniones</h2> 
-        </div>
-        <div class="owl-carousel content-slider">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <div class="testimonial text-center">
-                            <div class="testimonial-image">
-                                <img src="images/testimonial-1.jpg" alt="Jane Doe" title="Jane Doe" class="img-circle">
-                            </div>
-                            <h3>GassApp es genial!</h3>
-                            <div class="separator"></div>
-                            <div class="testimonial-body">
-                                <blockquote>
-                                    <p>Tiene todo lo necesario para ser reconocida como la Aplicacion del gas, todas las marcas disponibles y todos los formatos en una sola App. Y lo mejor de todo ya no necesito llamar por telefono para pedir mi gas.</p>
-                                </blockquote>
-                                <div class="testimonial-info-1">- Juan Pérez</div>
-                                <div class="testimonial-info-2">Consumidor</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <div class="testimonial text-center">
-                            <div class="testimonial-image">
-                                <img src="images/testimonial-2.jpg" alt="Jane Doe" title="Jane Doe" class="img-circle">
-                            </div>
-                            <h3>Una herramienta</h3>
-                            <div class="separator"></div>
-                            <div class="testimonial-body">
-                                <blockquote>
-                                    <p>GassApp es una herramienta para fomentar una mejor calidad de servicio de ventas de cilindros de gas ademas de optimizar combustible y personas a cargo de contestar llamadas.</p>
-                                </blockquote>
-                                <div class="testimonial-info-1">- Emilio Soto</div>
-                                <div class="testimonial-info-2">Distribuidor</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--
-    =================================
-    FOOTER
-    =================================
-    -->
-    <footer id="footer" class="clearfix pv-50">
-        <!-- .footer start -->
-        <!-- ================ -->
-        <div class="footer">
-            ﻿<div class="container">
-                <div class="footer-inner">
-                    <div class="row">
-                        <div class="col-md-6 col-md-offset-3">
-                            <div class="footer-content text-center padding-ver-clear">
-                                <div class="logo-footer">
-                                    <img id="logo-footer" class="center-block margin-bottom-10" src="images/logo-completo.png" height="auto" width="100" alt="">
-                                </div>
-                                <p>
-                                    GassApp es la primera aplicación de descarga gratuita para realizar compras de cilindros de Gas Licuado de manera automática y sin llamadas telefónicas.
-                                </p>
-                                <ul class="social-links circle animated-effect-1 margin-clear">
-                                    <li class="facebook">
-                                        <a target="_blank" href="https://www.facebook.com/GassAppChile/"><i class="fa fa-facebook"></i></a>
-                                    </li>
-                                    <li class="twitter">
-                                        <a target="_blank" href="https://twitter.com/GassApp_Chile/"><i class="fa fa-twitter"></i></a>
-                                    </li>
-                                </ul>
-                                <div class="separator"></div>
-                                <p class="text-center margin-clear">Copyright © 2016 GassApp SpA by <a target="_blank" href="http://www.limitech.cl">Limitech </a>. Todos los derechos reservados</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- .footer end -->
-    </footer>
-    <!-- footer end -->
-
-
-
-
-    <!--
-    =================================
-    SCRIPTS
-    =================================
-    -->
-    
-    <!-- jQuery -->
-    <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
-
-    <!-- Smootscrolling -->
-    <script src="js/smoothscrolling.jquery.js"></script>
-    <script>
-      $(document).on('click','.navbar-collapse.in',function(e) {
-      if( $(e.target).is('a') ) {
-          $(this).collapse('hide');
-        }
-      });
-    </script>
-    <script>
-      $("a.scroller").smoothscrolling(
-          { 
-        offsetTop: 65 // cantidad de pixeles que tiene el elemento flotante
-      });
-    </script>
-
-    <!-- Plugin JavaScript -->
-    <script src="plugins/owl-carousel/owl.carousel.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script>
-      new WOW().init();
-
-        /* =======================================
-        * Scroll Spy
-        * =======================================
-        
-        $( window ).on( 'scroll', function() {
-            // Floating Header
-            if ( $( window ).scrollTop() > 60 ) {
-                $( '.navbar-default' ).addClass( 'floating' );
-            } else {
-                $( '.navbar-default' ).removeClass( 'floating' );
-            }
-        });*/
-    </script>
-    <script>
-        $(document).ready(function() {
-         
-          //Owl carousel
-        //-----------------------------------------------
-        if ($('.owl-carousel').length>0) {
-            $(".owl-carousel.carousel").owlCarousel({
-                items: 4,
-                pagination: false,
-                navigation: true,
-                navigationText: false
-            });
-            $(".owl-carousel.carousel-autoplay").owlCarousel({
-                items: 4,
-                autoPlay: 5000,
-                pagination: false,
-                navigation: true,
-                navigationText: false
-            });
-            $(".owl-carousel.clients").owlCarousel({
-                items: 6,
-                autoPlay: true,
-                pagination: false,
-                itemsDesktopSmall: [992,4],
-                itemsTablet: [768,4],
-                itemsMobile: [479,3]
-            });
-            $(".owl-carousel.content-slider").owlCarousel({
-                singleItem: true,
-                autoPlay: 5000,
-                navigation: false,
-                navigationText: false,
-                pagination: false
-            });
-            $(".owl-carousel.content-slider-with-controls").owlCarousel({
-                singleItem: true,
-                autoPlay: false,
-                navigation: true,
-                pagination: true
-            });
-            $(".owl-carousel.content-slider-with-large-controls").owlCarousel({
-                singleItem: true,
-                autoPlay: false,
-                navigation: true,
-                pagination: true
-            });
-            $(".owl-carousel.content-slider-with-controls-autoplay").owlCarousel({
-                singleItem: true,
-                autoPlay: 5000,
-                navigation: true,
-                pagination: true
-            });
-            $(".owl-carousel.content-slider-with-large-controls-autoplay").owlCarousel({
-                singleItem: true,
-                autoPlay: 5000,
-                navigation: true,
-                pagination: true
-            });
-            $(".owl-carousel.content-slider-with-controls-autoplay-hover-stop").owlCarousel({
-                singleItem: true,
-                autoPlay: 5000,
-                navigation: true,
-                pagination: true,
-                stopOnHover: true
-            });
-        };
-
-        });
-    </script>
-
-    
-    <!-- Custom JavaScript -->
+		<!--
+		=================================
+		TESTIMONIALS SECTION
+		=================================
+		-->
+		<section id="testimonials" class="dark-translucent-bg background-img-4 pv-50">
+			<div class="call-to-action text-center"> 
+				<h2>Experiencias</h2> 
+			</div>
+			<div class="owl-carousel content-slider">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2">
+							<div class="testimonial text-center">
+								<div class="testimonial-image">
+									<img src="images/testimonial-1.jpg" alt="Jane Doe" title="Jane Doe" class="img-circle">
+								</div>
+								<h3>GassApp es genial!</h3>
+								<div class="separator"></div>
+								<div class="testimonial-body">
+									<blockquote>
+										<p>Tiene todo lo necesario para ser reconocida como la Aplicacion del gas, todas las marcas disponibles y todos los formatos en una sola App. Y lo mejor de todo ya no necesito llamar por telefono para pedir mi gas.</p>
+									</blockquote>
+									<div class="testimonial-info-1">- Juan Pérez</div>
+									<div class="testimonial-info-2">Consumidor</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2">
+							<div class="testimonial text-center">
+								<div class="testimonial-image">
+									<img src="images/testimonial-2.jpg" alt="Jane Doe" title="Jane Doe" class="img-circle">
+								</div>
+								<h3>Una herramienta</h3>
+								<div class="separator"></div>
+								<div class="testimonial-body">
+									<blockquote>
+										<p>GassApp es una herramienta para fomentar una mejor calidad de servicio de ventas de cilindros de gas ademas de optimizar combustible y personas a cargo de contestar llamadas.</p>
+									</blockquote>
+									<div class="testimonial-info-1">- Emilio Soto</div>
+									<div class="testimonial-info-2">Distribuidor</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--
+		=================================
+		FOOTER
+		=================================
+		-->
+		<footer id="footer" class="clearfix pv-50">
+			<!-- .footer start -->
+			<!-- ================ -->
+			<div class="footer">
+				﻿<div class="container">
+					<div class="footer-inner">
+						<div class="row">
+							<div class="col-md-6 col-md-offset-3">
+								<div class="footer-content text-center padding-ver-clear">
+									<div class="logo-footer">
+										<img id="logo-footer" class="center-block margin-bottom-10" src="images/logo-completo.png" height="auto" width="100" alt="">
+									</div>
+									<p>
+										GassApp es la primera aplicación de descarga gratuita para realizar compras de cilindros de Gas Licuado de manera automática y sin llamadas telefónicas.
+									</p>
+									<ul class="social-links circle animated-effect-1 margin-clear">
+										<li class="facebook">
+											<a target="_blank" href="https://www.facebook.com/GassAppChile/"><i class="fa fa-facebook"></i></a>
+										</li>
+										<li class="twitter">
+											<a target="_blank" href="https://twitter.com/GassApp_Chile/"><i class="fa fa-twitter"></i></a>
+										</li>
+									</ul>
+									<div class="separator"></div>
+									<p class="text-center margin-clear">Copyright © 2016 GassApp SpA by <a target="_blank" href="http://www.limitech.cl">Limitech </a>. Todos los derechos reservados</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- .footer end -->
+		</footer>
+		<!-- footer end -->
 
 
 
 
+		<!--
+		=================================
+		SCRIPTS
+		=================================
+		-->
+		
+		<!-- jQuery -->
+		<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
 
-</body>
+		<!-- Bootstrap Core JavaScript -->
+		<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+
+		<!-- Smootscrolling -->
+		<script src="js/smoothscrolling.jquery.js"></script>
+		<script>
+		  $(document).on('click','.navbar-collapse.in',function(e) {
+		  if( $(e.target).is('a') ) {
+			  $(this).collapse('hide');
+			}
+		  });
+		</script>
+		<script>
+		  $("a.scroller").smoothscrolling(
+			  { 
+			offsetTop: 65 // cantidad de pixeles que tiene el elemento flotante
+		  });
+		</script>
+
+		<!-- Plugin JavaScript -->
+		<script src="plugins/owl-carousel/owl.carousel.js"></script>
+		<script src="js/wow.min.js"></script>
+		<script>
+		  new WOW().init();
+
+			/* =======================================
+			* Scroll Spy
+			* =======================================
+			
+			$( window ).on( 'scroll', function() {
+				// Floating Header
+				if ( $( window ).scrollTop() > 60 ) {
+					$( '.navbar-default' ).addClass( 'floating' );
+				} else {
+					$( '.navbar-default' ).removeClass( 'floating' );
+				}
+			});*/
+		</script>
+		<script>
+			$(document).ready(function() {
+			 
+			  //Owl carousel
+			//-----------------------------------------------
+			if ($('.owl-carousel').length>0) {
+				$(".owl-carousel.carousel").owlCarousel({
+					items: 4,
+					pagination: false,
+					navigation: true,
+					navigationText: false
+				});
+				$(".owl-carousel.carousel-autoplay").owlCarousel({
+					items: 4,
+					autoPlay: 5000,
+					pagination: false,
+					navigation: true,
+					navigationText: false
+				});
+				$(".owl-carousel.clients").owlCarousel({
+					items: 6,
+					autoPlay: true,
+					pagination: false,
+					itemsDesktopSmall: [992,4],
+					itemsTablet: [768,4],
+					itemsMobile: [479,3]
+				});
+				$(".owl-carousel.content-slider").owlCarousel({
+					singleItem: true,
+					autoPlay: 5000,
+					navigation: false,
+					navigationText: false,
+					pagination: false
+				});
+				$(".owl-carousel.content-slider-with-controls").owlCarousel({
+					singleItem: true,
+					autoPlay: false,
+					navigation: true,
+					pagination: true
+				});
+				$(".owl-carousel.content-slider-with-large-controls").owlCarousel({
+					singleItem: true,
+					autoPlay: false,
+					navigation: true,
+					pagination: true
+				});
+				$(".owl-carousel.content-slider-with-controls-autoplay").owlCarousel({
+					singleItem: true,
+					autoPlay: 5000,
+					navigation: true,
+					pagination: true
+				});
+				$(".owl-carousel.content-slider-with-large-controls-autoplay").owlCarousel({
+					singleItem: true,
+					autoPlay: 5000,
+					navigation: true,
+					pagination: true
+				});
+				$(".owl-carousel.content-slider-with-controls-autoplay-hover-stop").owlCarousel({
+					singleItem: true,
+					autoPlay: 5000,
+					navigation: true,
+					pagination: true,
+					stopOnHover: true
+				});
+			};
+			//Scroll totop
+			//-----------------------------------------------
+			$(window).scroll(function() {
+				if($(this).scrollTop() != 0) {
+					$(".scrollToTop").fadeIn();
+				} else {
+					$(".scrollToTop").fadeOut();
+				}
+			});
+
+			$(".scrollToTop").click(function() {
+				$("body,html").animate({scrollTop:0},800);
+			});
+
+			});
+		</script>
+
+		
+		<!-- Custom JavaScript -->
+
+
+
+
+
+	</body>
 </html>

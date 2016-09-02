@@ -311,6 +311,10 @@ background-color: #ffffff;
 
 
 /* DASH */
+.dash {
+  background-color: #fff;
+  height: 631px;
+}
 .text-dash {
   padding-top: 80px;
 }
