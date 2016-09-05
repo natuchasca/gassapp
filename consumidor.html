@@ -503,11 +503,19 @@
                   </div>
                   <div class="modal-body">
                       <p>Ingrese sus datos.</p>
-                      <input id="frmlogin_rut" style="width: 300px; height: 40px; border-color: #cccccc; border-style: solid;" type="email" placeholder="micorreo@dominio.cl" />
+                      <!-- Email -->
+                      <div class="inner-addon left-addon">
+                          <i class="fa fa-envelope-o"></i>
+                          <input id="frmlogin_rut" class="form-control" type="email" placeholder="Email"/>
+                      </div>
                       <br>
+                      <!-- Password -->
+                      <div class="inner-addon left-addon">
+                          <i class="fa fa-key"></i>
+                          <input id="frmlogin_pass" class="form-control" type="password" placeholder="Contraseña"/>
+                      </div>
                       <br>
-                      <input id="frmlogin_pass" style="width: 300px; height: 40px; border-color: #cccccc; border-style: solid;" type="password" placeholder="CONTRASEÑA" />
-                      <br>
+                      <!-- Mensaje error -->
                       <label id="frmlogin_mensaje_error" style="font-family: Roboto; font-size: 11px; color: red; display: none;">
                       </label>
                       <br>
@@ -521,7 +529,7 @@
                               <button type="button" class="btn btn-primary active" id="frmlogin_btn_ingresar" readonly="readonly">Ingresar</button>
                               <font style="font-family: Roboto; font-size: 11px; color: #666666; text-align: center;">
                                   ¿TodavÍa no tienes una cuenta? 
-                                  <a class="scroller" href="#registro" data-dismiss="modal"> Regístrate</a> 
+                                  <a class="scroller" href="#registro" data-dismiss="modal"><span class="celeste"><b>Regístrate</b></span></a> 
                               </font>
                   </div>
               </div>
@@ -545,7 +553,7 @@
                   <div class="modal-body">
                       <p>Ingrese su Email.</p>
 
-                      <input id="email_olvidado" style="width: 300px; height: 40px; border-color: #cccccc; border-style: solid;" type="email" placeholder="micorreo@midonio.cl" />
+                      <input id="email_olvidado" style="width: 300px; height: 40px; border-color: #cccccc; border-style: solid; padding: 5px;" type="email" placeholder="micorreo@midonio.cl" />
 
                       <br>
                       <br>

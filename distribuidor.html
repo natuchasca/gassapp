@@ -1,477 +1,402 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>GassApp | Distribuidor</title>
+  <head>
+  	<meta charset="UTF-8">
+  	<title>GassApp | Distribuidor</title>
 
-    <!-- Mobile Meta -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Mobile Meta -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="images/favicon.ico">
+      <!-- Favicon -->
+      <link rel="shortcut icon" href="images/favicon.ico">
 
-    <!-- Web Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Raleway:700,400,300' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
+      <!-- Web Fonts -->
+      <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Raleway:700,400,300' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/helpers.css">
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/distribuidor.css">
-</head>
-<body>
-    <!-- scrollToTop -->
-    <!-- ================ -->
-    <div class="scrollToTop circle"><i class="icon-up-open-big"></i></div>
-    <!--
-    =================================
-    HEADER
-    =================================
-    -->
-  	<header>
-  		<!-- navbar start -->
-          <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-              <div class="container">
-                  <!-- Brand and toggle get grouped for better mobile display -->
-                  <div class="navbar-header">
-                      <button type="button" class=" navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
-                          <span class="sr-only">Toggle navigation</span>
-                          <span class="icon-bar"></span>
-                          <span class="icon-bar"></span>
-                          <span class="icon-bar"></span>
-                      </button>
-                      <a class="navbar-brand page-scroll" href="index.html">
-                          <img id="logo_img" src="images/logo_gassapp.png" alt="Limitech SpA">
-                      </a>
-                  </div>
-
-                  <!-- Collect the nav links, forms, and other content for toggling -->
-                  <div class="collapse navbar-collapse" id="navbar-collapse-1">
-                      <ul class="nav navbar-nav navbar-right">
-                              <!-- header buttons -->
-                              <div class="header-dropdown-buttons align-center">
-                                  <a href="#" class="btn btn-sm hidden-xs btn-default"><i class="fa fa-user-plus padding-r-5"></i> Súmate</a>
-                                  <a href="#" class="btn btn-sm visible-xs btn-default"><i class="fa fa-user-plus padding-r-5"></i> Súmate</a>
-                                  <div class="btn-group dropdown">
-                                    <button type="button" class="btn dropdown-toggle btn-default btn-sm" data-toggle="dropdown"><i class="fa fa-lock padding-r-5"></i> Iniciar Sesión</button>
-                                    <ul class="dropdown-menu dropdown-menu-right dropdown-animation">
-                                        <li>
-                                            <form class="login-form margin-clear">
-                                                <div class="form-group has-feedback">
-                                                    <label class="control-label">R.U.T.</label>
-                                                    <input type="text" class="form-control" placeholder="" id="frmlogin_rut">
-                                                    <i class="fa fa-user form-control-feedback"></i>
-                                                </div>
-                                                <div class="form-group has-feedback">
-                                                    <label class="control-label">Contraseña</label>
-                                                    <input type="password" id="frmlogin_pass" class="form-control" placeholder="">
-                                                    <i class="fa fa-lock form-control-feedback"></i>
-                                                </div>
-
-                                                <label id="frmlogin_mensaje_error" style="font-family: Roboto; font-size: 11px; color: red; display: none;">
-                                                </label>
-                                                 
-                                                <button type="button" class="btn btn-gray btn-sm" id="frmlogin_btn_ingresar"> Ingresar</button>
-                                                <ul>
-                                                    <li><a href="reset_password.html">Olvidaste tu Contraseña?</a></li>
-                                                </ul>
-                                            </form>
-                                        </li>
-                                    </ul>
-                                </div>
-                              </div> <!-- header buttons end-->
-                          </li>
-                      </ul>
-                              
-                  </div> <!-- /.navbar-collapse -->
-              </div> <!-- /.container-fluid -->
-          </nav>
-          <!-- ================ -->                                        
-          <!-- navbar end -->
-  	</header>
-    <!--
-    =================================
-    Slider 
-    =================================
-    -->
-    <div id="inSlider" class="carousel carousel-fade" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#inSlider" data-slide-to="0" class="active"></li>
-            <li data-target="#inSlider" data-slide-to="1"></li>
-        </ol>
-        <div class="carousel-inner" role="listbox">
-            <div class="item active item1">
+      <!-- Stylesheets -->
+      <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+      <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+      <link rel="stylesheet" href="css/animate.css">
+      <link rel="stylesheet" href="css/helpers.css">
+      <link rel="stylesheet" href="css/home.css">
+      <link rel="stylesheet" href="css/distribuidor.css">
+  </head>
+  <body>
+      <!-- scrollToTop -->
+      <!-- ================ -->
+      <div class="scrollToTop circle hidden-xs"><i class="fa fa-chevron-up"></i></div>
+      <!--
+      =================================
+      HEADER
+      =================================
+      -->
+    	<header>
+    		<!-- navbar start -->
+            <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
                 <div class="container">
-                    <div class="carousel-caption blank">
-                        <h1>Únete a la nueva forma
-                          <br>de vender cilindros de gas
-                        </h1>
-                        <p>Sé parte de GassApp.</p>
-                        <p>
-                            <a class="btn btn-lg btn-primary" href="#registro" role="button">Hazte Socio</a>
-                        </p>
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class=" navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand page-scroll" href="index.html">
+                            <img id="logo_img" src="images/logo_gassapp.png" alt="Limitech SpA">
+                        </a>
                     </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                                <!-- header buttons -->
+                                <div class="header-dropdown-buttons align-center">
+                                    <a href="#contact" class="btn btn-sm hidden-xs btn-default scroller"><i class="fa fa-user-plus padding-r-5"></i> Súmate</a>
+                                    <a href="#contact" class="btn btn-sm visible-xs btn-default margin-bottom-5 scroller"><i class="fa fa-user-plus padding-r-5"></i> Súmate</a>
+                                    <div class="btn-group dropdown">
+                                      <button type="button" class="btn dropdown-toggle btn-default btn-sm btn-block" data-toggle="dropdown"><i class="fa fa-lock padding-r-5"></i> Iniciar Sesión</button>
+                                      <ul class="dropdown-menu dropdown-menu-right dropdown-animation">
+                                          <li>
+                                              <form class="login-form margin-clear">
+                                                  <div class="form-group has-feedback">
+                                                      <label class="control-label">R.U.T.</label>
+                                                      <input type="text" class="form-control" placeholder="" id="frmlogin_rut">
+                                                      <i class="fa fa-user form-control-feedback"></i>
+                                                  </div>
+                                                  <div class="form-group has-feedback">
+                                                      <label class="control-label">Contraseña</label>
+                                                      <input type="password" id="frmlogin_pass" class="form-control" placeholder="">
+                                                      <i class="fa fa-lock form-control-feedback"></i>
+                                                  </div>
+
+                                                  <label id="frmlogin_mensaje_error" style="font-family: Roboto; font-size: 11px; color: red; display: none;">
+                                                  </label>
+                                                   
+                                                  <button type="button" class="btn btn-gray btn-sm" id="frmlogin_btn_ingresar"> Ingresar</button>
+                                                  <ul>
+                                                      <li><a href="reset_password.html">Olvidaste tu Contraseña?</a></li>
+                                                  </ul>
+                                              </form>
+                                          </li>
+                                      </ul>
+                                  </div>
+                                </div> <!-- header buttons end-->
+                            </li>
+                        </ul>
+                                
+                    </div> <!-- /.navbar-collapse -->
+                </div> <!-- /.container-fluid -->
+            </nav>
+            <!-- ================ -->                                        
+            <!-- navbar end -->
+    	</header>
+      <!--
+      =================================
+      Slider 
+      =================================
+      -->
+      <div id="inSlider" class="carousel carousel-fade" data-ride="carousel">
+          <ol class="carousel-indicators">
+              <li data-target="#inSlider" data-slide-to="0" class="active"></li>
+              <li data-target="#inSlider" data-slide-to="1"></li>
+          </ol>
+          <div class="carousel-inner" role="listbox">
+              <div class="item active item1">
+                  <div class="container">
+                      <div class="carousel-caption blank">
+                          <h1>Únete a la nueva forma
+                            <br>de vender cilindros de gas
+                          </h1>
+                          <p>Sé parte de GassApp.</p>
+                          <p>
+                              <a class="btn btn-lg btn-primary scroller" href="#contact" role="button">Súmate</a>
+                          </p>
+                      </div>
+                  </div>
+              </div>
+              <div class="item item2">
+                  <div class="container">
+                      <div class="carousel-caption blank">
+                          <h1>Aumenta tus ventas y
+                            <br>clientes satisfechos.
+                          </h1>
+                          <p>Disminuyendo los costos de operación.</p>
+                          <p><a class="btn btn-lg btn-primary scroller" href="#contact" role="button">Contáctanos</a></p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <a class="left carousel-control" href="#inSlider" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Atrás</span>
+          </a>
+          <a class="right carousel-control" href="#inSlider" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Siguiente</span>
+          </a>
+      </div>
+      <!--
+      =================================
+      DASH
+      =================================
+      -->
+      <section class="dash pv-70">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-xs-12">
+              <!-- Textos -->
+              <div class="text-dash">
+                <h1>Administra tu flota y ventas
+                <br>en línea</h1>
+                <div class="box">
+                    <p>GassApp ha pensado en cada uno de los distribuidores de gas.</p>
+                    <ul class="dash-list">
+                      <li class="dash-list-item">
+                        <span><i class="fa fa-truck fa-2x fa-fw margin-top-5 pull-left celeste"></i></span> 
+                        <p>Tu flota de vehículos en terreno recorrerá menos distancia diariamente. </p>
+                      </li>
+                      <li class="dash-list-item">
+                        <span><i class="fa fa-money fa-2x fa-fw margin-top-5 pull-left celeste"></i></span> 
+                        <p>Aumenta tus ventas disminuyendo los costos de operación.</p>
+                      </li>
+                      <li class="dash-list-item">
+                        <span><i class="fa fa-check-square-o fa-2x fa-fw margin-top-5 pull-left celeste"></i></span> 
+                        <p>Administra de mejor manera tu stock.</p>
+                      </li>
+                      <li class="dash-list-item">
+                        <span><i class="fa fa-smile-o fa-2x fa-fw margin-top-5 pull-left celeste"></i></span>
+                        <p>Aumenta la satisfacción de tu personal.</p>
+                      </li>
+                      <li class="dash-list-item">
+                        <span><i class="fa fa-star-o  fa-2x fa-fw margin-top-5 pull-left celeste"></i></span> 
+                        <p>Conoce que opinan tus clientes.</p>
+                      </li>
+                    </ul>
                 </div>
+              </div>
             </div>
-            <div class="item item2">
-                <div class="container">
-                    <div class="carousel-caption blank">
-                        <h1>Aumenta tus ventas y
-                          <br>clientes satisfechos.
-                        </h1>
-                        <p>Disminuyendo los costos de operación.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Saber más</a></p>
-                    </div>
+            <div class="col-md-6 col-xs-12 text-center">
+              <!-- imagenes computador y dash -->
+              <div class="wrap">
+                <div class="section-image wow fadeInRight animated" data-wow-delay="0.1s"> 
+                  <img src="images/distribuidor-dash.png" width="600" height="auto">
                 </div>
-            </div>
-        </div>
-        <a class="left carousel-control" href="#inSlider" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Atrás</span>
-        </a>
-        <a class="right carousel-control" href="#inSlider" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Siguiente</span>
-        </a>
-    </div>
-    <!--
-    =================================
-    DASH
-    =================================
-    -->
-    <section class="dash pv-70">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <!-- Textos -->
-            <div class="text-dash">
-              <h1>Administra tu flota y ventas
-              <br>en línea</h1>
-              <div class="box">
-                  <p>GassApp ha pensado en cada uno de los distribuidores de gas.</p>
-                  <ul class="dash-list">
-                    <li class="dash-list-item">
-                      <span><i class="fa fa-truck fa-2x fa-fw margin-top-5 pull-left celeste"></i></span> 
-                      <p>Tu flota de vehículos en terreno recorrerá menos distancia diariamente. </p>
-                    </li>
-                    <li class="dash-list-item">
-                      <span><i class="fa fa-money fa-2x fa-fw margin-top-5 pull-left celeste"></i></span> 
-                      <p>Aumenta tus ventas disminuyendo los costos de operación.</p>
-                    </li>
-                    <li class="dash-list-item">
-                      <span><i class="fa fa-check-square-o fa-2x fa-fw margin-top-5 pull-left celeste"></i></span> 
-                      <p>Administra de mejor manera tu stock.</p>
-                    </li>
-                    <li class="dash-list-item">
-                      <span><i class="fa fa-smile-o fa-2x fa-fw margin-top-5 pull-left celeste"></i></span>
-                      <p>Aumenta la satisfacción de tu personal.</p>
-                    </li>
-                    <li class="dash-list-item">
-                      <span><i class="fa fa-star-o  fa-2x fa-fw margin-top-5 pull-left celeste"></i></span> 
-                      <p>Conoce que opinan tus clientes.</p>
-                    </li>
-                  </ul>
               </div>
             </div>
           </div>
-          <div class="col-md-6 text-center">
-            <!-- imagenes computador y dash -->
-            <div class="wrap">
-              <div class="section-image wow fadeInRight animated" data-wow-delay="0.1s"> 
-                <img src="images/distribuidor-dash.png" width="600" height="auto">
-              </div>
+        </div>
+      </section>
+      <!--
+      =================================
+      DEMO Vendedor
+      =================================
+      -->
+      <!-- SECCION DEMO -->
+      <section class="demo pv-50" id="demodist">
+        <!-- PHONE -->
+        <div id="phone" class="phone-back">
+          <div class="screens  wow fadeInRight animated" data-wow-delay="0.1s">
+            <div class="holder step-1">
+              <img src="images/0.jpg">
+            </div>
+            <div class="holder step-2">
+              <img src="images/1.jpg">
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!--
-    =================================
-    DEMO Vendedor
-    =================================
-    -->
-    <!-- SECCION DEMO -->
-    <section class="demo pv-50" id="demodist">
-      <!-- PHONE -->
-      <div id="phone" class="phone-back">
-        <div class="screens  wow fadeInRight animated" data-wow-delay="0.1s">
-          <div class="holder step-1">
-            <img src="images/0.jpg">
-          </div>
-          <div class="holder step-2">
-            <img src="images/1.jpg">
-          </div>
-        </div>
-      </div>
-      <!-- CONTENIDO -->
-      <div class="contenido">
-        <div class="bg-1 pv-50 section" id="one">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="wrap">
-                  <h1>Recibe pedidos directamente 
-                  <br>en tu celular</h1>
-                  <div class="box">
-                    <p>En terreno, mantén el GPS de tu celular activo e ingresa a GassApp con tu usuario y contraseña. Verás cómo los pedidos de gas no tardan en llegar. 
-                    Verifica si posees el stock necesario y realiza la oferta a este cliente. Si él o ella están conforme con tu ofrecimiento confirmarán tu asistencia y esperarán a que llegues a su domicilio en pocos minutos. ¡NO LOS HAGAS ESPERAR!</p>
+        <!-- CONTENIDO -->
+        <div class="contenido">
+          <div class="bg-1 pv-50 section" id="one">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="wrap">
+                    <h1>Recibe pedidos directamente 
+                    <br>en tu celular</h1>
+                    <div class="box">
+                      <p>En terreno, mantén el GPS de tu celular activo e ingresa a GassApp con tu usuario y contraseña. Verás cómo los pedidos de gas no tardan en llegar. 
+                      Verifica si posees el stock necesario y realiza la oferta a este cliente. Si él o ella están conforme con tu ofrecimiento confirmarán tu asistencia y esperarán a que llegues a su domicilio en pocos minutos. ¡NO LOS HAGAS ESPERAR!</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 visible-xs">
+                  <div class="wow fadeInRight animated" data-wow-delay="0.1s">
+
                   </div>
                 </div>
               </div>
-              <div class="col-md-6 visible-xs">
-                <div class="wow fadeInRight animated" data-wow-delay="0.1s">
-
-                </div>
-              </div>
             </div>
           </div>
-        </div>
-        <div class="bg-2  pv-50 section" id="two">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="wrap">
-                  <h1>Tus clientes siempre cerca de ti. 
-                  <br>¡Apúrate!, porque ya tienes otro pedido entrante </h1>
-                  <div class="box">
-                    <p>Verifica que la dirección que indica tu cliente coincida con la que detecta el GPS de tu teléfono. Avísale tu llegada al domicilio. La mejor atención marcará la diferencia!
-                    Podrás fidelizar y con ello ganar a más y nuevos clientes. </p>
+          <div class="bg-2  pv-50 section" id="two">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="wrap">
+                    <h1>Tus clientes siempre cerca de ti. 
+                    <br>¡Apúrate!, porque ya tienes otro pedido entrante </h1>
+                    <div class="box">
+                      <p>Verifica que la dirección que indica tu cliente coincida con la que detecta el GPS de tu teléfono. Avísale tu llegada al domicilio. La mejor atención marcará la diferencia!
+                      Podrás fidelizar y con ello ganar a más y nuevos clientes. </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-md-6">
-                
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--
-    =================================
-    Call To Action
-    =================================
-    -->
-    <section class="call-to">
-      <div class="call-back">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-12 text-center">
-              <h1>Sé parte de GassApp y accede a cientos de clientes
-                <br><b>Inscríbete</b></h1>
-            </div>
-          </div>
-          <!-- REGISTER FORM -->
-          <div class="row">
-                <div class="col-md-12 col-xs-12">
-                    <form class="form-horizontal" id="formulario" enctype="multipart/form-data">
-
-                        <div class="form-group" id="frg_email">
-                            <label class="control-label col-md-3 col-sm-3 col-xs-4">Email:</label>
-                            <div class="col-md-9 col-sm-9 col-xs-8">
-                                <input type="email" class="form-control" name="email" id="email" required="required">
-                            </div>
-                        </div>
-                        <div class="form-group" id="frg_rut">
-                            <label class="control-label col-md-3 col-sm-3 col-xs-4">Rut:</label>
-                            <div class="col-md-9 col-sm-9 col-xs-8">
-                                <input type="text" class="form-control" required="required" id="rut" name="rut">
-                            </div>
-                        </div>
-
-                        <div class="form-group" id="frg_nombre">
-                            <label class="control-label col-md-3 col-sm-3 col-xs-4">Nombres:</label>
-                            <div class="col-md-9 col-sm-9 col-xs-8">
-                                <input type="text" class="form-control" required="required" id="nombre" name="nombre">
-                            </div>
-                        </div>
-                        <div class="form-group" id="frg_apellidos">
-                            <label class="control-label col-md-3 col-sm-3 col-xs-4">Apellidos:</label>
-                            <div class="col-md-9 col-sm-9 col-xs-8">
-                                <input type="text" class="form-control" required="required" id="apellidos" name="apellidos">
-                            </div>
-                        </div>
-
-                        <div class="form-group" id="frg_telefono">
-                            <label class="control-label col-md-3 col-sm-3 col-xs-4">Celular:</label>
-                            <div class="col-md-9 col-sm-9 col-xs-8">
-                                <input type="text" class="form-control" id="telefono" name="telefono" required="required">
-                            </div>
-                        </div>
-
-                        <div class="form-group" id="frg_direccion">
-                            <label class="control-label col-md-3 col-sm-3 col-xs-4">Dirección:</label>
-                            <div class="col-md-9 col-sm-9 col-xs-8">
-                                <input type="text" class="form-control" required="required" id="direccion" name="direccion" />
-                            </div>
-                        </div>
-                        <div class="form-group" id="frg_registro_region">
-                            <label class="control-label col-md-3 col-sm-3 col-xs-4">Ubicación:</label>
-                            <div class="col-xs-8 col-sm-3 col-md-3">
-                                <select class="form-control margin-bottom-5" name="registro_region" id="registro_region" required="required">
-                                    <option>Región</option>
-                                </select>
-                            </div>
-                            <div class="col-sm-3 col-md-3 hidden-xs">
-                                <select class="form-control disabled margin-bottom-5" name="registro_provincia" id="registro_provincia" disabled required="required">
-                                    <option>Provincia</option>
-                                </select>
-                            </div>
-                            <div class="col-sm-3 col-md-3 hidden-xs">
-                                <select class="form-control disabled margin-bottom-5" name="registro_comuna" id="registro_comuna" disabled required="required">
-                                    <option>Comuna</option>
-                                </select>
-                            </div>
-                            <!--visible xs -->
-                            <div class="col-xs-offset-4 col-xs-8 visible-xs">
-                                <select class="form-control disabled margin-bottom-5" name="registro_provincia" id="registro_provincia" disabled required="required">
-                                    <option>Provincia</option>
-                                </select>
-                            </div>
-                            <div class="col-xs-offset-4 col-xs-8 visible-xs">
-                                <select class="form-control disabled margin-bottom-5" name="registro_comuna" id="registro_comuna" disabled required="required">
-                                    <option>Comuna</option>
-                                </select>
-                            </div>
-                        </div>
-
-
-                        <div class="form-group" id="frg_inputPassword">
-                            <label class="control-label col-md-3 col-sm-3 col-xs-4">Contraseña:</label>
-                            <div class="col-md-9 col-sm-9 col-xs-8">
-                                <input type="password" class="form-control" name="inputPassword" id="inputPassword" required="required">
-                            </div>
-                        </div>
-                        <div class="form-group" id="frg_inputPassword2">
-                            <label class="control-label col-md-3 col-sm-3 col-xs-4">Confirmar:</label>
-                            <div class="col-md-9 col-sm-9 col-xs-8">
-                                <input type="password" class="form-control" id="inputPassword2" required="required">
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="col-xs-offset-3 col-xs-9">
-                                <label class="checkbox-inline">
-                                    <input type="checkbox" name="noticias" id="noticias">
-                                        Deseo recibir información en mi cuenta de correo
-                                </label>
-                            </div>
-                        </div>
-                        <div class="form-group" id="frg_terminos_y_condiciones">
-                            <div class="col-xs-offset-3 col-xs-9">
-                                <label class="checkbox-inline">
-                                    <input type="checkbox" name="terminos_y_condiciones" id="terminos_y_condiciones" required="required">
-                                        Accepto <a href="#">Terminos y condiciones</a>.
-                                </label>
-                            </div>
-                        </div>
-                        <div class="form-group" id="frmg_mensajes_error" style="display: none">
-                            <div class="col-xs-offset-3 col-xs-9">
-                                <label class="checkbox-inline" id="mensaje_error">
-                                </label>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="form-group">
-                            <div class="col-xs-offset-2 col-xs-10">
-                                <input type="button" class="btn btn-primary" id="btn_registro_usuario" value="Registrarse">
-                                <input type="reset" id="btn_limpiar_registro_usuario" class="btn btn-default" value="Limpiar">
-                            </div>
-                        </div>
-                    </form>
+                <div class="col-md-6">
+                  
                 </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-
-
-    <!--
-    =================================
-    FOOTER
-    =================================
-    -->
-    <footer id="footer" class="clearfix pv-50">
-        <!-- .footer start -->
-        <!-- ================ -->
-        <div class="footer">
-            ﻿<div class="container">
-                <div class="footer-inner">
-                    <div class="row">
-                        <div class="col-md-6 col-md-offset-3">
-                            <div class="footer-content text-center padding-ver-clear">
-                                <div class="logo-footer">
-                                    <img id="logo-footer" class="center-block margin-bottom-10" src="images/logo-completo.png" height="auto" width="100" alt="">
-                                </div>
-                                <p>
-                                    GassApp es la primera aplicación de descarga gratuita para realizar compras de cilindros de Gas Licuado de manera automática y sin llamadas telefónicas.
-                                </p>
-                                <ul class="social-links circle animated-effect-1 margin-clear">
-                                    <li class="facebook">
-                                        <a target="_blank" href="https://www.facebook.com/GassAppChile/"><i class="fa fa-facebook"></i></a>
-                                    </li>
-                                    <li class="twitter">
-                                        <a target="_blank" href="https://twitter.com/GassApp_Chile/"><i class="fa fa-twitter"></i></a>
-                                    </li>
-                                </ul>
-                                <div class="separator"></div>
-                                <p class="text-center margin-clear">Copyright © 2016 GassApp SpA by <a target="_blank" href="http://www.limitech.cl">Limitech </a>. Todos los derechos reservados</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <!--
+      =================================
+      Call To Action / Contact US
+      =================================
+      -->
+      <section class="call-to" id="contact">
+        <div class="call-back">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <h1><b>Contáctanos</b></h1>
+                <p>Sé parte de GassApp y accede a cientos de beneficios. Escríbenos y nos pondremos en contacto.</p>
+              </div>
             </div>
+            <div class="row">
+              <!-- CONTACT -->
+              <div class="contact-us">
+                <form role="form " action="" method="">
+                  <!-- Nombre -->
+                  <div class="form-group">
+                    <label for="name"></label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Nombre Completo" required>
+                    <!--placing icon using a span element-->
+                    <span class="icon fa fa-user fa-lg"></span>
+                  </div>
+
+                  <!-- Email -->
+                  <div class="form-group">
+                    <label for="email"></label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+                    <span class="icon fa fa-envelope fa-lg"></span>
+                  </div>
+
+                  <!-- Teléfono -->
+                  <div class="form-group">
+                    <label for="telefono"></label>
+                    <input type="telefono" class="form-control" id="telefono" name="telefono" placeholder="Telefono" required>
+                    <span class="icon fa fa-phone fa-lg"></span>
+                  </div>
+
+                  <!-- Asunto -->
+                  <div class="form-group">
+                    <label for="sub"></label>
+                    <input type="text" class="form-control" id="sub" name="sub" placeholder="Asunto" required>
+                    <span class="icon fa fa-pencil fa-lg"></span>
+                  </div>
+
+                  <!-- Mensaje -->
+                  <div class="form-group">
+                    <textarea rows="5" cols="30" id="msg" name="msg" placeholder="Mensaje" style="width:100%"></textarea>
+                    <span class="icon-textarea fa fa-paper-plane fa-lg "></span>
+                  </div>
+
+                  <div class="col-sm-12 text-center">
+                    <button type="submit" class="btn btn-default">Enviar</button>
+                  </div>
+                </form>
+              
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- .footer end -->
-    </footer>
-    <!-- footer end -->
+      </section>
+
+      <!--
+      =================================
+      FOOTER
+      =================================
+      -->
+      <footer id="footer" class="clearfix pv-50">
+          <!-- .footer start -->
+          <!-- ================ -->
+          <div class="footer">
+              ﻿<div class="container">
+                  <div class="footer-inner">
+                      <div class="row">
+                          <div class="col-md-6 col-md-offset-3">
+                              <div class="footer-content text-center padding-ver-clear">
+                                  <div class="logo-footer">
+                                      <img id="logo-footer" class="center-block margin-bottom-10" src="images/logo-completo.png" height="auto" width="100" alt="">
+                                  </div>
+                                  <p>
+                                      GassApp es la primera aplicación de descarga gratuita para realizar compras de cilindros de Gas Licuado de manera automática y sin llamadas telefónicas.
+                                  </p>
+                                  <ul class="social-links circle animated-effect-1 margin-clear">
+                                      <li class="facebook">
+                                          <a target="_blank" href="https://www.facebook.com/GassAppChile/"><i class="fa fa-facebook"></i></a>
+                                      </li>
+                                      <li class="twitter">
+                                          <a target="_blank" href="https://twitter.com/GassApp_Chile/"><i class="fa fa-twitter"></i></a>
+                                      </li>
+                                  </ul>
+                                  <div class="separator"></div>
+                                  <p class="text-center margin-clear">Copyright © 2016 GassApp SpA by <a target="_blank" href="http://www.limitech.cl">Limitech </a>. Todos los derechos reservados</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- .footer end -->
+      </footer>
+      <!-- footer end -->
 
 
 
 
-    <!--
-    =================================
-    SCRIPTS
-    =================================
-    -->
-    
-    <!-- jQuery -->
-    <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+      <!--
+      =================================
+      SCRIPTS
+      =================================
+      -->
+      
+      <!-- jQuery -->
+      <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+      <!-- Bootstrap Core JavaScript -->
+      <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
 
-    <!-- Smootscrolling -->
-    <script src="js/smoothscrolling.jquery.js"></script>
-    <script>
-      $(document).on('click','.navbar-collapse.in',function(e) {
-      if( $(e.target).is('a') ) {
-          $(this).collapse('hide');
-        }
-      });
-    </script>
-    <script>
-      $("a.scroller").smoothscrolling(
-          { 
-        offsetTop: 65 // cantidad de pixeles que tiene el elemento flotante
-      });
-    </script>
+      <!-- Smootscrolling -->
+      <script src="js/smoothscrolling.jquery.js"></script>
+      <script>
+        $(document).on('click','.navbar-collapse.in',function(e) {
+        if( $(e.target).is('a') ) {
+            $(this).collapse('hide');
+          }
+        });
+      </script>
+      <script>
+        $("a.scroller").smoothscrolling(
+            { 
+          offsetTop: 65 // cantidad de pixeles que tiene el elemento flotante
+        });
+      </script>
 
-    <!-- Scroll Demo Requires scrollmagic -->
-    <script src="scrollmagic/minified/ScrollMagic.min.js"></script>
-    <script src="js/scrolldemo.js"></script>
+      <!-- Scroll Demo Requires scrollmagic -->
+      <script src="scrollmagic/minified/ScrollMagic.min.js"></script>
+      <script src="js/scrolldemo.js"></script>
 
-    <!-- Wow -->
-    <script src="js/wow.min.js"></script>
-    <script>
-      new WOW().init();
-    </script>
-</body>
+      <!-- Wow -->
+      <script src="js/wow.min.js"></script>
+      <script>
+        new WOW().init();
+      </script>
+  </body>
 </html>
 

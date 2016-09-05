@@ -38,6 +38,7 @@ text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
 .carousel-caption .btn {
 text-shadow: none;
+z-index: 3000;
 }
 
 .carousel .item {
@@ -388,10 +389,67 @@ background-image: url("http://www.easytaxi.com/wp-content/uploads/2015/04/backgr
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
-  height: 631px;
+  height: auto;
   width: 100%;
 }
 .call-back {
   background-color: rgba(48, 174, 229, 0.8);
   padding: 50px;
+}
+
+
+/* Contact Us */
+.call-to form {
+  color: #888888;
+  text-align: left;
+  padding-top: 20px;
+}
+
+.call-to label {
+  display: none;
+}
+
+.call-to input,
+.call-to textarea {
+  /* to create space for placing icon*/
+  padding-left: 40px;
+  border-color: transparent;
+  background-color: white;
+  border-radius: 5px;
+}
+
+/*position should be relative and z-index greater than one*/
+.call-to .icon {
+  position: relative;
+  float: left;
+  margin-left: 8px;
+  margin-top: -24px;
+  z-index: 2;
+  color: #222222;
+}
+
+.call-to .icon-textarea {
+  float: left;
+  margin-left: 8px;
+  margin-top: -114px;
+  position: relative;
+  z-index: 2;
+  color: #222222;
+}
+
+/* Button */
+.call-to .btn-default {
+  margin-top: 5px;
+  margin-bottom: 30px;
+  background-color: white;
+  border-color: #30aee5;
+  color: #30aee5;
+}
+
+.call-to .btn-default:hover,
+.call-to .btn-default:focus {
+  background-color: #30aee5;
+  color: white;
+  border-color: white;
+  outline: 0px auto -webkit-focus-ring-color;
 }
