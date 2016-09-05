@@ -183,3 +183,8 @@ Clears
     text-align: center;
   }
 }
+
+/* Padding body right with modal content */
+body {
+padding-right: 0 !important;
+}

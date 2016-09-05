@@ -13,11 +13,10 @@
 
 /* SLIDER */
 .item1 {
-background: url('../images/slider-distribuidor-1.jpg') 50% 0 no-repeat;
-}
-
-.item2 {
 background: url('../images/slider-distribuidor-2.jpg') 50% 0 no-repeat;
+}
+.item2 {
+background: url('../images/slider-distribuidor-1.jpg') 50% 0 no-repeat;
 }
 
 .carousel {
@@ -315,10 +314,26 @@ background-color: #ffffff;
   background-color: #fff;
   height: 631px;
 }
-.text-dash {
-  padding-top: 80px;
+ul.dash-list {
+  list-style: none;
+  margin-left: -20px;
+}
+li.dash-list-item {
+  height: 60px;
+}
+li.dash-list-item p {
+  padding-top: 5px;
 }
 
+@media ( min-width: 768px ) {
+  li.dash-list-item {
+  height: 50px;
+  }
+  li.dash-list-item p {
+    padding-top: 10px;
+  }
+
+}
 
 
 /* DEMO */
@@ -373,7 +388,7 @@ background-image: url("http://www.easytaxi.com/wp-content/uploads/2015/04/backgr
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
-  height: 200px;
+  height: 631px;
   width: 100%;
 }
 .call-back {
