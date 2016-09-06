@@ -3,6 +3,14 @@
 Faqs
 ======================================================
 */
+.faq-area .nav li a {
+	padding: 10px 6px;
+}
+@media (min-width: 370px) {
+  .faq-area .nav li a {
+	padding: 10px 15px;
+	}
+}
 
 .faq-qa {
 	color: #00a7dd;
