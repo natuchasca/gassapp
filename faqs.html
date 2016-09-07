@@ -1,786 +1,440 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>GassApp | FAQS</title>
+  <head>
+    <meta charset="UTF-8">
+    <title>GassApp | FAQS</title>
 
-  <!-- Mobile Meta -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Mobile Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="images/favicon.ico">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico">
 
-  <!-- Web Fonts -->
-  <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Raleway:700,400,300' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
+    <!-- Web Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:700,400,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
 
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
-  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" href="plugins/owl-carousel/owl.carousel.css">
-  <link href="plugins/owl-carousel/owl.transitions.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/animate.css">
-  <link rel="stylesheet" href="css/helpers.css">
-  <link rel="stylesheet" href="css/home.css">
-  <link rel="stylesheet" href="css/faqs.css">
-  <link rel="stylesheet" href="css/tabs.css">
-</head>
-<body>
-  <!-- scrollToTop -->
-  <!-- ================ -->
-  <div class="scrollToTop circle"><i class="icon-up-open-big"></i></div>
-  <!--
-  =================================
-  HEADER
-  =================================
-  -->
-  <header>
-    <!-- navbar start -->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class=" navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand page-scroll" href="index.html">
-            <img id="logo_img" src="images/logo_gassapp.png" alt="Gassapp Chile">
-          </a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-            <li>
-              <a class="scroller" href="index.html#gassapp">GassApp</a>
-            </li>
-            <li>
-              <a class="scroller" data-offset-top="120" href="index.html#servicios">Servicios</a>
-            </li>
-            <li>
-              <a href="faqs.html">¿Dudas?</a>
-            </li>
-            <!-- mega-menu end -->
-            <!--
-            <li class="dropdown padding-r-20">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Preguntas Frecuentes</a>
-                <ul class="dropdown-menu">
-                    <li><a href="faqs.html"><i class="fa fa-angle-right"></i> bla bla bla</a></li>
-                </ul>
-            </li>
-            -->
-            <li class="ph-20">
-              <!-- header buttons -->
-                <div class="header-dropdown-buttons align-center">
-                  <a href="consumidor.html" class="btn btn-sm hidden-xs btn-default"><i class="fa fa-user padding-r-5"></i>Cliente</a>
-                  <a href="consumidor.html" class="btn btn-sm visible-xs btn-default margin-bottom-5"><i class="fa fa-user padding-r-5"></i>Cliente</a>
-                  <a href="distribuidor.html" class="btn btn-sm hidden-xs btn-default"><i class="fa fa-truck padding-r-5"></i>Distribuidor</a>
-                  <a href="distribuidor.html" class="btn btn-sm visible-xs btn-default"><i class="fa fa-truck padding-r-5"></i>Distribuidor</a>
-                </div> <!-- header buttons end-->
-            </li>
-          </ul>    
-        </div> <!-- /.navbar-collapse -->
-      </div> <!-- /.container-fluid -->
-    </nav>
-    <!-- ================ -->                                        
-    <!-- navbar end -->
-  </header>
-
-  <section class="intro-faqs pv-50 margin-top-40">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12 text-center wow animated fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
-          <h1>Preguntas Frecuentes</h1>
-          <div class="sub-heading pv-20">
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting <br>
-            industry. Lorem Ipsum has been the industry's standard dummy</p>
-          </div>                      
-        </div>
-      </div>
-    </div>
-  </section>
-
-    <!--
-
-    <section id="faq" class="faq-area pv-50">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 text-center wow animated fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
-                    <h1>Preguntas Frecuentes</h1>
-                    <div class="sub-heading pv-20">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting <br>
-                         industry. Lorem Ipsum has been the industry's standard dummy</p>
-                    </div>                      
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-8">
-                    <div class="panel-group" id="accordion">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#panel1" aria-expanded="false">
-                                        <span class="faq-qa">Al comprar a través de GassApp, ¿Debo pagar un valor adicional?</span>
-                                    <span class="glyphicon pull-right glyphicon-plus"></span></a>
-                                </h4>
-                            </div>
-                            <div id="panel1" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                                <div class="panel-body">
-                                    <span class="faq-qa">Respuesta:</span><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi dunt ut labore et dolore magna aliqua, Ut enim ad minim veniam.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#panel2" aria-expanded="false"><span class="glyphicon pull-right glyphicon-plus"></span>
-                                        <span class="faq-qa">Lorem ipsum dolor sit amet, consectetur adipisicing elit, eiusmoded tempor incididunt?</span>
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="panel2" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                                <div class="panel-body">
-                                    <span class="faq-qa">Respuesta:</span><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi dunt ut labore et dolore magna aliqua, Ut enim ad minim veniam.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#panel3" aria-expanded="false"><span class="glyphicon glyphicon-plus pull-right"></span>
-                                        <span class="faq-qa">Lorem ipsum dolor sit amet, consectetur adipisicing elit, eiusmoded tempor incididunt?</span>
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="panel3" class="panel-collapse collapse" aria-expanded="false">
-                                <div class="panel-body">
-                                    <span class="faq-qa">Respuesta:</span><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi dunt ut labore et dolore magna aliqua, Ut enim ad minim veniam.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#panel4" aria-expanded="false"><span class="glyphicon glyphicon-plus pull-right"></span>
-                                        <span class="faq-qa">Lorem ipsum dolor sit amet, consectetur adipisicing elit, eiusmoded tempor incididunt?</span>
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="panel4" class="panel-collapse collapse" aria-expanded="false">
-                                <div class="panel-body">
-                                    <span class="faq-qa">Respuesta:</span><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi dunt ut labore et dolore magna aliqua, Ut enim ad minim veniam.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#panel5" aria-expanded="false"><span class="glyphicon glyphicon-plus pull-right"></span>
-                                        <span class="faq-qa">Lorem ipsum dolor sit amet, consectetur adipisicing elit, eiusmoded tempor incididunt?</span>
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="panel5" class="panel-collapse collapse" aria-expanded="false">
-                                <div class="panel-body">
-                                    <span class="faq-qa">Respuesta:</span><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi dunt ut labore et dolore magna aliqua, Ut enim ad minim veniam.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-offset-1 col-sm-3">
-                    <img class="img-responsive" src="images/faq-mockup.png" alt="mockup">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    -->
-
-    <!--
-    <div id="tabs" class="tabs">
-        <nav>
-            <ul>
-                <li><a href="#section-1" class="icon-shop"><span>Cliente</span></a></li>
-                <li><a href="#section-2" class="icon-cup"><span>Vendedor</span></a></li>
-                <li><a href="#section-3" class="icon-food"><span>Distribuidor</span></a></li>
-            </ul>
-        </nav>
-        <div class="content">
-            <section id="section-1">
-                <div class="col-sm-12">
-                    <div class="panel-group" id="accordion">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#panel1" aria-expanded="false">
-                                        <span class="faq-qa"></span>Al comprar a través de GassApp, ¿Debo pagar un valor adicional?
-                                    <span class="glyphicon pull-right glyphicon-plus"></span></a>
-                                </h4>
-                            </div>
-                            <div id="panel1" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                                <div class="panel-body">
-                                    <span class="faq-qa">Respuesta:</span><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi dunt ut labore et dolore magna aliqua, Ut enim ad minim veniam.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#panel2" aria-expanded="false"><span class="glyphicon pull-right glyphicon-plus"></span>
-                                        <span class="faq-qa"></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, eiusmoded tempor incididunt?
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="panel2" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                                <div class="panel-body">
-                                    <span class="faq-qa">Respuesta:</span><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi dunt ut labore et dolore magna aliqua, Ut enim ad minim veniam.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#panel3" aria-expanded="false"><span class="glyphicon glyphicon-plus pull-right"></span>
-                                        <span class="faq-qa"></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, eiusmoded tempor incididunt?
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="panel3" class="panel-collapse collapse" aria-expanded="false">
-                                <div class="panel-body">
-                                    <span class="faq-qa">Respuesta:</span><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi dunt ut labore et dolore magna aliqua, Ut enim ad minim veniam.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#panel4" aria-expanded="false"><span class="glyphicon glyphicon-plus pull-right"></span>
-                                        <span class="faq-qa"></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, eiusmoded tempor incididunt?
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="panel4" class="panel-collapse collapse" aria-expanded="false">
-                                <div class="panel-body">
-                                    <span class="faq-qa">Respuesta:</span><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi dunt ut labore et dolore magna aliqua, Ut enim ad minim veniam.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#panel5" aria-expanded="false"><span class="glyphicon glyphicon-plus pull-right"></span>
-                                        <span class="faq-qa"></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, eiusmoded tempor incididunt?
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="panel5" class="panel-collapse collapse" aria-expanded="false">
-                                <div class="panel-body">
-                                    <span class="faq-qa">Respuesta:</span><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi dunt ut labore et dolore magna aliqua, Ut enim ad minim veniam.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="section-2">
-                <div class="col-sm-12">
-                    <div class="panel-group" id="accordion">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#panel1" aria-expanded="false">
-                                        <span class="faq-qa"></span>Al comprar a través de GassApp, ¿Debo pagar un valor adicional?
-                                    <span class="glyphicon pull-right glyphicon-plus"></span></a>
-                                </h4>
-                            </div>
-                            <div id="panel1" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                                <div class="panel-body">
-                                    <span class="faq-qa">Respuesta:</span><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi dunt ut labore et dolore magna aliqua, Ut enim ad minim veniam.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#panel2" aria-expanded="false"><span class="glyphicon pull-right glyphicon-plus"></span>
-                                        <span class="faq-qa"></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, eiusmoded tempor incididunt?
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="panel2" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                                <div class="panel-body">
-                                    <span class="faq-qa">Respuesta:</span><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi dunt ut labore et dolore magna aliqua, Ut enim ad minim veniam.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#panel3" aria-expanded="false"><span class="glyphicon glyphicon-plus pull-right"></span>
-                                        <span class="faq-qa"></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, eiusmoded tempor incididunt?
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="panel3" class="panel-collapse collapse" aria-expanded="false">
-                                <div class="panel-body">
-                                    <span class="faq-qa">Respuesta:</span><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi dunt ut labore et dolore magna aliqua, Ut enim ad minim veniam.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#panel4" aria-expanded="false"><span class="glyphicon glyphicon-plus pull-right"></span>
-                                        <span class="faq-qa"></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, eiusmoded tempor incididunt?
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="panel4" class="panel-collapse collapse" aria-expanded="false">
-                                <div class="panel-body">
-                                    <span class="faq-qa">Respuesta:</span><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi dunt ut labore et dolore magna aliqua, Ut enim ad minim veniam.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#panel5" aria-expanded="false"><span class="glyphicon glyphicon-plus pull-right"></span>
-                                        <span class="faq-qa"></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, eiusmoded tempor incididunt?
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="panel5" class="panel-collapse collapse" aria-expanded="false">
-                                <div class="panel-body">
-                                    <span class="faq-qa">Respuesta:</span><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi dunt ut labore et dolore magna aliqua, Ut enim ad minim veniam.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="section-3">
-                <div class="col-sm-12">
-                    <div class="panel-group" id="accordion">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#panel1" aria-expanded="false">
-                                        <span class="faq-qa"></span>Al comprar a través de GassApp, ¿Debo pagar un valor adicional?
-                                    <span class="glyphicon pull-right glyphicon-plus"></span></a>
-                                </h4>
-                            </div>
-                            <div id="panel1" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                                <div class="panel-body">
-                                    <span class="faq-qa">Respuesta:</span><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi dunt ut labore et dolore magna aliqua, Ut enim ad minim veniam.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#panel2" aria-expanded="false"><span class="glyphicon pull-right glyphicon-plus"></span>
-                                        <span class="faq-qa"></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, eiusmoded tempor incididunt?
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="panel2" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                                <div class="panel-body">
-                                    <span class="faq-qa">Respuesta:</span><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi dunt ut labore et dolore magna aliqua, Ut enim ad minim veniam.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#panel3" aria-expanded="false"><span class="glyphicon glyphicon-plus pull-right"></span>
-                                        <span class="faq-qa"></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, eiusmoded tempor incididunt?
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="panel3" class="panel-collapse collapse" aria-expanded="false">
-                                <div class="panel-body">
-                                    <span class="faq-qa">Respuesta:</span><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi dunt ut labore et dolore magna aliqua, Ut enim ad minim veniam.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#panel4" aria-expanded="false"><span class="glyphicon glyphicon-plus pull-right"></span>
-                                        <span class="faq-qa"></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, eiusmoded tempor incididunt?
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="panel4" class="panel-collapse collapse" aria-expanded="false">
-                                <div class="panel-body">
-                                    <span class="faq-qa">Respuesta:</span><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi dunt ut labore et dolore magna aliqua, Ut enim ad minim veniam.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#panel5" aria-expanded="false"><span class="glyphicon glyphicon-plus pull-right"></span>
-                                        <span class="faq-qa"></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, eiusmoded tempor incididunt?
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="panel5" class="panel-collapse collapse" aria-expanded="false">
-                                <div class="panel-body">
-                                    <span class="faq-qa">Respuesta:</span><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi dunt ut labore et dolore magna aliqua, Ut enim ad minim veniam.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </div> -->
-    
-    <!--
-    <link rel="stylesheet" href="css/tabs.css">
-    <script src="js/tabs.js"></script>
-    <script>
-        new CBPFWTabs( document.getElementById( 'tabs' ) );
-    </script>
-    -->
-
-    <section class="faq-area margin-bottom-50">
-      <div class="container">
-        <ul class="nav nav-tabs">
-          <li class="active">
-            <a href="#1" data-toggle="tab"><span><i class="fa fa-user" aria-hidden="true"></i> Cliente</span></a>
-          </li>
-          <li>
-            <a href="#2" data-toggle="tab"><span><i class="fa fa-truck" aria-hidden="true"></i> Distribuidor</span></a>
-          </li>
-          <li>
-            <a href="#3" data-toggle="tab"><span><i class="fa fa-users" aria-hidden="true"></i> Vendedor</span></a>
-          </li>
-        </ul>
-
-        <div class="tab-content">
-          <!-- Preguntas Cliente -->
-          <div class="tab-pane active fade in" id="1">
-            <div class="panel-group" id="accordion">
-              <!-- Pregunta y Respuesta 1 -->
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h4 class="panel-title">
-                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#panel1" aria-expanded="false">
-                      <span class="faq-qa">Al comprar a través de GassApp, ¿Debo pagar un valor adicional?</span>
-                    <span class="glyphicon pull-right glyphicon-plus"></span></a>
-                  </h4>
-                </div>
-                <div id="panel1" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                  <div class="panel-body">
-                    <span class="faq-qa">Respuesta:</span><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi dunt ut labore et dolore magna aliqua, Ut enim ad minim veniam.</p>
-                  </div>
-                </div>
-              </div>
-              <!-- Pregunta y Respuesta 2 -->
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h4 class="panel-title">
-                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#panel2" aria-expanded="false"><span class="glyphicon pull-right glyphicon-plus"></span>
-                      <span class="faq-qa">Pregunta Cliente</span>
-                    </a>
-                  </h4>
-                </div>
-                <div id="panel2" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                  <div class="panel-body">
-                    <span class="faq-qa">Respuesta:</span><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi dunt ut labore et dolore magna aliqua, Ut enim ad minim veniam.</p>
-                  </div>
-                </div>
-              </div>
-              <!-- Pregunta y Respuesta 3 -->
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h4 class="panel-title">
-                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#panel3" aria-expanded="false"><span class="glyphicon glyphicon-plus pull-right"></span>
-                      <span class="faq-qa">Pregunta Cliente</span>
-                    </a>
-                  </h4>
-                </div>
-                <div id="panel3" class="panel-collapse collapse" aria-expanded="false">
-                  <div class="panel-body">
-                    <span class="faq-qa">Respuesta:</span><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi dunt ut labore et dolore magna aliqua, Ut enim ad minim veniam.</p>
-                  </div>
-                </div>
-              </div>
-              <!-- Pregunta y Respuesta 4 -->
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h4 class="panel-title">
-                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#panel4" aria-expanded="false"><span class="glyphicon glyphicon-plus pull-right"></span>
-                      <span class="faq-qa">Pregunta Cliente</span>
-                    </a>
-                  </h4>
-                </div>
-                <div id="panel4" class="panel-collapse collapse" aria-expanded="false">
-                  <div class="panel-body">
-                    <span class="faq-qa">Respuesta:</span><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi dunt ut labore et dolore magna aliqua, Ut enim ad minim veniam.</p>
-                  </div>
-                </div>
-              </div>
-              <!-- Pregunta y Respuesta 5 -->
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h4 class="panel-title">
-                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#panel5" aria-expanded="false"><span class="glyphicon glyphicon-plus pull-right"></span>
-                      <span class="faq-qa">Pregunta Cliente</span>
-                    </a>
-                  </h4>
-                </div>
-                <div id="panel5" class="panel-collapse collapse" aria-expanded="false">
-                  <div class="panel-body">
-                    <span class="faq-qa">Respuesta:</span><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi dunt ut labore et dolore magna aliqua, Ut enim ad minim veniam.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Preguntas Distribuidor -->
-          <div class="tab-pane fade" id="2">
-            <div class="panel-group" id="accordion">
-              <!-- Pregunta y Respuesta 1 -->
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h4 class="panel-title">
-                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#panel6" aria-expanded="false">
-                      <span class="faq-qa">Pregunta Distribuidor</span>
-                    <span class="glyphicon pull-right glyphicon-plus"></span></a>
-                  </h4>
-                </div>
-                <div id="panel6" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                  <div class="panel-body">
-                    <span class="faq-qa">Respuesta:</span><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi dunt ut labore et dolore magna aliqua, Ut enim ad minim veniam.</p>
-                  </div>
-                </div>
-              </div>
-              <!-- Pregunta y Respuesta 2 -->
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h4 class="panel-title">
-                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#panel7" aria-expanded="false"><span class="glyphicon pull-right glyphicon-plus"></span>
-                      <span class="faq-qa">Pregunta Distribuidor</span>
-                    </a>
-                  </h4>
-                </div>
-                <div id="panel7" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                  <div class="panel-body">
-                    <span class="faq-qa">Respuesta:</span><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi dunt ut labore et dolore magna aliqua, Ut enim ad minim veniam.</p>
-                  </div>
-                </div>
-              </div>
-              <!-- Pregunta y Respuesta 3 -->
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h4 class="panel-title">
-                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#panel8" aria-expanded="false"><span class="glyphicon glyphicon-plus pull-right"></span>
-                      <span class="faq-qa">Pregunta Distribuidor</span>
-                    </a>
-                  </h4>
-                </div>
-                <div id="panel8" class="panel-collapse collapse" aria-expanded="false">
-                  <div class="panel-body">
-                    <span class="faq-qa">Respuesta:</span><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi dunt ut labore et dolore magna aliqua, Ut enim ad minim veniam.</p>
-                  </div>
-                </div>
-              </div>
-              <!-- Pregunta y Respuesta 4 -->
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h4 class="panel-title">
-                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#panel9" aria-expanded="false"><span class="glyphicon glyphicon-plus pull-right"></span>
-                      <span class="faq-qa">Pregunta Distribuidor</span>
-                    </a>
-                  </h4>
-                </div>
-                <div id="panel9" class="panel-collapse collapse" aria-expanded="false">
-                  <div class="panel-body">
-                    <span class="faq-qa">Respuesta:</span><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi dunt ut labore et dolore magna aliqua, Ut enim ad minim veniam.</p>
-                  </div>
-                </div>
-              </div>
-              <!-- Pregunta y Respuesta 5 -->
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h4 class="panel-title">
-                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#panel10" aria-expanded="false"><span class="glyphicon glyphicon-plus pull-right"></span>
-                      <span class="faq-qa">Pregunta Distribuidor</span>
-                    </a>
-                  </h4>
-                </div>
-                <div id="panel10" class="panel-collapse collapse" aria-expanded="false">
-                  <div class="panel-body">
-                    <span class="faq-qa">Respuesta:</span><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi dunt ut labore et dolore magna aliqua, Ut enim ad minim veniam.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Preguntas Vendedor -->
-          <div class="tab-pane fade" id="3">
-            <div class="panel-group" id="accordion">
-              <!-- Pregunta y Respuesta 1 -->
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h4 class="panel-title">
-                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#panel11" aria-expanded="false">
-                      <span class="faq-qa">Pregunta vendedor</span>
-                    <span class="glyphicon pull-right glyphicon-plus"></span></a>
-                  </h4>
-                </div>
-                <div id="panel11" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                  <div class="panel-body">
-                    <span class="faq-qa">Respuesta:</span><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi dunt ut labore et dolore magna aliqua, Ut enim ad minim veniam.</p>
-                  </div>
-                </div>
-              </div>
-              <!-- Pregunta y Respuesta 2 -->
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h4 class="panel-title">
-                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#panel12" aria-expanded="false"><span class="glyphicon pull-right glyphicon-plus"></span>
-                      <span class="faq-qa">Pregunta vendedor</span>
-                    </a>
-                  </h4>
-                </div>
-                <div id="panel12" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                  <div class="panel-body">
-                    <span class="faq-qa">Respuesta:</span><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi dunt ut labore et dolore magna aliqua, Ut enim ad minim veniam.</p>
-                  </div>
-                </div>
-              </div>
-              <!-- Pregunta y Respuesta 3 -->
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h4 class="panel-title">
-                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#panel13" aria-expanded="false"><span class="glyphicon glyphicon-plus pull-right"></span>
-                      <span class="faq-qa">Pregunta vendedor</span>
-                    </a>
-                  </h4>
-                </div>
-                <div id="panel13" class="panel-collapse collapse" aria-expanded="false">
-                  <div class="panel-body">
-                    <span class="faq-qa">Respuesta:</span><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi dunt ut labore et dolore magna aliqua, Ut enim ad minim veniam.</p>
-                  </div>
-                </div>
-              </div>
-              <!-- Pregunta y Respuesta 4 -->
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h4 class="panel-title">
-                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#panel14" aria-expanded="false"><span class="glyphicon glyphicon-plus pull-right"></span>
-                      <span class="faq-qa">Pregunta vendedor</span>
-                    </a>
-                  </h4>
-                </div>
-                <div id="panel14" class="panel-collapse collapse" aria-expanded="false">
-                  <div class="panel-body">
-                    <span class="faq-qa">Respuesta:</span><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi dunt ut labore et dolore magna aliqua, Ut enim ad minim veniam.</p>
-                  </div>
-                </div>
-              </div>
-              <!-- Pregunta y Respuesta 5 -->
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h4 class="panel-title">
-                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#panel15" aria-expanded="false"><span class="glyphicon glyphicon-plus pull-right"></span>
-                      <span class="faq-qa">Pregunta vendedor</span>
-                    </a>
-                  </h4>
-                </div>
-                <div id="panel15" class="panel-collapse collapse" aria-expanded="false">
-                  <div class="panel-body">
-                    <span class="faq-qa">Respuesta:</span><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi dunt ut labore et dolore magna aliqua, Ut enim ad minim veniam.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-        
-    <!-- funciona sin este js...que hago...
-    <script type="text/javascript">
-        jQuery(document).ready(function ($) {
-            $('#tabs').tab();
-        });
-    </script> --> 
-
-
-    <!--
-    =================================
-    FOOTER
-    =================================
-    -->
-    <footer id="footer" class="clearfix pv-50">
-      <!-- .footer start -->
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="plugins/owl-carousel/owl.carousel.css">
+    <link href="plugins/owl-carousel/owl.transitions.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/helpers.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/faqs.css">
+  </head>
+  <body>
+      <!-- scrollToTop -->
       <!-- ================ -->
-      <div class="footer">
-        ﻿<div class="container">
-          <div class="footer-inner">
-            <div class="row">
-              <div class="col-md-6 col-md-offset-3">
-                <div class="footer-content text-center padding-ver-clear">
-                  <div class="logo-footer">
-                    <img id="logo-footer" class="center-block margin-bottom-10" src="images/logo-completo.png" height="auto" width="100" alt="">
+      <div class="scrollToTop circle"><i class="icon-up-open-big"></i></div>
+      <!--
+      =================================
+      HEADER
+      =================================
+      -->
+      <header>
+        <!-- navbar start -->
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+          <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class=" navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand page-scroll" href="index.html">
+                <img id="logo_img" src="images/logo_gassapp.png" alt="Gassapp Chile">
+              </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <li>
+                  <a class="scroller" href="index.html#gassapp">GassApp</a>
+                </li>
+                <li>
+                  <a class="scroller" data-offset-top="120" href="index.html#servicios">Servicios</a>
+                </li>
+                <li>
+                  <a href="faqs.html">¿Dudas?</a>
+                </li>
+                <!-- mega-menu end -->
+                <!--
+                <li class="dropdown padding-r-20">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Preguntas Frecuentes</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="faqs.html"><i class="fa fa-angle-right"></i> bla bla bla</a></li>
+                    </ul>
+                </li>
+                -->
+                <li class="ph-20">
+                  <!-- header buttons -->
+                    <div class="header-dropdown-buttons align-center">
+                      <a href="consumidor.html" class="btn btn-sm hidden-xs btn-default"><i class="fa fa-user padding-r-5"></i>Cliente</a>
+                      <a href="consumidor.html" class="btn btn-sm visible-xs btn-default margin-bottom-5"><i class="fa fa-user padding-r-5"></i>Cliente</a>
+                      <a href="distribuidor.html" class="btn btn-sm hidden-xs btn-default"><i class="fa fa-truck padding-r-5"></i>Distribuidor</a>
+                      <a href="distribuidor.html" class="btn btn-sm visible-xs btn-default"><i class="fa fa-truck padding-r-5"></i>Distribuidor</a>
+                    </div> <!-- header buttons end-->
+                </li>
+              </ul>    
+            </div> <!-- /.navbar-collapse -->
+          </div> <!-- /.container-fluid -->
+        </nav>
+        <!-- ================ -->                                        
+        <!-- navbar end -->
+      </header>
+      <!--
+      =================================
+      INTRO FAQS
+      =================================
+      -->
+      <section class="intro-faqs pv-50 margin-top-40">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 text-center wow animated fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+              <h1>Preguntas Frecuentes</h1>
+              <div class="sub-heading pv-20">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting <br>
+                industry. Lorem Ipsum has been the industry's standard dummy</p>
+              </div>                      
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--
+      =================================
+      FAQS
+      =================================
+      -->
+
+      <section class="faq-area margin-bottom-50">
+        <div class="container">
+          <ul class="nav nav-tabs">
+            <li class="active">
+              <a href="#1" data-toggle="tab"><span><i class="fa fa-user" aria-hidden="true"></i> Cliente</span></a>
+            </li>
+            <li>
+              <a href="#2" data-toggle="tab"><span><i class="fa fa-truck" aria-hidden="true"></i> Distribuidor</span></a>
+            </li>
+            <li>
+              <a href="#3" data-toggle="tab"><span><i class="fa fa-users" aria-hidden="true"></i> Vendedor</span></a>
+            </li>
+          </ul>
+
+          <div class="tab-content">
+            <!-- Preguntas Cliente -->
+            <div class="tab-pane active fade in" id="1">
+              <div class="panel-group" id="accordion">
+                <!-- Pregunta y Respuesta 1 -->
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#panel1" aria-expanded="false">
+                        <span class="faq-qa">Al comprar a través de GassApp, ¿Debo pagar un valor adicional?</span>
+                      <span class="glyphicon pull-right glyphicon-plus"></span></a>
+                    </h4>
                   </div>
-                  <p>
-                    GassApp es la primera aplicación de descarga gratuita para realizar compras de cilindros de Gas Licuado de manera automática y sin llamadas telefónicas.
-                  </p>
-                  <ul class="social-links circle animated-effect-1 margin-clear">
-                    <li class="facebook">
-                      <a target="_blank" href="https://www.facebook.com/GassAppChile/"><i class="fa fa-facebook"></i></a>
-                    </li>
-                    <li class="twitter">
-                      <a target="_blank" href="https://twitter.com/GassApp_Chile/"><i class="fa fa-twitter"></i></a>
-                    </li>
-                  </ul>
-                  <div class="separator"></div>
-                  <p class="text-center margin-clear">Copyright © 2016 GassApp SpA by <a target="_blank" href="http://www.limitech.cl">Limitech </a>. Todos los derechos reservados</p>
+                  <div id="panel1" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                    <div class="panel-body">
+                      <span class="faq-qa">Respuesta:</span><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi dunt ut labore et dolore magna aliqua, Ut enim ad minim veniam.</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Pregunta y Respuesta 2 -->
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#panel2" aria-expanded="false"><span class="glyphicon pull-right glyphicon-plus"></span>
+                        <span class="faq-qa">Pregunta Cliente</span>
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="panel2" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                    <div class="panel-body">
+                      <span class="faq-qa">Respuesta:</span><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi dunt ut labore et dolore magna aliqua, Ut enim ad minim veniam.</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Pregunta y Respuesta 3 -->
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#panel3" aria-expanded="false"><span class="glyphicon glyphicon-plus pull-right"></span>
+                        <span class="faq-qa">Pregunta Cliente</span>
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="panel3" class="panel-collapse collapse" aria-expanded="false">
+                    <div class="panel-body">
+                      <span class="faq-qa">Respuesta:</span><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi dunt ut labore et dolore magna aliqua, Ut enim ad minim veniam.</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Pregunta y Respuesta 4 -->
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#panel4" aria-expanded="false"><span class="glyphicon glyphicon-plus pull-right"></span>
+                        <span class="faq-qa">Pregunta Cliente</span>
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="panel4" class="panel-collapse collapse" aria-expanded="false">
+                    <div class="panel-body">
+                      <span class="faq-qa">Respuesta:</span><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi dunt ut labore et dolore magna aliqua, Ut enim ad minim veniam.</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Pregunta y Respuesta 5 -->
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#panel5" aria-expanded="false"><span class="glyphicon glyphicon-plus pull-right"></span>
+                        <span class="faq-qa">Pregunta Cliente</span>
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="panel5" class="panel-collapse collapse" aria-expanded="false">
+                    <div class="panel-body">
+                      <span class="faq-qa">Respuesta:</span><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi dunt ut labore et dolore magna aliqua, Ut enim ad minim veniam.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Preguntas Distribuidor -->
+            <div class="tab-pane fade" id="2">
+              <div class="panel-group" id="accordion">
+                <!-- Pregunta y Respuesta 1 -->
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#panel6" aria-expanded="false">
+                        <span class="faq-qa">Pregunta Distribuidor</span>
+                      <span class="glyphicon pull-right glyphicon-plus"></span></a>
+                    </h4>
+                  </div>
+                  <div id="panel6" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                    <div class="panel-body">
+                      <span class="faq-qa">Respuesta:</span><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi dunt ut labore et dolore magna aliqua, Ut enim ad minim veniam.</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Pregunta y Respuesta 2 -->
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#panel7" aria-expanded="false"><span class="glyphicon pull-right glyphicon-plus"></span>
+                        <span class="faq-qa">Pregunta Distribuidor</span>
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="panel7" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                    <div class="panel-body">
+                      <span class="faq-qa">Respuesta:</span><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi dunt ut labore et dolore magna aliqua, Ut enim ad minim veniam.</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Pregunta y Respuesta 3 -->
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#panel8" aria-expanded="false"><span class="glyphicon glyphicon-plus pull-right"></span>
+                        <span class="faq-qa">Pregunta Distribuidor</span>
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="panel8" class="panel-collapse collapse" aria-expanded="false">
+                    <div class="panel-body">
+                      <span class="faq-qa">Respuesta:</span><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi dunt ut labore et dolore magna aliqua, Ut enim ad minim veniam.</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Pregunta y Respuesta 4 -->
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#panel9" aria-expanded="false"><span class="glyphicon glyphicon-plus pull-right"></span>
+                        <span class="faq-qa">Pregunta Distribuidor</span>
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="panel9" class="panel-collapse collapse" aria-expanded="false">
+                    <div class="panel-body">
+                      <span class="faq-qa">Respuesta:</span><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi dunt ut labore et dolore magna aliqua, Ut enim ad minim veniam.</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Pregunta y Respuesta 5 -->
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#panel10" aria-expanded="false"><span class="glyphicon glyphicon-plus pull-right"></span>
+                        <span class="faq-qa">Pregunta Distribuidor</span>
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="panel10" class="panel-collapse collapse" aria-expanded="false">
+                    <div class="panel-body">
+                      <span class="faq-qa">Respuesta:</span><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi dunt ut labore et dolore magna aliqua, Ut enim ad minim veniam.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Preguntas Vendedor -->
+            <div class="tab-pane fade" id="3">
+              <div class="panel-group" id="accordion">
+                <!-- Pregunta y Respuesta 1 -->
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#panel11" aria-expanded="false">
+                        <span class="faq-qa">Pregunta vendedor</span>
+                      <span class="glyphicon pull-right glyphicon-plus"></span></a>
+                    </h4>
+                  </div>
+                  <div id="panel11" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                    <div class="panel-body">
+                      <span class="faq-qa">Respuesta:</span><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi dunt ut labore et dolore magna aliqua, Ut enim ad minim veniam.</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Pregunta y Respuesta 2 -->
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#panel12" aria-expanded="false"><span class="glyphicon pull-right glyphicon-plus"></span>
+                        <span class="faq-qa">Pregunta vendedor</span>
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="panel12" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                    <div class="panel-body">
+                      <span class="faq-qa">Respuesta:</span><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi dunt ut labore et dolore magna aliqua, Ut enim ad minim veniam.</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Pregunta y Respuesta 3 -->
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#panel13" aria-expanded="false"><span class="glyphicon glyphicon-plus pull-right"></span>
+                        <span class="faq-qa">Pregunta vendedor</span>
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="panel13" class="panel-collapse collapse" aria-expanded="false">
+                    <div class="panel-body">
+                      <span class="faq-qa">Respuesta:</span><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi dunt ut labore et dolore magna aliqua, Ut enim ad minim veniam.</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Pregunta y Respuesta 4 -->
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#panel14" aria-expanded="false"><span class="glyphicon glyphicon-plus pull-right"></span>
+                        <span class="faq-qa">Pregunta vendedor</span>
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="panel14" class="panel-collapse collapse" aria-expanded="false">
+                    <div class="panel-body">
+                      <span class="faq-qa">Respuesta:</span><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi dunt ut labore et dolore magna aliqua, Ut enim ad minim veniam.</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Pregunta y Respuesta 5 -->
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#panel15" aria-expanded="false"><span class="glyphicon glyphicon-plus pull-right"></span>
+                        <span class="faq-qa">Pregunta vendedor</span>
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="panel15" class="panel-collapse collapse" aria-expanded="false">
+                    <div class="panel-body">
+                      <span class="faq-qa">Respuesta:</span><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi dunt ut labore et dolore magna aliqua, Ut enim ad minim veniam.</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- .footer end -->
-    </footer>
-    <!-- footer end -->
+      </section>
+          
+      <!--
+      =================================
+      FOOTER
+      =================================
+      -->
+      <footer id="footer" class="clearfix pv-50">
+        <!-- .footer start -->
+        <!-- ================ -->
+        <div class="footer">
+          ﻿<div class="container">
+            <div class="footer-inner">
+              <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                  <div class="footer-content text-center padding-ver-clear">
+                    <div class="logo-footer">
+                      <img id="logo-footer" class="center-block margin-bottom-10" src="images/logo-completo.png" height="auto" width="100" alt="">
+                    </div>
+                    <p>
+                      GassApp es la primera aplicación de descarga gratuita para realizar compras de cilindros de Gas Licuado de manera automática y sin llamadas telefónicas.
+                    </p>
+                    <ul class="social-links circle animated-effect-1 margin-clear">
+                      <li class="facebook">
+                        <a target="_blank" href="https://www.facebook.com/GassAppChile/"><i class="fa fa-facebook"></i></a>
+                      </li>
+                      <li class="twitter">
+                        <a target="_blank" href="https://twitter.com/GassApp_Chile/"><i class="fa fa-twitter"></i></a>
+                      </li>
+                    </ul>
+                    <div class="separator"></div>
+                    <p class="text-center margin-clear">Copyright © 2016 GassApp SpA by <a target="_blank" href="http://www.limitech.cl">Limitech </a>. Todos los derechos reservados</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- .footer end -->
+      </footer>
+      <!-- footer end -->
 
 
 
 
-    <!--
-    =================================
-    SCRIPTS
-    =================================
-    -->
-    
-    <!-- jQuery -->
-    <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+      <!--
+      =================================
+      SCRIPTS
+      =================================
+      -->
+      
+      <!-- jQuery -->
+      <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+      <!-- Bootstrap Core JavaScript -->
+      <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
 
-    <!-- Plugin JavaScript -->
-   
-    
-    <!-- Custom JavaScript -->
-
-
+      <!-- Plugin JavaScript -->
+     
+      
+      <!-- Custom JavaScript -->
 
 
 
-</body>
+
+
+  </body>
 </html>

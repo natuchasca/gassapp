@@ -1,13 +1,14 @@
 /**
  * ========================================
- * Estilos Comunes
+ * COMMON STYLES
  * Colores Links Buttons y Hover
  * Header
  * Footer
  * ========================================
  */
 
-/*Colors
+
+ /*Colors
 ---------------------------------- */
 .azul {
   color: #2669df;
@@ -26,16 +27,9 @@ h5,
 h6,
 .navbar .navbar-nav {
   font-family: 'Raleway', sans-serif;
-  color: color: #333333;
 }
 body {
   font-family: 'Roboto', sans-serif;
-}
-
-html {
-  height: 100%;
-}
-body {
   font-size: 15px;
   line-height: 1.46666667;
   color: #777777;
@@ -43,21 +37,25 @@ body {
   font-weight: 300;
 }
 
+html {
+  height: 100%;
+}
+
+
 /*Links
 ---------------------------------- */
 a {
-  color: #09afdf;
+  color: #777777; 
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-a:hover {
-  color: #0c9ec7;
-}
+a:hover,
 a:focus,
 a:active {
   outline: none;
   color: #0c9ec7;
+  text-decoration: none; 
 }
 
 /* Buttons
@@ -83,9 +81,9 @@ a:active {
 .btn-default:active,
 .btn-default.active,
 .open > .dropdown-toggle.btn-default {
-  color: #ffffff;
-  background-color: #0c9ec7;
-  border-color: #0c9ec7;
+  color: #0c9ec7;
+  background-color: white;
+  border: 1px solid #0c9ec7;
 }
 .btn-default.disabled,
 .btn-default[disabled],
@@ -100,6 +98,14 @@ fieldset[disabled] .btn-default {
 .navbar-default {
   height: 70px;
   border: none;
+  width: 100%;
+  /* Para que nav aparezca al hacer scroll
+  margin-bottom: 0;
+  margin-top: -120px;
+  -webkit-transition: all ease 1.5s;
+  transition: all ease 1.5s;
+  -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);*/
 }
 .header-dropdown-buttons {
   margin-top: 12px;
@@ -114,9 +120,88 @@ button.navbar-toggle {
   border: none;
   background-color: #f8f8f8;
 }
+/*.floating {
+  margin-top: 0;
+}*/
+/* Hover links & buttons */
+.navbar-default .navbar-nav li a:hover,
+.navbar-default .navbar-nav li a:focus,
+.navbar-default .navbar-nav li a:active {
+  color: #0c9ec7;
+  text-decoration: none; 
+}
+
+
+
+
+/* Scroll to top
+---------------------------------- */
+.scrollToTop {
+  color: #fff;
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1005;
+  display: none;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.scrollToTop i {
+  line-height: 45px;
+  font-size: 24px;
+}
+.scrollToTop:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+/* Small devices (tablets, phones less than 767px) */
+@media (max-width: 767px) {
+  .scrollToTop {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  .scrollToTop i {
+    line-height: 35px;
+    font-size: 20px;
+  }
+}
+
+
+/* MODAL CONTENT */
+/* enable absolute positioning */
+.inner-addon { 
+    position: relative; 
+}
+
+/* style icon */
+.inner-addon .fa {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+
+/* align icon */
+.left-addon .fa  { left:  0px;}
+.right-addon .fa { right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
+
 
 /* FOOTER Social icons block
 ---------------------------------- */
+footer {
+  background-color: #f8f8f8;
+}
 .social-links {
   list-style: none;
   font-size: 0;

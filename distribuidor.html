@@ -21,7 +21,7 @@
       <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
       <link rel="stylesheet" href="css/animate.css">
       <link rel="stylesheet" href="css/helpers.css">
-      <link rel="stylesheet" href="css/home.css">
+      <link rel="stylesheet" href="css/common.css">
       <link rel="stylesheet" href="css/distribuidor.css">
   </head>
   <body>
@@ -57,33 +57,8 @@
                                 <div class="header-dropdown-buttons align-center">
                                     <a href="#contact" class="btn btn-sm hidden-xs btn-default scroller"><i class="fa fa-user-plus padding-r-5"></i> Súmate</a>
                                     <a href="#contact" class="btn btn-sm visible-xs btn-default margin-bottom-5 scroller"><i class="fa fa-user-plus padding-r-5"></i> Súmate</a>
-                                    <div class="btn-group dropdown">
-                                      <button type="button" class="btn dropdown-toggle btn-default btn-sm btn-block" data-toggle="dropdown"><i class="fa fa-lock padding-r-5"></i> Iniciar Sesión</button>
-                                      <ul class="dropdown-menu dropdown-menu-right dropdown-animation">
-                                          <li>
-                                              <form class="login-form margin-clear">
-                                                  <div class="form-group has-feedback">
-                                                      <label class="control-label">R.U.T.</label>
-                                                      <input type="text" class="form-control" placeholder="" id="frmlogin_rut">
-                                                      <i class="fa fa-user form-control-feedback"></i>
-                                                  </div>
-                                                  <div class="form-group has-feedback">
-                                                      <label class="control-label">Contraseña</label>
-                                                      <input type="password" id="frmlogin_pass" class="form-control" placeholder="">
-                                                      <i class="fa fa-lock form-control-feedback"></i>
-                                                  </div>
-
-                                                  <label id="frmlogin_mensaje_error" style="font-family: Roboto; font-size: 11px; color: red; display: none;">
-                                                  </label>
-                                                   
-                                                  <button type="button" class="btn btn-gray btn-sm" id="frmlogin_btn_ingresar"> Ingresar</button>
-                                                  <ul>
-                                                      <li><a href="reset_password.html">Olvidaste tu Contraseña?</a></li>
-                                                  </ul>
-                                              </form>
-                                          </li>
-                                      </ul>
-                                  </div>
+                                    <a href="" data-toggle="modal" data-target="#logInDist" id="panel_login" class="btn btn-sm hidden-xs btn-default">Entrar</a>
+                                    <a href="" data-toggle="modal" data-target="#logInDist" id="panel_login" class="btn btn-sm visible-xs btn-default">Entrar</a>
                                 </div> <!-- header buttons end-->
                             </li>
                         </ul>
@@ -108,8 +83,8 @@
               <div class="item active item1">
                   <div class="container">
                       <div class="carousel-caption blank">
-                          <h1>Únete a la nueva forma
-                            <br>de vender cilindros de gas
+                          <h1>La nueva forma de 
+                            <br>vender cilindros de gas
                           </h1>
                           <p class="hidden-xs">Sé parte de GassApp.</p>
                           <p>
@@ -152,7 +127,7 @@
               <div class="text-dash">
                 <h1>Administra tu flota y ventas
                 <br>en línea</h1>
-                <div class="box">
+                <div class="box margin-bottom-40">
                     <p>GassApp ha pensado en cada uno de los distribuidores de gas.</p>
                     <ul class="dash-list">
                       <li class="dash-list-item">
@@ -179,11 +154,11 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-xs-12 text-center">
+            <div class="col-md-6 col-xs-12 text-center padding-bottom-40 white-back">
               <!-- imagenes computador y dash -->
               <div class="wrap">
                 <div class="section-image wow fadeInRight animated" data-wow-delay="0.1s"> 
-                  <img src="images/distribuidor-dash.png" width="600" height="auto">
+                  <img src="images/distribuidor-dash.png" class="dash-preview responsive-img">
                 </div>
               </div>
             </div>
@@ -236,8 +211,7 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="wrap">
-                    <h1>Tus clientes siempre cerca de ti. 
-                    <br>¡Apúrate!, porque ya tienes otro pedido entrante </h1>
+                    <h1>Tus clientes siempre cerca de ti.</h1>
                     <div class="box">
                       <p>Verifica que la dirección que indica tu cliente coincida con la que detecta el GPS de tu teléfono. Avísale tu llegada al domicilio. La mejor atención marcará la diferencia!
                       Podrás fidelizar y con ello ganar a más y nuevos clientes. </p>
@@ -356,6 +330,82 @@
           <!-- .footer end -->
       </footer>
       <!-- footer end -->
+
+
+      <!--
+      =================================
+      Modal LogIN
+      =================================
+      -->
+      <div id="logInDist" class="modal fade" role="dialog">
+          <div class="modal-dialog modal-dialog-pop">
+              <!-- Modal content-->
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">Iniciar sesión</h4>
+                  </div>
+                  <div class="modal-body">
+                      <p>Ingrese sus datos.</p>
+                      <!-- Email -->
+                      <div class="inner-addon left-addon">
+                          <i class="fa fa-envelope-o"></i>
+                          <input id="frmlogin_rut" class="form-control" type="email" placeholder="Email"/>
+                      </div>
+                      <br>
+                      <!-- Password -->
+                      <div class="inner-addon left-addon">
+                          <i class="fa fa-key"></i>
+                          <input id="frmlogin_pass" class="form-control" type="password" placeholder="Contraseña"/>
+                      </div>
+                      <br>
+                      <!-- Mensaje error -->
+                      <label id="frmlogin_mensaje_error" style="font-family: Roboto; font-size: 11px; color: red; display: none;">
+                      </label>
+                      <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#logInDist_forgot">
+                          <font style="font-family: Roboto; font-size: 11px; color: #4baee2;">
+                              <b>¿Olvidaste tu Contraseña?</b>
+                          </font>
+                      </a>
+                      <br>
+                          <br>
+                              <button type="button" class="btn btn-primary active" id="frmlogin_btn_ingresar" readonly="readonly">Ingresar</button>
+                              <font style="font-family: Roboto; font-size: 11px; color: #666666; text-align: center;">
+                                  ¿TodavÍa no tienes una cuenta? 
+                                  <a class="scroller" href="#registro" data-dismiss="modal"><span class="celeste"><b>Regístrate</b></span></a> 
+                              </font>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+
+      <!--
+      =================================
+      Modal Forgot Pass
+      =================================
+      -->
+      <div id="logInDist_forgot" class="modal fade" role="dialog">
+          <div class="modal-dialog modal-dialog-pop">
+              <!-- Modal content-->
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">Recuperar Contraseña</h4>
+                  </div>
+                  <div class="modal-body">
+                      <p>Ingrese su Email.</p>
+
+                      <input id="email_olvidado" style="width: 300px; height: 40px; border-color: #cccccc; border-style: solid; padding: 5px;" type="email" placeholder="micorreo@midonio.cl" />
+
+                      <br>
+                      <br>
+                      <button type="button" class="btn btn-primary active" id="btn_recuperar_pass" alt="Recuperar Contraseña" readonly="readonly">Recuperar Contraseña</button>
+
+                  </div>
+              </div>
+          </div>
+      </div>
 
 
 

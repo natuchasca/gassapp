@@ -3,6 +3,7 @@
 Faqs
 ======================================================
 */
+
 .faq-area .nav li a {
 	padding: 10px 6px;
 }
@@ -21,7 +22,6 @@ Faqs
 	padding: 20px;
 }
 
-
 .panel {
 	box-shadow: none;
 	border: none;
@@ -31,8 +31,6 @@ Faqs
 	font-weight: normal;
 	font-size: 16px;
 }
-
-
 
 .panel-body {
 	background: #fafafa;
