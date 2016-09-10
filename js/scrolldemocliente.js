@@ -60,16 +60,11 @@ $(document).ready(function(){
   })
   .setClassToggle(".step-7", "show").addTo(controller);
 
-  var scene8 = new ScrollMagic.Scene({
-    triggerElement: "#eight",
-    duration: 400
-  })
-  .setClassToggle(".step-8", "show").addTo(controller);
 
 
   // Para desaparecer el celular y dots
   $(window).scroll(function(){
-    var threshold = 1800; // number of pixels before bottom of page that you want to start fading
+    var threshold = 2000; // number of pixels before bottom of page that you want to start fading
     var op = (($(document).height() - $(window).height()) - $(window).scrollTop()) - threshold;
     if( op <= 0 ){
       $(".phone-back").hide();

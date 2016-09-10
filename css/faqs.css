@@ -6,10 +6,12 @@ Faqs
 
 .faq-area .nav li a {
 	padding: 10px 6px;
+	font-size: 13px;
 }
 @media (min-width: 370px) {
   .faq-area .nav li a {
 	padding: 10px 15px;
+	font-size: 16px;
 	}
 }
 

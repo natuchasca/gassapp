@@ -6,7 +6,7 @@ $(document).ready(function(){
 
   var phone = new ScrollMagic.Scene({
     triggerElement: "#demodist",
-    offset: 2687,
+    offset: 1687,
     duration: 0
   })
   .setClassToggle("#phone", "pinIt").addTo(controller);
@@ -26,7 +26,7 @@ $(document).ready(function(){
 
   var scene2 = new ScrollMagic.Scene({
     triggerElement: "#two",
-    duration: 400
+    duration: 450
   })
   .setClassToggle(".step-2", "show").addTo(controller);
   

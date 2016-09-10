@@ -78,21 +78,21 @@
       <!-- SECCION DEMO -->
       <section class="demo pv-50" id="demodist">
         <!-- Dots de Links -->
-        <div class="dots-menu hidden-xs wow fadeInLeft" data-wow-delay="0.1s">
+        <div class="dots-menu dots-fillup hidden-xs wow fadeInLeft" data-wow-delay="0.1s">
           <ul>
-            <li><a href="#one">&#9679;</a></li>
-            <li><a href="#two">&#9679;</a></li>
-            <li><a href="#three">&#9679;</a></li>
-            <li><a href="#four">&#9679;</a></li>
-            <li><a href="#five">&#9679;</a></li>
-            <li><a href="#six">&#9679;</a></li>
-            <li><a href="#seven">&#9679;</a></li>
-            <li><a href="#eight">&#9679;</a></li>
+            <li><a href="#one"></a></li>
+            <li><a href="#two"></a></li>
+            <li><a href="#three"></a></li>
+            <li><a href="#four"></a></li>
+            <li><a href="#five"></a></li>
+            <li><a href="#six"></a></li>
+            <li><a href="#seven"></a></li>
+            <li><a href="#eight"></a></li>
           </ul>
         </div>
         <!-- PHONE -->
-        <div id="phone" class="phone-back hidden-xs wow fadeIn" data-wow-delay="0.1s">
-          <div class="screens">
+        <div id="phone" class="phone-back">
+          <div class="screens hidden-xs wow fadeIn" data-wow-delay="0.1s">
             <div class="holder step-1">
               <img src="images/1.jpg">
             </div>
@@ -114,39 +114,55 @@
             <div class="holder step-7">
               <img src="images/7.jpg">
             </div>
-            <div class="holder step-8">
-              <img src="images/8.jpg">
+          </div>
+          <div class="screens visible-xs wow fadeIn" data-wow-delay="0.1s">
+            <div class="holder step-1">
+              <img src="images/1b.png">
+            </div>
+            <div class="holder step-2">
+              <img src="images/2b.png">
+            </div>
+            <div class="holder step-3">
+              <img src="images/3b.png">
+            </div>
+            <div class="holder step-4">
+              <img src="images/4b.png">
+            </div>
+            <div class="holder step-5">
+              <img src="images/5b.png">
+            </div>
+            <div class="holder step-6">
+              <img src="images/6b.png">
+            </div>
+            <div class="holder step-7">
+              <img src="images/7b.png">
             </div>
           </div>
           <div class="celu"></div>
         </div>
         <!-- CONTENIDO -->
         <div class="contenido">
-          <div class="bg-1 pv-50 section" id="one">
+          <div class="bg-1 pv-30 section" id="one">
             <div class="container">
               <div class="row">
-                <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="col-md-6 col-sm-6">
                   <div class="wrap">
                       <div class="box">
                         <!-- SECTION HOME CONTENT -->
                         <h1>Descarga <strong>GassApp</strong> y experimenta una mejor calidad de servicio.</h1>
-                        <p><b>Regístrate y accede</b> a esta nueva alternativa de compra.</p> 
-
-                        <!-- DOWNLOAD APPSTORE-->
-                        <!--
-                        <a href="#" class="simple-button appstore-button"><span class="icon appstore"></span>App Store</a>
-                        -->
-
+                        <p class="hidden-xs"><b>Regístrate y accede</b> a esta nueva alternativa de compra.</p>
                         <!-- DOWNLOAD PLAYSTORE-->
-                        <a href="#" class="simple-button playstore-button"><span class="icon playstore"></span>Play Store</a>
+                        <p class="download-buttons">
+                          <img src="images/boton_googleplaycolor.png" class="hvr-float-shadow">
+                        </p>
 
                     </div>
                   </div>
                 </div>
                 <!-- Xs phone -->
-                <div class="col-md-6 col-sm-6 visible-xs col-xs-12">
+                <div class="col-md-6 col-sm-6 visible-xs">
                   <div class="wow fadeInRight animated" data-wow-delay="0.1s">
-                    <img src="images/home-phone.png" class="phone-xs">
+                    
                   </div>
                 </div>
               </div>
@@ -155,7 +171,7 @@
           <div class="bg-2  pv-50 section" id="two">
             <div class="container">
               <div class="row">
-                <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="col-md-6 col-sm-6">
                   <div class="wrap">
                     <div class="box">
                       <h1>Selecciona el color de tu preferencia</h1>
@@ -164,8 +180,8 @@
                   </div>
                 </div>
                 <!-- Xs phone -->
-                <div class="col-md-6 col-sm-6 visible-xs col-xs-12">
-                  <img src="images/home-phone.png" class="phone-xs">
+                <div class="col-md-6 col-sm-6 visible-xs">
+                  
                 </div>
               </div>
             </div>
@@ -173,20 +189,35 @@
           <div class="bg-3  pv-50 section" id="three">
             <div class="container">
               <div class="row">
-                <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="col-md-6 col-sm-6">
                   <div class="wrap">
                     <div class="box">
                       <h1>¿Cuántos cilindros necesitas?</h1>
-                      <p>Puedes seleccionar más de un formato a la vez. 
-                      <br>Haz click en la hoja que está sobre el cilindro, si lo que necesitas es un producto Catalítico. 
-                      <br>Dale prioridad a tus favoritos y solo los camiones que te han ofrecido un buen servicio anterior podrán continuar atendiéndote en el futuro.
-                      <br>Al apretar continuar selecciona tu forma de pago.</p>
+                      <ul class="dash-list">
+                        <li class="dash-list-item">
+                          <span><i class="fa fa-check-square-o fa-2x fa-fw margin-top-5 pull-left celeste"></i></span> 
+                          <p>Puedes seleccionar más de un formato a la vez.</p>
+                        </li>
+
+                        <li class="dash-list-item">
+                          <span><i class="fa fa-envira fa-flip-horizontal fa-2x fa-fw margin-top-5 pull-left celeste"></i></span> 
+                          <p>Haz click en la hoja que está sobre el cilindro, si lo que necesitas es un producto Catalítico.</p>
+                        </li>
+                        <li class="dash-list-item">
+                          <span><i class="fa fa-star-o  fa-2x fa-fw margin-top-5 pull-left celeste"></i></span> 
+                          <p>Dale prioridad a tus favoritos y solo los camiones que te han ofrecido un buen servicio anterior podrán continuar atendiéndote en el futuro.</p>
+                        </li>
+                        <li class="dash-list-item">
+                          <span><i class="fa fa-money fa-2x fa-fw margin-top-5 pull-left celeste"></i></span> 
+                          <p>Al hacer click en el botón Continuar, selecciona tu forma de pago. Con esto, GassApp le informará tu elección al vendedor.</p>
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </div>
                 <!-- Xs phone -->
-                <div class="col-md-6 col-sm-6 visible-xs col-xs-12">
-                  <img src="images/home-phone.png" class="phone-xs">
+                <div class="col-md-6 col-sm-6 visible-xs">
+                  
                 </div>
               </div>
             </div>
@@ -194,20 +225,20 @@
           <div class="bg-4  pv-50 section" id="four">
             <div class="container">
               <div class="row">
-                <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="col-md-6 col-sm-6">
                   <div class="wrap">
                     <div class="box">
                       <h1>Vendedores cercanos</h1>
                       <p>Ahora podrás saber si hay camiones cercanos en tu barrio.
                       Uno de los Camiones Activos, se adjudicará tu pedido. Te sorprenderá lo fácil y rápido que es comprar gas. ¡Espera y veras!...
-                      Si aún no aparecen, invita a tu distribuidor favorito para que utilice GassApp.
+                      Si aún no aparecen en el mapa, invita a tu distribuidor para que se sume a GassApp.
                       No te preocupes, de no haber vendedores cercanos del color de tu preferencia nuestra aplicación te sigerirá una nueva opción de marca.</p>
                     </div>
                   </div>
                 </div>
                 <!-- Xs phone -->
-                <div class="col-md-6 col-sm-6 visible-xs col-xs-12">
-                  <img src="images/home-phone.png" class="phone-xs">
+                <div class="col-md-6 col-sm-6 visible-xs">
+                  
                 </div>
               </div>
             </div>
@@ -215,7 +246,7 @@
           <div class="bg-5  pv-50 section" id="five">
             <div class="container">
               <div class="row">
-                <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="col-md-6 col-sm-6">
                   <div class="wrap">
                     <div class="box">
                       <h1>¡Conoce quien te atiende!</h1>
@@ -226,8 +257,8 @@
                   </div>
                 </div>
                 <!-- Xs phone -->
-                <div class="col-md-6 col-sm-6 visible-xs col-xs-12">
-                  <img src="images/home-phone.png" class="phone-xs">
+                <div class="col-md-6 col-sm-6 visible-xs">
+                  
                 </div>
               </div>
             </div>
@@ -235,7 +266,7 @@
           <div class="bg-6  pv-50 section" id="six">
             <div class="container">
               <div class="row">
-                <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="col-md-6 col-sm-6">
                   <div class="wrap">
                     <div class="box">
                       <h1>Tiempo y distancia</h1>
@@ -245,8 +276,8 @@
                   </div>
                 </div>
                 <!-- Xs phone -->
-                <div class="col-md-6 col-sm-6 visible-xs col-xs-12">
-                  <img src="images/home-phone.png" class="phone-xs">
+                <div class="col-md-6 col-sm-6 visible-xs">
+                  
                 </div>
               </div>
             </div>
@@ -254,7 +285,7 @@
           <div class="bg-7  pv-50 section" id="seven">
             <div class="container">
               <div class="row">
-                <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="col-md-6 col-sm-6">
                   <div class="wrap">
                     <div class="box">
                       <h1>Califica <strong>tu experiencia</strong></h1>
@@ -264,8 +295,8 @@
                   </div>
                 </div>
                 <!-- Xs phone -->
-                <div class="col-md-6 col-sm-6 visible-xs col-xs-12">
-                  <img src="images/home-phone.png" class="phone-xs">
+                <div class="col-md-6 col-sm-6 visible-xs">
+                  
                 </div>
               </div>
             </div>
@@ -277,16 +308,29 @@
                   <div class="wrap">
                     <div class="box">
                       <h1>Accede con tu cuenta y descubre los beneficios que <strong>hemos creado para ti!</strong></h1>
-                      <p>
-                      Registro e historial de compras.
-                      <br> Concursos y promociones personalizadas.
-                      <br>Locales Cercanos fuera de horario.
-                      <br> Síguenos en nuestras redes sociales!</p>
+                      <ul class="dash-list">
+                        <li class="dash-list-item wow fadeInUp" data-wow-delay="0.3s">
+                          <span><i class="fa fa-bar-chart fa-2x fa-fw margin-top-5 pull-left celeste"></i></span> 
+                          <p>Registro e historial de compras.</p>
+                        </li>
+                        <li class="dash-list-item wow fadeInUp" data-wow-delay="0.6s">
+                          <span><i class="fa fa fa-trophy fa-2x fa-fw margin-top-5 pull-left celeste"></i></span> 
+                          <p>Concursos y promociones.</p>
+                        </li>
+                        <li class="dash-list-item wow fadeInUp" data-wow-delay="0.6s">
+                          <span><i class="fa fa-moon-o fa-flip-horizontal fa-2x fa-fw margin-top-5 pull-left celeste"></i></span> 
+                          <p>Locales Cercanos fuera de horario.</p>
+                        </li>
+                        <li class="dash-list-item wow fadeInUp" data-wow-delay="0.9s">
+                          <span><i class="fa fa-heart-o fa-2x fa-fw margin-top-5 pull-left celeste"></i></span> 
+                          <p>Síguenos en nuestras redes sociales!</p>
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </div>
                 <div class="col-md-6 col-sm-6">
-                  <img src="images/img-dash.jpg" class="dash-full">
+                  <img src="images/img-dash.jpg" class="dash-full img-responsive">
                 </div>
               </div>
             </div>

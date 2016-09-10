@@ -11,7 +11,12 @@
  */
 
 
-
+/**
+ * ========================================
+ * MOBILE FIRST and globals
+ * ========================================
+ */
+ 
 /* SLIDER */
 .item1 {
   background: url('../images/slider-distribuidor-2.jpg') 50% 0 no-repeat;
@@ -289,10 +294,11 @@ list-style: none;
   background-color: #ffffff;
   }
 
+
 /* DASH */
 .dash {
   background-color: #fff;
-  height: 631px;
+  min-height: 631px;
 }
 ul.dash-list {
   list-style: none;
@@ -310,46 +316,48 @@ li.dash-list-item p {
   min-width: 300px;
   max-width: 600px;
 }
-.white-back {
-  background-color: white;
-}
 
 
 /* DEMO */
 .demo {
-  background-image: url("../images/cel.png");
-  background-size: 100%;
+  background-image: url("../images/bg-dist.jpg");
+  background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position: 0px 180px;
+  color: black;
 }
 .screens {
-    position: fixed;
-    left: 43%;
-    top: 50%;
-    overflow: hidden;
-    z-index: 10;
-    margin-top: -192px;
-    width: 250px;
-    height: 450px;
-    margin-left: 270px;
-    border-radius: 3px;
-}
-.dots-menu ul li {
-  list-style: none;
-}
-.dots-menu {
   position: fixed;
-  top: 300px;
-  left: 20px;
-  visibility: hidden;
+  left: -10%;
+  top: 50%;
+  z-index: 10;
+  margin-top: -100px;
+  width: auto;
+  height: auto;
+  margin-left: 0;
 }
+
 .section {
   height: 631px;
-  padding-top: 180px;
 }
 .holder {
   display: none;
+}
+.wrap .box,
+.wrap {
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+.box h1 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.box p {
+  font-size: 14px;
+}
+.contenido {
+  padding-bottom: 100px;
 }
 
 
@@ -425,11 +433,99 @@ li.dash-list-item p {
 
 
 
-
-/*------------------------------ */
-/* DESKTOP
---------------------------------- */
 @media ( min-width: 768px ) {
+  .sumate {
+    margin-top: 0;
+  }
+  .carousel {
+  height: 651px; /*full frame*/
+  /*height: 470px; mid frame*/
+  }
+  .carousel-caption.blank {
+    top: 200px; /*full frame*/
+  }
+
+  .carousel-caption {
+  position: absolute;
+  left: 15%;
+  right: 15%;
+  bottom: 20px;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding: 20px 40px;
+  color: #ffffff;
+  text-align: left;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  }
+  .carousel-caption .btn {
+  text-shadow: none;
+  z-index: 3000;
+  }
+
+  .carousel .item {
+  height: 651px; /*full frame*/
+  /*height: 470px; mid frame*/
+  background-color: #777;
+  }
+
+  .carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 651px; /*full frame*/
+  /*height: 470px; mid frame*/
+  }
+  .demo {
+    background-image: url("../images/bg-dist.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: black;
+  }
+  .screens {
+    position: fixed;
+    left: 43%;
+    top: 20%;
+    z-index: 10;
+    margin-top: -100px;
+    width: auto;
+    height: auto;
+    margin-left: 50px;
+  }
+  .wrap .box,
+  .wrap {
+      -webkit-transition: 0.5s;
+      -o-transition: 0.5s;
+      transition: 0.5s;
+  }
+  .box {
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    line-height: 26px;
+    font-weight: 400;
+    font-style: normal;
+    color: #111;
+    font-size: 15px;
+    padding-left: 40px;
+  }
+  .box h1 {
+    font-size: 50px;
+    font-weight: 300;
+  }
+  .box p { margin: 15px 0 }
+
+}
+
+
+
+/**
+ * ========================================
+ * DESKTOP media
+ * ========================================
+ */
+@media ( min-width: 1068px ) {
   .sumate {
     margin-top: 0;
   }
@@ -736,23 +832,21 @@ li.dash-list-item p {
 
   /* DEMO */
   .demo {
-    background-image: url("../images/cel.png");
-    background-size: 25%;
+    background-image: url("../images/bg-dist.jpg");
+    background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position: 800px 60px;
+    color: black;
   }
   .screens {
       position: fixed;
       left: 43%;
-      top: 50%;
-      overflow: hidden;
+      top: 20%;
       z-index: 10;
-      margin-top: -192px;
-      width: 250px;
-      height: 450px;
+      margin-top: -100px;
+      width: auto;
+      height: auto;
       margin-left: 270px;
-      border-radius: 3px;
   }
   .dots-menu ul li {
     list-style: none;
@@ -766,9 +860,6 @@ li.dash-list-item p {
   .section {
     height: 631px;
     padding-top: 180px;
-  }
-  .holder {
-    display: none;
   }
   /* Backgrounds de secciones 
   .bg-1 { 

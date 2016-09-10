@@ -236,7 +236,7 @@
 						<div class="feature-box-2 right margin-clear wow fadeInUp" data-wow-delay="0.3s">
 							<div class="col-md-1 col-xs-2">
 								<span class="icon without-bg">
-									<img src="images/pin_cliente.png" height="40" width="40" class="icon-app">
+									<img src="images/pin_cliente.png" class="icon-app">
 								</span>
 							</div>
 							<div class="col-md-11 col-xs-10">
@@ -252,7 +252,7 @@
 						<div class="feature-box-2 right margin-clear wow fadeInUp" data-wow-delay="0.6s">
 							<div class="col-md-1 col-xs-2">
 								<span class="icon without-bg">
-									<img src="images/pin_transportista.png" height="40" width="40" class="icon-app">
+									<img src="images/pin_distribuidor1.png" class="icon-app">
 								</span>
 							</div>
 							<div class="col-md-11 col-xs-10">
@@ -268,14 +268,14 @@
 						<div class="feature-box-2 right margin-clear wow fadeInUp" data-wow-delay="0.9s">
 							<div class="col-md-1 col-xs-2">
 								<span class="icon without-bg">
-									<img src="images/pin_transportista.png" height="40" width="40" class="icon-app">
+									<img src="images/pin_transportista.png" class="icon-app">
 								</span>
 							</div>
 							<div class="col-md-11 col-xs-10">
 								<a href="distribuidor.html#demodist">
 									<div class="body">
 										<h4><b>Vendedor</b></h4>
-										<p>Recibe pedidos directamente en tu celular y optimiza tu tiempo y stock accediendo a pedidos georeferenciados que podrás atender de forma rápida y oportuna. Además podrás hacer más eficiente tu ruta y servicio, fidelizando tus clientes!</p>
+										<p>Recibe pedidos directamente en tu celular y optimiza tu tiempo y stock accediendo a clientes georeferenciados que podrás atender de forma rápida y oportuna. Además podrás hacer más eficiente tu ruta y servicio, fidelizando tus clientes.</p>
 									</div>
 								</a>
 							</div>
@@ -326,7 +326,7 @@
 								<div class="separator"></div>
 								<div class="testimonial-body">
 									<blockquote>
-										<p>GassApp es una herramienta para fomentar una mejor calidad de servicio de ventas de cilindros de gas ademas de optimizar combustible y personas a cargo de contestar llamadas.</p>
+										<p>GassApp fomenta una mejor calidad de servicio para la distribución y venta de cilindros de gas y nos ayuda a optimizar nuestros procesos internos. Además, nos ofrece la posibilidad de disminuir los costos de operación diaria, como por ejemplo, el combustible y horas hombre en ruta.</p>
 									</blockquote>
 									<div class="testimonial-info-1">- Emilio Soto</div>
 									<div class="testimonial-info-2">Distribuidor</div>
@@ -413,86 +413,9 @@
 		<script src="js/wow.min.js"></script>
 		<script>
 		  new WOW().init();
-
-			/* =======================================
-			* Scroll Spy
-			* =======================================
-			
-			$( window ).on( 'scroll', function() {
-				// Floating Header
-				if ( $( window ).scrollTop() > 60 ) {
-					$( '.navbar-default' ).addClass( 'floating' );
-				} else {
-					$( '.navbar-default' ).removeClass( 'floating' );
-				}
-			});*/
 		</script>
 		<script>
 			$(document).ready(function() {
-			 
-			  //Owl carousel
-			//-----------------------------------------------
-			if ($('.owl-carousel').length>0) {
-				$(".owl-carousel.carousel").owlCarousel({
-					items: 4,
-					pagination: false,
-					navigation: true,
-					navigationText: false
-				});
-				$(".owl-carousel.carousel-autoplay").owlCarousel({
-					items: 4,
-					autoPlay: 5000,
-					pagination: false,
-					navigation: true,
-					navigationText: false
-				});
-				$(".owl-carousel.clients").owlCarousel({
-					items: 6,
-					autoPlay: true,
-					pagination: false,
-					itemsDesktopSmall: [992,4],
-					itemsTablet: [768,4],
-					itemsMobile: [479,3]
-				});
-				$(".owl-carousel.content-slider").owlCarousel({
-					singleItem: true,
-					autoPlay: 5000,
-					navigation: false,
-					navigationText: false,
-					pagination: false
-				});
-				$(".owl-carousel.content-slider-with-controls").owlCarousel({
-					singleItem: true,
-					autoPlay: false,
-					navigation: true,
-					pagination: true
-				});
-				$(".owl-carousel.content-slider-with-large-controls").owlCarousel({
-					singleItem: true,
-					autoPlay: false,
-					navigation: true,
-					pagination: true
-				});
-				$(".owl-carousel.content-slider-with-controls-autoplay").owlCarousel({
-					singleItem: true,
-					autoPlay: 5000,
-					navigation: true,
-					pagination: true
-				});
-				$(".owl-carousel.content-slider-with-large-controls-autoplay").owlCarousel({
-					singleItem: true,
-					autoPlay: 5000,
-					navigation: true,
-					pagination: true
-				});
-				$(".owl-carousel.content-slider-with-controls-autoplay-hover-stop").owlCarousel({
-					singleItem: true,
-					autoPlay: 5000,
-					navigation: true,
-					pagination: true,
-					stopOnHover: true
-				});
-			};
 			//Scroll totop
 			//-----------------------------------------------
 			$(window).scroll(function() {
@@ -510,8 +433,8 @@
 			});
 		</script>
 
-		
 		<!-- Custom JavaScript -->
+		<script src="js/home.js"></script>
 
 
 

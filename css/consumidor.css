@@ -9,22 +9,116 @@
  3.- Registro
  */
 
-/* Mobile first */
+
+/**
+ * ========================================
+ * MOBILE FIRST and globals
+ * ========================================
+ */
+body { 
+  background-image: url("../images/bg2.jpg"); 
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+/* DEMO */
+.screens {
+  position: fixed;
+  left: -10%;
+  top: 50%;
+  z-index: 10;
+  margin-top: -100px;
+  width: auto;
+  height: auto;
+  margin-left: 0;
+}
+
+.section {
+  height: 631px;
+}
+.holder {
+  display: none;
+}
+.wrap .box,
 .wrap {
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+.box h1 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.box p {
+  font-size: 14px;
+}
+
+
+/* Lista con íconos */
+ul.dash-list {
+  list-style: none;
+  margin-left: -20px;
+}
+li.dash-list-item {
+  height: auto;
+}
+li.dash-list-item p {
+  padding-top: 5px;
+  padding-left: 46px;
+}
+.dash-preview {
   width: 100%;
   min-width: 300px;
+  max-width: 600px;
 }
-.phone-xs,
-.dash-full {
-  width: 100%;
-  min-width: 300px;
+
+
+
+/* DOTS MENU SIDER */
+.dots-menu {
+  position: fixed;
+  top: 300px;
+  left: -18px;
+  visibility: hidden;
+  z-index: 1000;
+  list-style: none;
 }
+.dots-menu li {
+  height: 12px;
+  width: 12px;
+  list-style: none;
+  margin-bottom: 10px;
+}
+.dots-menu a {
+  height: 12px;
+  width: 12px;
+  border: 1px solid black;
+  border-radius: 50%;
+  list-style: none;
+  margin-bottom: 5px;
+  display: block;
+}
+.dots-menu a.active {
+  background-color: black;
+}
+.dots-menu li a:hover,
+.dots-menu li a:focus {
+  overflow: hidden;
+  background-color: #30aee5;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+}
+
+
+
 
 /* Call to action */
 .call-to {
-  background-image: url("../images/2-transportista.jpg");
+  background-image: url("../images/call-to-client.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   color: white;
   height: auto;
   width: 100%;
@@ -45,14 +139,6 @@
 /* Desktop */
 @media ( min-width: 768px ) {
   /* DEMO */
-    /* Backgrounds de secciones */
-    body { 
-    background-image: url("../images/bg2.jpg"); 
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    }
-
     .phone-back {
       background: url(../images/hand-mockup.png) top no-repeat;
       width: 800px;
@@ -76,18 +162,9 @@
       margin-left: 170px;
       border-radius: 3px;
     }
-    .dots-menu ul li {
-      list-style: none;
-    }
-    .dots-menu {
-      position: fixed;
-      top: 300px;
-      left: -18px;
-      visibility: hidden;
-      z-index: 1000;
-    }
+
     .section {
-      height: 631px;
+      min-height: 631px;
       padding-top: 140px;
     }
     .holder {
@@ -204,7 +281,7 @@
     }
     .section {
       height: 631px;
-      padding-top: 180px;
+      padding-top: 150px;
     }
     .holder {
       display: none;
@@ -277,13 +354,9 @@
 
     /* Call to action */
     .call-to {
-      background-image: url("../images/2-transportista.jpg");
-      background-size: cover;
-      background-repeat: no-repeat;
-      color: white;
       height: 200px;
       width: 100%;
-      z-index: 2000;
+      z-index: 250;
     }
     .call-back {
       background-color: rgba(48, 174, 229, 0.8);
