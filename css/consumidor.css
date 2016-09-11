@@ -72,7 +72,13 @@ li.dash-list-item p {
   min-width: 300px;
   max-width: 600px;
 }
-
+.dash-full {
+  display: block;
+}
+.bg-8 {
+  min-height: 631px;
+  height: 100%;
+}
 
 
 /* DOTS MENU SIDER */
@@ -118,7 +124,7 @@ li.dash-list-item p {
   background-image: url("../images/call-to-client.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center top;
   color: white;
   height: auto;
   width: 100%;

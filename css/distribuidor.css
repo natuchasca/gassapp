@@ -16,13 +16,15 @@
  * MOBILE FIRST and globals
  * ========================================
  */
- 
+
 /* SLIDER */
 .item1 {
-  background: url('../images/slider-distribuidor-2.jpg') 50% 0 no-repeat;
+  background: url('../images/slider-distribuidor-0.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .item2 {
-  background: url('../images/slider-distribuidor-1.jpg') 50% 0 no-repeat;
+  background: url('../images/slider-distribuidor-4.jpg') 50% 0 no-repeat;
 } 
 
 .carousel {
