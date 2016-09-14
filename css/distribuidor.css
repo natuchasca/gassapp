@@ -7,7 +7,8 @@
  1.- Slider
  2.- Dash
  3.- Demo
- 4.- Call To Action 
+ 4.- Registro
+ 5.- Contacto
  */
 
 
@@ -435,6 +436,13 @@ li.dash-list-item p {
 
 
 
+
+
+/**
+ * ========================================
+ * TABLETS
+ * ========================================
+ */
 @media ( min-width: 768px ) {
   .sumate {
     margin-top: 0;

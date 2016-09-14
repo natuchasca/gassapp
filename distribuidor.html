@@ -55,8 +55,8 @@
                         <ul class="nav navbar-nav navbar-right">
                                 <!-- header buttons -->
                                 <div class="header-dropdown-buttons align-center">
-                                    <a href="#contact" class="btn btn-sm hidden-xs btn-default scroller"><i class="fa fa-user-plus padding-r-5"></i> Súmate</a>
-                                    <a href="#contact" class="btn btn-sm visible-xs btn-default margin-bottom-5 scroller"><i class="fa fa-user-plus padding-r-5"></i> Súmate</a>
+                                    <a href="#sumate" class="btn btn-sm hidden-xs btn-default scroller"><i class="fa fa-user-plus padding-r-5"></i> Súmate</a>
+                                    <a href="#sumate" class="btn btn-sm visible-xs btn-default margin-bottom-5 scroller"><i class="fa fa-user-plus padding-r-5"></i> Súmate</a>
                                     <a href="" data-toggle="modal" data-target="#logInDist" id="panel_login" class="btn btn-sm hidden-xs btn-default">Entrar</a>
                                     <a href="" data-toggle="modal" data-target="#logInDist" id="panel_login" class="btn btn-sm visible-xs btn-default">Entrar</a>
                                 </div> <!-- header buttons end-->
@@ -88,7 +88,7 @@
                           </h1>
                           <p class="hidden-xs">Sé parte de GassApp.</p>
                           <p>
-                              <a class="btn btn-lg btn-primary sumate scroller" href="#contact" role="button">Súmate</a>
+                              <a class="btn btn-lg btn-primary sumate scroller" href="#sumate" role="button">Súmate</a>
                           </p>
                       </div>
                   </div>
@@ -174,7 +174,7 @@
       <section class="demo pv-70" id="demodist">
         <!-- PHONE -->
         <div id="phone" class="phone-back">
-          <div class="screens  wow fadeIn animated" data-wow-delay="0.1s">
+          <div class="screens">
             <div class="holder step-1">
               <img src="images/8b.png">
             </div>
@@ -227,6 +227,183 @@
           </div>
         </div>
       </section>
+      <!--
+      =================================
+      Call To Action / Registro
+      =================================
+      -->
+      <div id="sumate" class="sumate pv-40">
+          <div class="container">
+              <div class="row">
+                  <div class="form-block center-block text-center ph-30 space-bottom">
+                      <h1>Súmate a GassApp</h1>
+                      <p class="margin-bottom-30">Regístrate ingresando todos los datos correctamente. Una vez validada la información, podrás ser parte de GassApp y acceder a tu administrador.</p>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12 col-xs-12">
+
+                      <form class="form-horizontal" id="formulario" enctype="multipart/form-data">
+                  
+                          <div class="form-group" id="frg_rut">
+                              <label class="control-label col-md-3 col-sm-3 col-xs-4">Rut:</label>
+                              <div class="col-md-9 col-sm-9 col-xs-8">
+                                  <input type="text" class="form-control" required="required" id="rut" name="rut">
+                              </div>
+                          </div>
+
+                          <div class="form-group" id="frg_razon_social">
+                              <label class="control-label col-md-3 col-sm-3 col-xs-4">Razon Social:</label>
+                              <div class="col-md-9 col-sm-9 col-xs-8">
+                                  <input type="text" class="form-control" required="required" id="razon_social" name="razon_social">
+                              </div>
+                          </div>
+                          <div class="form-group" id="frg_giro">
+                              <label class="control-label col-md-3 col-sm-3 col-xs-4">Giro:</label>
+                              <div class="col-md-9 col-sm-9 col-xs-8">
+                                  <input type="text" class="form-control" required="required" id="giro" name="giro">
+                              </div>
+                          </div>
+                          <div class="form-group" id="frg_nombre_fantasia">
+                              <label class="control-label col-md-3 col-sm-3 col-xs-4">Nombre Fantasía:</label>
+                              <div class="col-md-9 col-sm-9 col-xs-8">
+                                  <input type="text" class="form-control" required="required" id="nombre_fantasia" name="nombre_fantasia"/>
+                              </div>
+                          </div>
+                          <div class="form-group" id="frg_nombre_representante_legal">
+                              <label class="control-label col-md-3 col-sm-3 col-xs-4">Representante Legal:</label>
+                              <div class="col-md-9 col-sm-9 col-xs-8">
+                                  <input type="text" class="form-control" required="required" id="nombre_representante_legal" name="nombre_representante_legal">
+                              </div>
+                          </div>
+                          <div class="form-group" id="frg_rut_representante_legal">
+                              <label class="control-label col-md-3 col-sm-3 col-xs-4">Rut Representante:</label>
+                              <div class="col-md-9 col-sm-9 col-xs-8">
+                                  <input type="text" required="required" class="form-control" id="rut_representante_legal" name="rut_representante_legal">
+                              </div>
+                          </div>
+
+                          <div class="form-group" id="frg_telefono">
+                              <label class="control-label col-md-3 col-sm-3 col-xs-4">Telefono:</label>
+                              <div class="col-md-9 col-sm-9 col-xs-8">
+                                  <input type="text" class="form-control" id="telefono" name="telefono" required="required">
+                              </div>
+                          </div>
+                          <div class="form-group" id="frg_email">
+                              <label class="control-label col-md-3 col-sm-3 col-xs-4">Email:</label>
+                              <div class="col-md-9 col-sm-9 col-xs-8">
+                                  <input type="email" class="form-control" name="email" id="email" required="required">
+                              </div>
+                          </div>
+                          <div class="form-group" id="frg_registro_region">
+                              <label class="control-label col-md-3 col-sm-3 col-xs-4">Ubicación</label>
+                              <div class="col-xs-8 col-sm-3 col-md-3">
+                                  <select class="form-control margin-bottom-5" name="registro_region" id="registro_region" required="required">
+                                      <option>Región</option>
+                                  </select>
+                              </div>
+                              <div class="col-sm-3 col-md-3 hidden-xs">
+                                  <select class="form-control disabled margin-bottom-5" name="registro_provincia" id="registro_provincia" disabled required="required">
+                                      <option>Provincia</option>
+                                  </select>
+                              </div>
+                              <div class="col-sm-3 col-md-3 hidden-xs">
+                                  <select class="form-control disabled margin-bottom-5" name="registro_comuna" id="registro_comuna" disabled required="required">
+                                      <option>Comuna</option>
+                                  </select>
+                              </div>
+                              <!--visible xs -->
+                              <div class="col-xs-offset-4 col-xs-8 visible-xs">
+                                  <select class="form-control disabled margin-bottom-5" name="registro_provincia" id="registro_provincia" disabled required="required">
+                                      <option>Provincia</option>
+                                  </select>
+                              </div>
+                              <div class="col-xs-offset-4 col-xs-8 visible-xs">
+                                  <select class="form-control disabled margin-bottom-5" name="registro_comuna" id="registro_comuna" disabled required="required">
+                                      <option>Comuna</option>
+                                  </select>
+                              </div>
+                          </div>
+                          <div class="form-group" id="frg_direccion_casa_matriz">
+                              <label class="control-label col-md-3 col-sm-3 col-xs-4">Dirección Casa Matriz:</label>
+                              <div class="col-md-9 col-sm-9 col-xs-8"> 
+                                  <div class="config_map">
+                                      <input id="direccion_casa_matriz" name="direccion_casa_matriz" class ="form-control" type="text">
+                                      <div id="map" style="width: 420px; height: 200px;"></div>
+                                  </div>
+                              </div>
+                          </div>
+
+
+                          <div class="form-group" id="frg_myImage">
+                              <label class="control-label col-md-3 col-sm-3 col-xs-4">Logo Empresa:</label>
+                              <div class="col-md-9 col-sm-9 col-xs-8">
+                                  <input id="latitud" name="latitud" class="hidden" type="hidden"  >
+                                  <input id="longitud" name="longitud" class="hidden" type="hidden"  >
+                                  <input type="file" class="filestyle" name="myImage" id="myImage" accept="image/*" data-buttonname="btn-primary" required="required">
+                              </div>
+                          </div>
+
+
+                          <div class="form-group" id="frg_inputPassword">
+                              <label class="control-label col-md-3 col-sm-3 col-xs-4">Contraseña:</label>
+                              <div class="col-md-9 col-sm-9 col-xs-8">
+                                  <input type="password" class="form-control" name="inputPassword" id="inputPassword" required="required">
+                              </div>
+                          </div>
+                          <div class="form-group" id="frg_inputPassword2">
+                              <label class="control-label col-md-3 col-sm-3 col-xs-4">Confirmar Contraseña:</label>
+                              <div class="col-md-9 col-sm-9 col-xs-8">
+                                  <input type="password" class="form-control" id="inputPassword2" required="required">
+                              </div>
+                          </div>
+
+                          <div class="form-group">
+                              <div class="col-xs-offset-3 col-xs-9">
+                                  <label class="checkbox-inline">
+                                      <input type="checkbox" name="noticias" id="noticias">
+                                      Deseo recibir información en mi cuenta de correo.
+                                  </label>
+                              </div>
+                          </div>
+
+                          <div class="form-group" id="frg_terminos_y_condiciones">
+                              <div class="col-xs-offset-3 col-xs-9">
+                                  <label class="checkbox-inline">
+                                      <input type="checkbox" name="terminos_y_condiciones" id="terminos_y_condiciones" required="required">
+                                      Accepto <a href="#">Términos y Condiciones</a>.
+                                  </label>
+                              </div>
+                          </div>
+
+                          <div class="form-group" id="frg_acuerdo_de_usabilidad">
+                              <div class="col-xs-offset-3 col-xs-9">
+                                  <label class="checkbox-inline">
+                                      <input type="checkbox" name="acuerdo_de_usabilidad" id="acuerdo_de_usabilidad" required="required">
+                                      Accepto <a href="#">Acuerdos de Usabilidad</a>.
+                                  </label>
+                              </div>
+                          </div>
+
+
+                          <div class="form-group" id="frmg_mensajes_error" style="display: none">
+                              <div class="col-xs-offset-3 col-xs-9">
+                                  <label class="checkbox-inline" id="mensaje_error">
+                                  </label>
+                              </div>
+                          </div>
+                          <br>
+                          <div class="form-group">
+                              <div class="col-xs-offset-3 col-xs-9">
+                                  <input type="button" class="btn btn-primary" id="btn_registro_distri" value="Activar cuenta">
+                                  <input type="reset" class="btn btn-default" value="Limpiar">
+                              </div>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
 
       <!--
       =================================
@@ -351,7 +528,7 @@
                       <!-- Rut -->
                       <div class="inner-addon left-addon">
                           <i class="fa fa-user"></i>
-                          <input id="frmlogin_rut" class="form-control" type="" placeholder="Rut"/>
+                          <input id="frmlogin_rut" class="form-control" type="text" placeholder="Rut"/>
                       </div>
                       <br>
                       <!-- Password -->
@@ -372,8 +549,8 @@
                           <br>
                               <button type="button" class="btn btn-primary active" id="frmlogin_btn_ingresar" readonly="readonly">Ingresar</button>
                               <font style="font-family: Roboto; font-size: 11px; color: #666666; text-align: center;">
-                                  ¿TodavÍa no tienes una cuenta? 
-                                  <a class="scroller" href="#registro" data-dismiss="modal"><span class="celeste"><b>Regístrate</b></span></a> 
+                                  ¿Quieres ser parte de GassApp? 
+                                  <a class="scroller" href="#sumate" data-dismiss="modal"><span class="celeste"><b>Súmate</b></span></a> 
                               </font>
                   </div>
               </div>
