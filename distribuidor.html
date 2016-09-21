@@ -100,7 +100,7 @@
                             <br>clientes satisfechos.
                           </h1>
                           <p>Disminuyendo los costos de operación.</p>
-                          <p><a class="btn btn-lg btn-primary scroller" href="#contact" role="button">Contáctanos</a></p>
+                          <p><a class="btn btn-lg btn-primary sumate scroller" href="#sumate" role="button">Súmate</a></p>
                       </div>
                   </div>
               </div>
@@ -371,7 +371,7 @@
                               <div class="col-xs-offset-3 col-xs-9">
                                   <label class="checkbox-inline">
                                       <input type="checkbox" name="terminos_y_condiciones" id="terminos_y_condiciones" required="required">
-                                      Accepto <a href="#">Términos y Condiciones</a>.
+                                      Acepto <a href="#" target="_blank">Términos y Condiciones</a>.
                                   </label>
                               </div>
                           </div>
@@ -380,7 +380,7 @@
                               <div class="col-xs-offset-3 col-xs-9">
                                   <label class="checkbox-inline">
                                       <input type="checkbox" name="acuerdo_de_usabilidad" id="acuerdo_de_usabilidad" required="required">
-                                      Accepto <a href="#">Acuerdos de Usabilidad</a>.
+                                      Acepto <a href="#" target="_blank">Acuerdo de Usabilidad</a>.
                                   </label>
                               </div>
                           </div>
@@ -407,62 +407,25 @@
 
       <!--
       =================================
-      Call To Action / Contact US
+      Call To Action / Más info
       =================================
       -->
-      <section class="call-to" id="contact">
+      <section class="call-to">
         <div class="call-back">
           <div class="container-fluid">
             <div class="row">
               <div class="col-md-12 text-center">
-                <h1><b>Contáctanos</b></h1>
-                <p>Sé parte de GassApp y accede a cientos de beneficios. Escríbenos y nos pondremos en contacto.</p>
+                <h1><b>¿Necesitas más información?</b></h1>
               </div>
             </div>
             <div class="row">
-              <!-- CONTACT -->
-              <div class="contact-us">
-                <form role="form " action="" method="">
-                  <!-- Nombre -->
-                  <div class="form-group">
-                    <label for="name"></label>
-                    <input type="text" class="form-control" id="name" name="name" placeholder="Nombre Completo" required>
-                    <!--placing icon using a span element-->
-                    <span class="icon fa fa-user fa-lg"></span>
-                  </div>
-
-                  <!-- Email -->
-                  <div class="form-group">
-                    <label for="email"></label>
-                    <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
-                    <span class="icon fa fa-envelope fa-lg"></span>
-                  </div>
-
-                  <!-- Teléfono -->
-                  <div class="form-group">
-                    <label for="telefono"></label>
-                    <input type="telefono" class="form-control" id="telefono" name="telefono" placeholder="Telefono" required>
-                    <span class="icon fa fa-phone fa-lg"></span>
-                  </div>
-
-                  <!-- Asunto -->
-                  <div class="form-group">
-                    <label for="sub"></label>
-                    <input type="text" class="form-control" id="sub" name="sub" placeholder="Asunto" required>
-                    <span class="icon fa fa-pencil fa-lg"></span>
-                  </div>
-
-                  <!-- Mensaje -->
-                  <div class="form-group">
-                    <textarea rows="5" cols="30" id="msg" name="msg" placeholder="Mensaje" style="width:100%"></textarea>
-                    <span class="icon-textarea fa fa-paper-plane fa-lg "></span>
-                  </div>
-
-                  <div class="col-sm-12 text-center">
-                    <button type="submit" class="btn btn-default">Enviar</button>
-                  </div>
-                </form>
-              
+              <div class="col-md-6 col-xs-12 text-center pv-30">
+                <h4 class="margin-bottom-20">Escríbenos y responderemos todas tus dudas.</h4>
+                <a data-toggle="modal" data-target="#contact" id="panel_contact" class="btn btn-lg btn-primary" role="button">Contáctanos</a>
+              </div>
+              <div class="col-md-6 col-xs-12 text-center pv-30">
+                <h4 class="margin-bottom-20">Visita la sección de preguntas frecuentes.</h4>
+                <a href="faqs.html" class="btn btn-lg btn-primary" role="button">Preguntas Frecuentes</a>
               </div>
             </div>
           </div>
@@ -547,7 +510,7 @@
                       </a>
                       <br>
                           <br>
-                              <button type="button" class="btn btn-primary active" id="frmlogin_btn_ingresar" readonly="readonly">Ingresar</button>
+                              <button type="button" class="btn btn-primary" id="frmlogin_btn_ingresar" readonly="readonly">Ingresar</button>
                               <font style="font-family: Roboto; font-size: 11px; color: #666666; text-align: center;">
                                   ¿Quieres ser parte de GassApp? 
                                   <a class="scroller" href="#sumate" data-dismiss="modal"><span class="celeste"><b>Súmate</b></span></a> 
@@ -580,6 +543,70 @@
                       <br>
                       <button type="button" class="btn btn-primary active" id="btn_recuperar_pass" alt="Recuperar Contraseña" readonly="readonly">Recuperar Contraseña</button>
 
+                  </div>
+              </div>
+          </div>
+      </div>
+
+
+
+      <!--
+      =================================
+      Modal CONTACT US
+      =================================
+      -->
+      <div id="contact" class="modal fade" role="dialog">
+          <div class="modal-dialog modal-dialog-pop">
+              <!-- Modal content-->
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h1><b>Contáctanos</b></h1>
+                      <p>Sé parte de GassApp y accede a cientos de beneficios. Escríbenos y nos pondremos en contacto.</p>
+                  </div>
+                  <div class="modal-body">
+                     <!-- CONTACT -->
+                      <div class="contact-us">
+                        <form role="form " action="" method="">
+                          <!-- Nombre -->
+                          <div class="form-group">
+                            <label for="name"></label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Nombre Completo" required>
+                            <!--placing icon using a span element-->
+                            <span class="icon fa fa-user fa-lg"></span>
+                          </div>
+
+                          <!-- Email -->
+                          <div class="form-group">
+                            <label for="email"></label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+                            <span class="icon fa fa-envelope fa-lg"></span>
+                          </div>
+
+                          <!-- Teléfono -->
+                          <div class="form-group">
+                            <label for="telefono"></label>
+                            <input type="telefono" class="form-control" id="telefono" name="telefono" placeholder="Telefono" required>
+                            <span class="icon fa fa-phone fa-lg"></span>
+                          </div>
+
+                          <!-- Asunto -->
+                          <div class="form-group">
+                            <label for="sub"></label>
+                            <input type="text" class="form-control" id="sub" name="sub" placeholder="Asunto" required>
+                            <span class="icon fa fa-pencil fa-lg"></span>
+                          </div>
+
+                          <!-- Mensaje -->
+                          <div class="form-group">
+                            <textarea class="form-control" rows="5" cols="30" id="msg" name="msg" placeholder="Mensaje" style="width:100%"></textarea>
+                            <span class="icon-textarea fa fa-paper-plane fa-lg "></span>
+                          </div>
+
+                          <button type="submit" class="btn btn-default">Enviar</button>
+                        </form>
+                      
+                      </div>
                   </div>
               </div>
           </div>

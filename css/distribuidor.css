@@ -374,32 +374,34 @@ li.dash-list-item p {
   width: 100%;
 }
 .call-back {
-  background-color: rgba(48, 174, 229, 0.8);
+  background-color: rgba(48, 174, 229, 0.9);
   padding: 50px 20px;
 }
 
 /* Contact Us */
-.call-to form {
+.contact-us form {
   color: #888888;
   text-align: left;
   padding-top: 20px;
 }
 
-.call-to label {
+.contact-us label {
   display: none;
 }
 
-.call-to input,
-.call-to textarea {
+.contact-us input,
+.contact-us textarea {
   /* to create space for placing icon*/
   padding-left: 40px;
   border-color: transparent;
   background-color: white;
   border-radius: 5px;
+  border-style: solid;
+  border-color: #cccccc;
 }
 
 /*position should be relative and z-index greater than one*/
-.call-to .icon {
+.contact-us .icon {
   position: relative;
   float: left;
   margin-left: 8px;
@@ -408,32 +410,32 @@ li.dash-list-item p {
   color: #222222;
 }
 
-.call-to .icon-textarea {
+.contact-us .icon-textarea {
   float: left;
   margin-left: 8px;
-  margin-top: -114px;
+  margin-top: -104px;
   position: relative;
   z-index: 2;
   color: #222222;
 }
 
-/* Button */
-.call-to .btn-default {
+/* Button 
+.contact-us .btn-default {
   margin-top: 5px;
   margin-bottom: 30px;
-  background-color: white;
+  background-color: #30aee5;
   border-color: #30aee5;
-  color: #30aee5;
+  color: white;
 }
 
-.call-to .btn-default:hover,
-.call-to .btn-default:focus {
-  background-color: #30aee5;
-  color: white;
-  border-color: white;
+.contact-us .btn-default:hover,
+.contact-us .btn-default:focus {
+  background-color: white;
+  color: #30aee5;
+  border-color: #30aee5;
   outline: 0px auto -webkit-focus-ring-color;
 }
-
+*/
 
 
 
