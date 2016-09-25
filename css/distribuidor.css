@@ -437,6 +437,9 @@ li.dash-list-item p {
 }
 */
 
+.config_map {
+  margin: 20px auto;
+}
 
 
 
@@ -887,3 +890,4 @@ li.dash-list-item p {
   }
 
 }
+
