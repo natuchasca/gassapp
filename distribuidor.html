@@ -228,186 +228,178 @@
         </div>
       </section>
       <!--
-      =================================
-      Call To Action / Registro
-      =================================
-      -->
-      <div id="sumate" class="sumate pv-40">
-          <div class="container">
-              <div class="row">
-                  <div class="form-block center-block text-center ph-30 space-bottom">
-                      <h1>Súmate a GassApp</h1>
-                      <p class="margin-bottom-30">Regístrate ingresando todos los datos correctamente. Una vez validada la información, podrás ser parte de GassApp y acceder a tu administrador.</p>
-                  </div>
-              </div>
-              <div class="row">
-                  <div class="col-md-12 col-xs-12">
+    =================================
+    Call To Action / Registro
+    =================================
+    -->
+    <div id="sumate" class="sumate pv-40">
+        <div class="container">
+            <div class="row">
+                <div class="form-block center-block text-center ph-30 space-bottom">
+                    <h1>Súmate a GassApp</h1>
+                    <p class="margin-bottom-30">Regístrate ingresando todos los datos correctamente. Una vez validada la información, podrás ser parte de GassApp y acceder a tu administrador.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
 
-                      <form class="form-horizontal" id="formulario" enctype="multipart/form-data">
-                  
-                          <div class="form-group" id="frg_rut">
-                              <label class="control-label col-md-3 col-sm-3 col-xs-4">Rut:</label>
-                              <div class="col-md-9 col-sm-9 col-xs-8">
-                                  <input type="text" class="form-control" required="required" id="rut" name="rut">
-                              </div>
-                          </div>
+                    <form class="form-horizontal" id="formulario" enctype="multipart/form-data">
 
-                          <div class="form-group" id="frg_razon_social">
-                              <label class="control-label col-md-3 col-sm-3 col-xs-4">Razon Social:</label>
-                              <div class="col-md-9 col-sm-9 col-xs-8">
-                                  <input type="text" class="form-control" required="required" id="razon_social" name="razon_social">
-                              </div>
-                          </div>
-                          <div class="form-group" id="frg_giro">
-                              <label class="control-label col-md-3 col-sm-3 col-xs-4">Giro:</label>
-                              <div class="col-md-9 col-sm-9 col-xs-8">
-                                  <input type="text" class="form-control" required="required" id="giro" name="giro">
-                              </div>
-                          </div>
-                          <div class="form-group" id="frg_nombre_fantasia">
-                              <label class="control-label col-md-3 col-sm-3 col-xs-4">Nombre Fantasía:</label>
-                              <div class="col-md-9 col-sm-9 col-xs-8">
-                                  <input type="text" class="form-control" required="required" id="nombre_fantasia" name="nombre_fantasia"/>
-                              </div>
-                          </div>
-                          <div class="form-group" id="frg_nombre_representante_legal">
-                              <label class="control-label col-md-3 col-sm-3 col-xs-4">Representante Legal:</label>
-                              <div class="col-md-9 col-sm-9 col-xs-8">
-                                  <input type="text" class="form-control" required="required" id="nombre_representante_legal" name="nombre_representante_legal">
-                              </div>
-                          </div>
-                          <div class="form-group" id="frg_rut_representante_legal">
-                              <label class="control-label col-md-3 col-sm-3 col-xs-4">Rut Representante:</label>
-                              <div class="col-md-9 col-sm-9 col-xs-8">
-                                  <input type="text" required="required" class="form-control" id="rut_representante_legal" name="rut_representante_legal">
-                              </div>
-                          </div>
+                        <div class="form-group" id="frg_rut">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-4">Rut:</label>
+                            <div class="col-md-9 col-sm-9 col-xs-8">
+                                <input type="text" class="form-control" required="required" id="rut" name="rut">
+                            </div>
+                        </div>
 
-                          <div class="form-group" id="frg_telefono">
-                              <label class="control-label col-md-3 col-sm-3 col-xs-4">Telefono:</label>
-                              <div class="col-md-9 col-sm-9 col-xs-8">
-                                  <input type="text" class="form-control" id="telefono" name="telefono" required="required">
-                              </div>
-                          </div>
-                          <div class="form-group" id="frg_email">
-                              <label class="control-label col-md-3 col-sm-3 col-xs-4">Email:</label>
-                              <div class="col-md-9 col-sm-9 col-xs-8">
-                                  <input type="email" class="form-control" name="email" id="email" required="required">
-                              </div>
-                          </div>
-                          <div class="form-group" id="frg_registro_region">
-                              <label class="control-label col-md-3 col-sm-3 col-xs-4">Ubicación</label>
-                              <div class="col-xs-8 col-sm-3 col-md-3">
-                                  <select class="form-control margin-bottom-5" name="registro_region" id="registro_region" required="required">
-                                      <option>Región</option>
-                                  </select>
-                              </div>
-                              <div class="col-sm-3 col-md-3 hidden-xs">
-                                  <select class="form-control disabled margin-bottom-5" name="registro_provincia" id="registro_provincia" disabled required="required">
-                                      <option>Provincia</option>
-                                  </select>
-                              </div>
-                              <div class="col-sm-3 col-md-3 hidden-xs">
-                                  <select class="form-control disabled margin-bottom-5" name="registro_comuna" id="registro_comuna" disabled required="required">
-                                      <option>Comuna</option>
-                                  </select>
-                              </div>
-                              <!--visible xs -->
-                              <div class="col-xs-offset-4 col-xs-8 visible-xs">
-                                  <select class="form-control disabled margin-bottom-5" name="registro_provincia" id="registro_provincia" disabled required="required">
-                                      <option>Provincia</option>
-                                  </select>
-                              </div>
-                              <div class="col-xs-offset-4 col-xs-8 visible-xs">
-                                  <select class="form-control disabled margin-bottom-5" name="registro_comuna" id="registro_comuna" disabled required="required">
-                                      <option>Comuna</option>
-                                  </select>
-                              </div>
-                          </div>
-                          <div class="form-group" id="frg_direccion_casa_matriz">
-                              <label class="control-label col-md-3 col-sm-3 col-xs-4">Dirección Casa Matriz:</label>
-                              <div class="col-md-9 col-sm-9 col-xs-8">
-                                  <input id="direccion_casa_matriz" name="direccion_casa_matriz" class ="form-control" type="text"> 
-                              </div>
-                              <!-- MAPA -->
-                              <div class="col-md-offset-3 col-sm-offset-3 col-md-9 col-sm-9 col-xs-12">
+                        <div class="form-group" id="frg_razon_social">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-4">Razon Social:</label>
+                            <div class="col-md-9 col-sm-9 col-xs-8">
+                                <input type="text" class="form-control" required="required" id="razon_social" name="razon_social">
+                            </div>
+                        </div>
+                        <div class="form-group" id="frg_giro">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-4">Giro:</label>
+                            <div class="col-md-9 col-sm-9 col-xs-8">
+                                <input type="text" class="form-control" required="required" id="giro" name="giro">
+                            </div>
+                        </div>
+                        <div class="form-group" id="frg_nombre_fantasia">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-4">Nombre Fantasía:</label>
+                            <div class="col-md-9 col-sm-9 col-xs-8">
+                                <input type="text" class="form-control" required="required" id="nombre_fantasia" name="nombre_fantasia" />
+                            </div>
+                        </div>
+                        <div class="form-group" id="frg_nombre_representante_legal">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-4">Representante Legal:</label>
+                            <div class="col-md-9 col-sm-9 col-xs-8">
+                                <input type="text" class="form-control" required="required" id="nombre_representante_legal" name="nombre_representante_legal">
+                            </div>
+                        </div>
+                        <div class="form-group" id="frg_rut_representante_legal">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-4">Rut Representante:</label>
+                            <div class="col-md-9 col-sm-9 col-xs-8">
+                                <input type="text" required="required" class="form-control" id="rut_representante_legal" name="rut_representante_legal">
+                            </div>
+                        </div>
+
+                        <div class="form-group" id="frg_telefono">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-4">Telefono:</label>
+                            <div class="col-md-9 col-sm-9 col-xs-8">
+                                <input type="text" class="form-control" id="telefono" name="telefono" required="required">
+                            </div>
+                        </div>
+                        <div class="form-group" id="frg_email">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-4">Email:</label>
+                            <div class="col-md-9 col-sm-9 col-xs-8">
+                                <input type="email" class="form-control" name="email" id="email" required="required">
+                            </div>
+                        </div>
+                        <div class="form-group" id="frg_registro_region">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-4">Ubicación</label>
+                            <div class="col-xs-8 col-sm-3 col-md-3">
+                                <select class="form-control margin-bottom-5" name="registro_region" id="registro_region" required="required">
+                                    <option>Región</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-3 col-md-3 col-xs-8 registro_xs">
+                                <select class="form-control disabled margin-bottom-5" name="registro_provincia" id="registro_provincia" disabled required="required">
+                                    <option>Provincia</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-3 col-md-3 col-xs-8 registro_xs">
+                                <select class="form-control disabled margin-bottom-5" name="registro_comuna" id="registro_comuna" disabled required="required">
+                                    <option>Comuna</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group" id="frg_direccion_casa_matriz">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-4">Dirección Casa Matriz:</label>
+                            <div class="col-md-9 col-sm-9 col-xs-8">
+                                <input id="direccion_casa_matriz" name="direccion_casa_matriz" class="form-control" type="text">
+                            </div>
+                            <!-- MAPA -->
+                            <div class="col-md-offset-3 col-sm-offset-3 col-md-9 col-sm-9 col-xs-12">
                                 <div class="config_map">
+                                    <div id="map" style="width: 420px; height: 200px; position: relative;">
+                              
                                     
-                                    <div id="map" style="width: 420px; height: 200px; position: relative;"><div style="height: 100%; width: 100%; position: absolute; background-color: rgb(229, 227, 223); overflow: hidden;"><div class="gm-style" style="position: absolute; left: 0px; top: 0px; overflow: hidden; width: 100%; height: 100%; z-index: 0;"><div style="position: absolute; left: 0px; top: 0px; overflow: hidden; width: 100%; height: 100%; z-index: 0; cursor: url(&quot;https://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;), default;"><div style="position: absolute; left: 0px; top: 0px; z-index: 1; width: 100%; transform-origin: 243px 112px 0px;"><div style="position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;"><div style="width: 256px; height: 256px; position: absolute; left: 34px; top: -216px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 34px; top: 40px;"></div><div style="width: 256px; height: 256px; position: absolute; left: -222px; top: -216px;"></div><div style="width: 256px; height: 256px; position: absolute; left: -222px; top: 40px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 290px; top: -216px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 290px; top: 40px;"></div></div></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 101; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 102; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 103; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: -1;"><div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;"><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 34px; top: -216px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 34px; top: 40px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -222px; top: -216px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -222px; top: 40px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 290px; top: -216px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 290px; top: 40px;"></div></div></div></div><div style="position: absolute; z-index: 0; left: 0px; top: 0px;"><div style="overflow: hidden; width: 420px; height: 200px;"><img src="https://maps.googleapis.com/maps/api/js/StaticMapService.GetMapImage?1m2&amp;1i19678&amp;2i39128&amp;2e1&amp;3u8&amp;4m2&amp;1u420&amp;2u200&amp;5m5&amp;1e0&amp;5ses-ES&amp;6sus&amp;10b1&amp;12b1&amp;token=128613" style="width: 420px; height: 200px;"></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;"><div style="position: absolute; left: 34px; top: -216px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i8!2i77!3i152!4i256!2m3!1e0!2sm!3i365036470!3m9!2ses-ES!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=26970" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 34px; top: 40px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i8!2i77!3i153!4i256!2m3!1e0!2sm!3i365036470!3m9!2ses-ES!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=62991" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: -222px; top: -216px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i8!2i76!3i152!4i256!2m3!1e0!2sm!3i365036470!3m9!2ses-ES!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=109252" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: -222px; top: 40px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i8!2i76!3i153!4i256!2m3!1e0!2sm!3i365036470!3m9!2ses-ES!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=14202" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 290px; top: -216px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i8!2i78!3i152!4i256!2m3!1e0!2sm!3i365036470!3m9!2ses-ES!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=75759" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 290px; top: 40px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i8!2i78!3i153!4i256!2m3!1e0!2sm!3i365036470!3m9!2ses-ES!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=111780" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div></div></div></div><div class="gm-style-pbc" style="position: absolute; left: 0px; top: 0px; z-index: 2; width: 100%; height: 100%; transition-duration: 0.3s; opacity: 0; display: none;"><p class="gm-style-pbt">Para mover el mapa, utiliza dos dedos</p></div><div style="position: absolute; left: 0px; top: 0px; z-index: 3; width: 100%; height: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 4; width: 100%; transform-origin: 243px 112px 0px;"><div style="position: absolute; left: 0px; top: 0px; z-index: 104; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 107; width: 100%;"></div></div></div><div style="margin-left: 5px; margin-right: 5px; z-index: 1000000; position: absolute; left: 0px; bottom: 0px;"><a title="Haz clic aquí para visualizar esta zona en Google Maps" href="https://maps.google.com/maps?ll=-33.414607,-70.752543&amp;z=8&amp;t=m&amp;hl=es-ES&amp;gl=US&amp;mapclient=apiv3" target="_blank" style="position: static; overflow: visible; float: none; display: inline;"><div style="width: 66px; height: 26px; cursor: pointer;"><img draggable="false" src="https://maps.gstatic.com/mapfiles/api-3/images/google4.png" style="position: absolute; left: 0px; top: 0px; width: 66px; height: 26px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px;"></div></a></div><div style="background-color: white; padding: 15px 21px; border: 1px solid rgb(171, 171, 171); font-family: Roboto,Arial,sans-serif; color: rgb(34, 34, 34); box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2); z-index: 10000002; display: none; width: 256px; height: 148px; position: absolute; left: 60px; top: 10px;"><div style="padding: 0px 0px 10px; font-size: 16px;">Datos de mapas</div><div style="font-size: 13px;">Datos de mapas ©2016 Google</div><div style="width: 13px; height: 13px; overflow: hidden; position: absolute; opacity: 0.7; right: 12px; top: 12px; z-index: 10000; cursor: pointer;"><img draggable="false" src="https://maps.gstatic.com/mapfiles/api-3/images/mapcnt6.png" style="position: absolute; left: -2px; top: -336px; width: 59px; height: 492px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div></div><div style="z-index: 1000001; position: absolute; width: 151px; right: 225px; bottom: 0px;" class="gmnoprint"><div class="gm-style-cc" style="-moz-user-select: none; height: 14px; line-height: 14px;" draggable="false"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto,Arial,sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a style="color: rgb(68, 68, 68); text-decoration: none; cursor: pointer; display: none;">Datos de mapas</a><span>Datos de mapas ©2016 Google</span></div></div></div><div style="position: absolute; right: 0px; bottom: 0px;" class="gmnoscreen"><div style="font-family: Roboto,Arial,sans-serif; font-size: 11px; color: rgb(68, 68, 68); direction: ltr; text-align: right; background-color: rgb(245, 245, 245);">Datos de mapas ©2016 Google</div></div><div draggable="false" style="z-index: 1000001; -moz-user-select: none; height: 14px; line-height: 14px; position: absolute; right: 139px; bottom: 0px;" class="gmnoprint gm-style-cc"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto,Arial,sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a target="_blank" href="https://www.google.com/intl/es-ES_US/help/terms_maps.html" style="text-decoration: none; cursor: pointer; color: rgb(68, 68, 68);">Términos de uso</a></div></div><div style="width: 25px; height: 25px; overflow: hidden; display: none; margin: 10px 14px; position: absolute; top: 0px; right: 0px;"><img class="gm-fullscreen-control" draggable="false" src="https://maps.gstatic.com/mapfiles/api-3/images/sv9.png" style="position: absolute; left: -52px; top: -86px; width: 164px; height: 175px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px;"></div><div class="gm-style-cc" style="-moz-user-select: none; height: 14px; line-height: 14px; position: absolute; right: 0px; bottom: 0px;" draggable="false"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto,Arial,sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a href="https://www.google.com/maps/@-33.4146067,-70.7525434,8z/data=!10m1!1e1!12b1?source=apiv3&amp;rapsrc=apiv3" style="font-family: Roboto,Arial,sans-serif; font-size: 10px; color: rgb(68, 68, 68); text-decoration: none; position: relative;" title="Informar a Google acerca de errores en las imágenes o en el mapa de carreteras" target="_new">Informar de un error de Maps</a></div></div><div controlheight="93" controlwidth="28" draggable="false" style="margin: 10px; -moz-user-select: none; position: absolute; bottom: 107px; right: 28px;" class="gmnoprint gm-bundled-control gm-bundled-control-on-bottom"><div controlheight="55" controlwidth="28" style="position: absolute; left: 0px; top: 38px;" class="gmnoprint"><div style="-moz-user-select: none; box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.3); border-radius: 2px; cursor: pointer; background-color: rgb(255, 255, 255); width: 28px; height: 55px;" draggable="false"><div style="position: relative; width: 28px; height: 27px; left: 0px; top: 0px;" title="Acerca la imagen"><div style="overflow: hidden; position: absolute; width: 15px; height: 15px; left: 7px; top: 6px;"><img draggable="false" src="https://maps.gstatic.com/mapfiles/api-3/images/tmapctrl.png" style="position: absolute; left: 0px; top: 0px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none; width: 120px; height: 54px;"></div></div><div style="position: relative; overflow: hidden; width: 67%; height: 1px; left: 16%; background-color: rgb(230, 230, 230); top: 0px;"></div><div style="position: relative; width: 28px; height: 27px; left: 0px; top: 0px;" title="Aleja la imagen"><div style="overflow: hidden; position: absolute; width: 15px; height: 15px; left: 7px; top: 6px;"><img draggable="false" src="https://maps.gstatic.com/mapfiles/api-3/images/tmapctrl.png" style="position: absolute; left: 0px; top: -15px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none; width: 120px; height: 54px;"></div></div></div></div><div controlheight="28" controlwidth="28" style="background-color: rgb(255, 255, 255); box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.3); border-radius: 2px; width: 28px; height: 28px; cursor: url(&quot;https://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;), default; position: absolute; left: 0px; top: 0px;" class="gm-svpc"><div style="position: absolute; left: 1px; top: 1px;"></div><div style="position: absolute; left: 1px; top: 1px;"><div aria-label="Control del hombrecito naranja de Street View" style="width: 26px; height: 26px; overflow: hidden; position: absolute; left: 0px; top: 0px;"><img draggable="false" src="https://maps.gstatic.com/mapfiles/api-3/images/cb_scout5.png" style="position: absolute; left: -147px; top: -26px; width: 215px; height: 835px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div><div aria-label="El hombrecito naranja está en la parte superior del mapa." style="width: 26px; height: 26px; overflow: hidden; position: absolute; left: 0px; top: 0px; visibility: hidden;"><img draggable="false" src="https://maps.gstatic.com/mapfiles/api-3/images/cb_scout5.png" style="position: absolute; left: -147px; top: -52px; width: 215px; height: 835px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div><div aria-label="Control del hombrecito naranja de Street View" style="width: 26px; height: 26px; overflow: hidden; position: absolute; left: 0px; top: 0px; visibility: hidden;"><img draggable="false" src="https://maps.gstatic.com/mapfiles/api-3/images/cb_scout5.png" style="position: absolute; left: -147px; top: -78px; width: 215px; height: 835px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div></div></div><div style="display: none; position: absolute;" controlheight="0" controlwidth="28" class="gmnoprint"><div title="Girar el mapa 90 grados" style="width: 28px; height: 28px; overflow: hidden; position: absolute; border-radius: 2px; box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.3); cursor: pointer; background-color: rgb(255, 255, 255); display: none;"><img draggable="false" src="https://maps.gstatic.com/mapfiles/api-3/images/tmapctrl4.png" style="position: absolute; left: -141px; top: 6px; width: 170px; height: 54px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div><div class="gm-tilt" style="width: 28px; height: 28px; overflow: hidden; position: absolute; border-radius: 2px; box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.3); top: 0px; cursor: pointer; background-color: rgb(255, 255, 255);"><img draggable="false" src="https://maps.gstatic.com/mapfiles/api-3/images/tmapctrl4.png" style="position: absolute; left: -141px; top: -13px; width: 170px; height: 54px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div></div></div><div style="margin: 10px; z-index: 0; position: absolute; cursor: pointer; left: 0px; top: 0px;" class="gmnoprint"><div class="gm-style-mtc" style="float: left;"><div title="Muestra el callejero" draggable="false" style="direction: ltr; overflow: hidden; text-align: center; position: relative; color: rgb(0, 0, 0); font-family: Roboto,Arial,sans-serif; -moz-user-select: none; font-size: 11px; background-color: rgb(255, 255, 255); padding: 8px; border-bottom-left-radius: 2px; border-top-left-radius: 2px; background-clip: padding-box; box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.3); min-width: 28px; font-weight: 500;">Mapa</div><div style="background-color: white; z-index: -1; padding: 2px; border-bottom-left-radius: 2px; border-bottom-right-radius: 2px; box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.3); position: absolute; left: 0px; top: 32px; text-align: left; display: none;"><div title="Muestra el callejero con relieve" draggable="false" style="color: rgb(0, 0, 0); font-family: Roboto,Arial,sans-serif; -moz-user-select: none; font-size: 11px; background-color: rgb(255, 255, 255); padding: 6px 8px 6px 6px; direction: ltr; text-align: left; white-space: nowrap;"><span style="box-sizing: border-box; position: relative; line-height: 0; font-size: 0px; margin: 0px 5px 0px 0px; display: inline-block; background-color: rgb(255, 255, 255); border: 1px solid rgb(198, 198, 198); border-radius: 1px; width: 13px; height: 13px; vertical-align: middle;" role="checkbox"><div style="position: absolute; left: 1px; top: -2px; width: 13px; height: 11px; overflow: hidden; display: none;"><img draggable="false" src="https://maps.gstatic.com/mapfiles/mv/imgs8.png" style="position: absolute; left: -52px; top: -44px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none; width: 68px; height: 67px;"></div></span><label style="vertical-align: middle; cursor: pointer;">Relieve</label></div></div></div><div class="gm-style-mtc" style="float: left;"><div title="Muestra las imágenes de satélite" draggable="false" style="direction: ltr; overflow: hidden; text-align: center; position: relative; color: rgb(86, 86, 86); font-family: Roboto,Arial,sans-serif; -moz-user-select: none; font-size: 11px; background-color: rgb(255, 255, 255); padding: 8px; border-bottom-right-radius: 2px; border-top-right-radius: 2px; background-clip: padding-box; box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.3); border-left: 0px none; min-width: 39px;">Satélite</div><div style="background-color: white; z-index: -1; padding: 2px; border-bottom-left-radius: 2px; border-bottom-right-radius: 2px; box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.3); position: absolute; right: 0px; top: 32px; text-align: left; display: none;"><div title="Muestra las imágenes con los nombres de las calles" draggable="false" style="color: rgb(0, 0, 0); font-family: Roboto,Arial,sans-serif; -moz-user-select: none; font-size: 11px; background-color: rgb(255, 255, 255); padding: 6px 8px 6px 6px; direction: ltr; text-align: left; white-space: nowrap;"><span style="box-sizing: border-box; position: relative; line-height: 0; font-size: 0px; margin: 0px 5px 0px 0px; display: inline-block; background-color: rgb(255, 255, 255); border: 1px solid rgb(198, 198, 198); border-radius: 1px; width: 13px; height: 13px; vertical-align: middle;" role="checkbox"><div style="position: absolute; left: 1px; top: -2px; width: 13px; height: 11px; overflow: hidden;"><img draggable="false" src="https://maps.gstatic.com/mapfiles/mv/imgs8.png" style="position: absolute; left: -52px; top: -44px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none; width: 68px; height: 67px;"></div></span><label style="vertical-align: middle; cursor: pointer;">Etiquetas</label></div></div></div></div></div></div></div>
+                                    
+                                    </div>
                                 </div>
-                              </div>
-                          </div>
+                            </div>
+                        </div>
 
 
-                          <div class="form-group" id="frg_myImage">
-                              <label class="control-label col-md-3 col-sm-3 col-xs-4">Logo Empresa:</label>
-                              <div class="col-md-9 col-sm-9 col-xs-8">
-                                  <input id="latitud" name="latitud" class="hidden" type="hidden"  >
-                                  <input id="longitud" name="longitud" class="hidden" type="hidden"  >
-                                  <input type="file" class="filestyle" name="myImage" id="myImage" accept="image/*" data-buttonname="btn-primary" required="required">
-                              </div>
-                          </div>
+                        <div class="form-group" id="frg_myImage">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-4">Logo Empresa:</label>
+                            <div class="col-md-9 col-sm-9 col-xs-8">
+                                <input id="latitud" name="latitud" class="hidden" type="hidden">
+                                <input id="longitud" name="longitud" class="hidden" type="hidden">
+                                <input type="file" class="filestyle" name="myImage" id="myImage" accept="image/*" data-buttonname="btn-primary" required="required">
+                            </div>
+                        </div>
 
 
-                          <div class="form-group" id="frg_inputPassword">
-                              <label class="control-label col-md-3 col-sm-3 col-xs-4">Contraseña:</label>
-                              <div class="col-md-9 col-sm-9 col-xs-8">
-                                  <input type="password" class="form-control" name="inputPassword" id="inputPassword" required="required">
-                              </div>
-                          </div>
-                          <div class="form-group" id="frg_inputPassword2">
-                              <label class="control-label col-md-3 col-sm-3 col-xs-4">Confirmar Contraseña:</label>
-                              <div class="col-md-9 col-sm-9 col-xs-8">
-                                  <input type="password" class="form-control" id="inputPassword2" required="required">
-                              </div>
-                          </div>
+                        <div class="form-group" id="frg_inputPassword">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-4">Contraseña:</label>
+                            <div class="col-md-9 col-sm-9 col-xs-8">
+                                <input type="password" class="form-control" name="inputPassword" id="inputPassword" required="required">
+                            </div>
+                        </div>
+                        <div class="form-group" id="frg_inputPassword2">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-4">Confirmar Contraseña:</label>
+                            <div class="col-md-9 col-sm-9 col-xs-8">
+                                <input type="password" class="form-control" id="inputPassword2" required="required">
+                            </div>
+                        </div>
 
-                          <div class="form-group">
-                              <div class="col-xs-offset-3 col-xs-9">
-                                  <label class="checkbox-inline">
-                                      <input type="checkbox" name="noticias" id="noticias">
-                                      Deseo recibir información en mi cuenta de correo.
-                                  </label>
-                              </div>
-                          </div>
+                        <div class="form-group">
+                            <div class="col-xs-offset-3 col-xs-9">
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" name="noticias" id="noticias">
+                                    Deseo recibir información en mi cuenta de correo.
+                                </label>
+                            </div>
+                        </div>
 
-                          <div class="form-group" id="frg_terminos_y_condiciones">
-                              <div class="col-xs-offset-3 col-xs-9">
-                                  <label class="checkbox-inline">
-                                      <input type="checkbox" name="terminos_y_condiciones" id="terminos_y_condiciones" required="required">
-                                      Acepto <a href="pdf/Terminosycondiciones.pdf" target="_blank" class="celeste">Términos y Condiciones</a>.
-                                  </label>
-                              </div>
-                          </div>
+                        <div class="form-group" id="frg_terminos_y_condiciones">
+                            <div class="col-xs-offset-3 col-xs-9">
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" name="terminos_y_condiciones" id="terminos_y_condiciones" required="required">
+                                    Acepto <a href="pdf/Terminosycondiciones.pdf" target="_blank" class="celeste">Términos y Condiciones</a>.
+                                </label>
+                            </div>
+                        </div>
 
-                          <div class="form-group" id="frg_acuerdo_de_usabilidad">
-                              <div class="col-xs-offset-3 col-xs-9">
-                                  <label class="checkbox-inline">
-                                      <input type="checkbox" name="acuerdo_de_usabilidad" id="acuerdo_de_usabilidad" required="required">
-                                      Acepto <a href="pdf/acuerdo.pdf" target="_blank" class="celeste">Acuerdo de Mediación</a>.
-                                  </label>
-                              </div>
-                          </div>
+                        <div class="form-group" id="frg_acuerdo_de_usabilidad">
+                            <div class="col-xs-offset-3 col-xs-9">
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" name="acuerdo_de_usabilidad" id="acuerdo_de_usabilidad" required="required">
+                                    Acepto <a href="pdf/acuerdo.pdf" target="_blank" class="celeste">Acuerdo de Mediación</a>.
+                                </label>
+                            </div>
+                        </div>
 
 
-                          <div class="form-group" id="frmg_mensajes_error" style="display: none">
-                              <div class="col-xs-offset-3 col-xs-9">
-                                  <label class="checkbox-inline" id="mensaje_error">
-                                  </label>
-                              </div>
-                          </div>
-                          <br>
-                          <div class="form-group">
-                              <div class="col-xs-offset-3 col-xs-9">
-                                  <input type="button" class="btn btn-primary" id="btn_registro_distri" value="Activar cuenta">
-                                  <input type="reset" class="btn btn-default" value="Limpiar">
-                              </div>
-                          </div>
-                      </form>
-                  </div>
-              </div>
-          </div>
-      </div>
+                        <div class="form-group" id="frmg_mensajes_error" style="display: none">
+                            <div class="col-xs-offset-3 col-xs-9">
+                                <label class="checkbox-inline" id="mensaje_error">
+                                </label>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <div class="col-xs-offset-3 col-xs-9">
+                                <input type="button" class="btn btn-primary" id="btn_registro_distri" value="Activar cuenta">
+                                <input type="reset" class="btn btn-default" value="Limpiar">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
       <!--
       =================================

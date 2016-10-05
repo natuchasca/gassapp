@@ -116,7 +116,10 @@ li.dash-list-item p {
   transition: background 0.3s ease;
 }
 
-
+/* Contact xs space */
+.registro_xs {
+  margin-left: 33.33333333%;
+}
 
 
 /* Call to action */
@@ -237,6 +240,11 @@ li.dash-list-item p {
     .simple-button:hover {
         color: #fff;
         background: #2669DF;
+    }
+
+    /* Contact xs space */
+    .registro_xs {
+      margin-left: 0;
     }
 
 }
@@ -375,5 +383,9 @@ li.dash-list-item p {
       background-color: white;
     }
 
-
+    /* Contact xs space */
+    .registro_xs {
+      margin-left: 0;
+    }
+    
 }
